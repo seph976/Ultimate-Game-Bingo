@@ -5,5 +5,7 @@ function settings_save(){
 	ini_write_string("SETTINGS","Color",global.Color)
 	ini_write_string("SETTINGS","Port",global.Port)
 	ini_write_string("SETTINGS","Sound Effects",global.Sounds)
+	ini_write_string("SETTINGS","Remember Settings",global.RememberSettings)
+	ini_write_string("SETTINGS","Remember Seed",global.RememberSeed)
 	ini_close()
 }

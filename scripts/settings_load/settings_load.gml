@@ -5,5 +5,7 @@ function settings_load(){
 	global.Color = ini_read_real("SETTINGS","Color",global.Color)
 	global.Port = ini_read_real("SETTINGS","Port",global.Port)
 	global.Sounds = ini_read_real("SETTINGS","Sound Effects",global.Sounds)
+	global.RememberSettings = ini_read_real("SETTINGS","Remember Settings",global.RememberSettings)
+	global.RememberSeed = ini_read_real("SETTINGS","Remember Seed",global.RememberSeed)
 	ini_close()
 }
