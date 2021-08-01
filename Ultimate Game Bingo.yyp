@@ -25,6 +25,7 @@
     {"id":{"name":"draw_text_outline","path":"scripts/draw_text_outline/draw_text_outline.yy",},"order":0,},
     {"id":{"name":"spr_icon","path":"sprites/spr_icon/spr_icon.yy",},"order":1,},
     {"id":{"name":"recieved_packet_client","path":"scripts/recieved_packet_client/recieved_packet_client.yy",},"order":4,},
+    {"id":{"name":"bingosettings_save","path":"scripts/bingosettings_save/bingosettings_save.yy",},"order":7,},
     {"id":{"name":"room_init","path":"rooms/room_init/room_init.yy",},"order":2,},
     {"id":{"name":"obj_init","path":"objects/obj_init/obj_init.yy",},"order":0,},
     {"id":{"name":"spr_arrows","path":"sprites/spr_arrows/spr_arrows.yy",},"order":3,},
@@ -33,6 +34,7 @@
     {"id":{"name":"font_bahnschrift_11","path":"fonts/font_bahnschrift_11/font_bahnschrift_11.yy",},"order":0,},
     {"id":{"name":"bingo_item_get","path":"scripts/bingo_item_get/bingo_item_get.yy",},"order":5,},
     {"id":{"name":"window_frame","path":"extensions/window_frame/window_frame.yy",},"order":0,},
+    {"id":{"name":"bingosettings_load","path":"scripts/bingosettings_load/bingosettings_load.yy",},"order":8,},
     {"id":{"name":"room_menu","path":"rooms/room_menu/room_menu.yy",},"order":0,},
   ],
   "Options": [

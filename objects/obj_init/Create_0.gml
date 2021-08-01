@@ -4,7 +4,7 @@
 was_ready = false
 
 //Setup
-global.Version = "1.0.0"
+global.Version = "1.0.1"
 randomize()
 window_set_caption("Ultimate Game Bingo - " + string(global.Version))
 global.max_players = 6
@@ -40,6 +40,8 @@ global.Name = "Bingo Bob"
 global.Color = c_green
 global.Port = 64000
 global.Sounds = true
+global.RememberSettings = true
+global.RememberSeed = true
 
 if file_exists("settings.ini") then{
 	settings_load()
@@ -68,6 +70,14 @@ global.oot_quests = true
 global.ct_keyitems = true
 global.ct_characters = true
 global.ct_bosses = true
+
+if file_exists("bingosettings.ini") then{
+	bingosettings_load()
+}
+else{
+	bingosettings_save()
+}
+
 
 //Hightlight animation and setup
 col_mode = 0

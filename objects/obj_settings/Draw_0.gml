@@ -30,6 +30,16 @@ var _pos_x  = 50
 var _pos_y = 125
 draw_line(_pos_x,_pos_y,_pos_x + 400,_pos_y)
 draw_line(_pos_x,_pos_y + 25,_pos_x + 400,_pos_y + 25)
+//Remember settings
+var _pos_x  = 50
+var _pos_y = 150
+draw_line(_pos_x,_pos_y,_pos_x + 400,_pos_y)
+draw_line(_pos_x,_pos_y + 25,_pos_x + 400,_pos_y + 25)
+//Remember seed
+var _pos_x  = 50
+var _pos_y = 175
+draw_line(_pos_x,_pos_y,_pos_x + 400,_pos_y)
+draw_line(_pos_x,_pos_y + 25,_pos_x + 400,_pos_y + 25)
 //Back
 var _pos_x  = 50
 var _pos_y = 400
@@ -70,6 +80,26 @@ if mouse_x > _pos_x and mouse_x < _pos_x + 400 and mouse_y > _pos_y and mouse_y 
 //Sound effects
 var _pos_x  = 50
 var _pos_y = 125
+if mouse_x > _pos_x and mouse_x < _pos_x + 400 and mouse_y > _pos_y and mouse_y < _pos_y + 25 then{
+	draw_set_alpha(0.3)
+	draw_rectangle(_pos_x,_pos_y,_pos_x + 400,_pos_y + 25,false)
+	draw_set_alpha(1)
+	draw_rectangle_color(_pos_x + 2,_pos_y + 2,_pos_x + 400 - 2,_pos_y + 25 - 2,col_highlight,col_highlight,col_highlight,col_highlight,true)
+	draw_rectangle_color(_pos_x + 1,_pos_y + 1,_pos_x + 400 - 1,_pos_y + 25 - 1,col_highlight,col_highlight,col_highlight,col_highlight,true)
+}
+//Remember settings
+var _pos_x  = 50
+var _pos_y = 150
+if mouse_x > _pos_x and mouse_x < _pos_x + 400 and mouse_y > _pos_y and mouse_y < _pos_y + 25 then{
+	draw_set_alpha(0.3)
+	draw_rectangle(_pos_x,_pos_y,_pos_x + 400,_pos_y + 25,false)
+	draw_set_alpha(1)
+	draw_rectangle_color(_pos_x + 2,_pos_y + 2,_pos_x + 400 - 2,_pos_y + 25 - 2,col_highlight,col_highlight,col_highlight,col_highlight,true)
+	draw_rectangle_color(_pos_x + 1,_pos_y + 1,_pos_x + 400 - 1,_pos_y + 25 - 1,col_highlight,col_highlight,col_highlight,col_highlight,true)
+}
+//Remember seed
+var _pos_x  = 50
+var _pos_y = 175
 if mouse_x > _pos_x and mouse_x < _pos_x + 400 and mouse_y > _pos_y and mouse_y < _pos_y + 25 then{
 	draw_set_alpha(0.3)
 	draw_rectangle(_pos_x,_pos_y,_pos_x + 400,_pos_y + 25,false)
@@ -118,12 +148,38 @@ draw_set_halign(fa_left)
 draw_text(_pos_x + 10,_pos_y + 4,"Sound Effects")
 draw_set_halign(fa_right)
 if global.Sounds = true then{
-	var _sounds = "On"
+	var _temp = "On"
 }
 else{
-	var _sounds = "Off"
+	var _temp = "Off"
 }
-draw_text(_pos_x + 390,_pos_y + 4,_sounds)
+draw_text(_pos_x + 390,_pos_y + 4,_temp)
+//Remember settings
+var _pos_x  = 50
+var _pos_y = 150
+draw_set_halign(fa_left)
+draw_text(_pos_x + 10,_pos_y + 4,"Remember Bingo Settings")
+draw_set_halign(fa_right)
+if global.RememberSettings = true then{
+	var _temp = "On"
+}
+else{
+	var _temp = "Off"
+}
+draw_text(_pos_x + 390,_pos_y + 4,_temp)
+//Remember seed
+var _pos_x  = 50
+var _pos_y = 175
+draw_set_halign(fa_left)
+draw_text(_pos_x + 10,_pos_y + 4,"Remember Bingo Seed")
+draw_set_halign(fa_right)
+if global.RememberSeed = true then{
+	var _temp = "On"
+}
+else{
+	var _temp = "Off"
+}
+draw_text(_pos_x + 390,_pos_y + 4,_temp)
 //Back
 var _pos_x  = 50
 var _pos_y = 400

@@ -209,10 +209,10 @@ if global.Game = game_ct then{
 var _pos_x  = 50
 var _pos_y = 375
 if mouse_x > _pos_x and mouse_x < _pos_x + 400 and mouse_y > _pos_y and mouse_y < _pos_y + 25 and mouse_check_button_pressed(mb_left) then{
-if global.Sounds = true then{
-	audio_play_sound(sfx_cursor,1,false)
-}
-//Check if grid or hex
+	if global.Sounds = true then{
+		audio_play_sound(sfx_cursor,1,false)
+	}
+	//Check if grid or hex
 	bingo_settings()
 	if ds_list_size(global.availableitems) < slots and global.Dupes = false then{
 		show_message("Not enough items to populate the board, you need at least\n" + string(slots) + " items, you currently have " + string(ds_list_size(global.availableitems)) + ".")
@@ -220,6 +220,7 @@ if global.Sounds = true then{
 	}
 	else{
 		ds_list_clear(global.availableitems)
+		bingosettings_save()
 		instance_create_layer(0,0,"Instances",obj_server)
 		room_goto(room_bingo)
 	}
