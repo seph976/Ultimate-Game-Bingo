@@ -4,7 +4,7 @@
 was_ready = false
 
 //Setup
-global.Version = "1.0.1"
+global.Version = "1.0.2"
 randomize()
 window_set_caption("Ultimate Game Bingo - " + string(global.Version))
 global.max_players = 6

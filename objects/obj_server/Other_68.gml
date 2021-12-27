@@ -21,6 +21,11 @@ switch (type_event){
 			buffer_write(server_buffer,buffer_u8,global.oot_skulltulas)
 			buffer_write(server_buffer,buffer_u8,global.oot_quests)
 		}
+		if global.Game = game_ct then{
+			buffer_write(server_buffer,buffer_u8,global.ct_keyitems)
+			buffer_write(server_buffer,buffer_u8,global.ct_characters)
+			buffer_write(server_buffer,buffer_u8,global.ct_bosses)
+		}
 		var _players = ds_list_size(global.players) - 1
 		buffer_write(server_buffer,buffer_u8,_players)
 		for (i = 0; i <= _players; i++) {

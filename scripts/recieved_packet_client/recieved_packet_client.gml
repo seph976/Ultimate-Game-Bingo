@@ -20,6 +20,11 @@ function recieved_packet_client(argument0) {
 				global.oot_skulltulas = buffer_read(buffer,buffer_u8)
 				global.oot_quests = buffer_read(buffer,buffer_u8)
 			}
+			if global.Game = game_ct then{
+				global.ct_keyitems = buffer_read(buffer,buffer_u8)
+				global.ct_characters = buffer_read(buffer,buffer_u8)
+				global.ct_bosses = buffer_read(buffer,buffer_u8)
+			}
 			var _players = buffer_read(buffer,buffer_u8)
 			for (i = 0; i <= _players; i++) {
 				ds_list_add(global.players,buffer_read(buffer,buffer_string))
