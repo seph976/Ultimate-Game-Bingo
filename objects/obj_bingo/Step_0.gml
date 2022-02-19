@@ -135,6 +135,30 @@ else if global.Type = 1 then{ //Hex mode
 		}
 	}
 }
+else if global.Type = 2 then{ //Mission mode
+	if global.Color != c_ltgray then{
+		for (i = 0; i < 5; i += 1){
+			draw_sprite(spr_icon,0,_board_x + 88,_board_y + 57 + (i * 55))
+			if mouse_x > _board_x + 88 - 25 and mouse_x < _board_x + 88 + 283 and mouse_y > _board_y + 57 - 25 + (i * 55) and mouse_y < _board_y + 57 + 25 + (i * 55) and mouse_check_button_pressed(mb_left) then{
+				if ds_list_find_value(global.board,i - 1) != 0 or ds_list_find_value(global.board,i) = global.Color then{
+					if ds_list_find_value(global.board,i) = 0 or ds_list_find_value(global.board,i) = global.Color then{
+						if ds_list_find_value(global.board,i) = global.Color then{
+							var _col = 0
+						}
+						else{
+							var _col = global.Color
+						}
+						ds_list_set(global.board,i,_col)
+						if global.Sounds = true then{
+							audio_play_sound(sfx_cursor,1,false)
+						}
+						network_bingo_send(i,_col)
+					}	
+				}
+			}
+		}
+	}
+}
 
 //Function for sending network data
 function network_bingo_send(argument0,argument1){

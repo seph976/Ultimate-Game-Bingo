@@ -1,7 +1,7 @@
 /// @description Setup
 
 //Setup
-global.Version = "1.1.1 DEV"
+global.Version = "1.2.0 DEV"
 randomize()
 global.caption = "Ultimate Game Bingo - " + string(global.Version)
 global.topbar = 32
@@ -60,7 +60,7 @@ else{
 //Bingo settings
 global.Game = game_oot
 global.Seed = irandom(2147483647)
-global.Type = 0 //0 - Grid, 1 - Hex
+global.Type = 0 //0 - Grid, 1 - Hex, 2 - Mission
 global.Dupes = false
 //Ocarina of Time
 global.oot_basic = true

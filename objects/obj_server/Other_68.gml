@@ -47,6 +47,13 @@ switch (type_event){
 					ii++
 				}
 			}
+			else if global.Type = 2 then{ //Mission mode
+				var ii = 0
+				repeat(5){
+					buffer_write(server_buffer,buffer_u32,ds_list_find_value(global.board,ii))
+					ii++
+				}
+			}
 		}
 		network_send_packet(socket,server_buffer,buffer_tell(server_buffer))
 		break

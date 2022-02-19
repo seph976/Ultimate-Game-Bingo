@@ -2210,7 +2210,7 @@ function bingo_item_get(argument0,argument1){
 						return "Bottles"
 					break
 					case 2: //Description
-						return "Have at least the specified amount of bottles"
+						return "Obtain at least the specified amount of bottles."
 					break
 					case 3: //Amount
 						var _random = 1 + irandom(3)

@@ -291,6 +291,9 @@ if global.Type = 0 then{
 else if global.Type = 1 then{
 	var _text = "Hex"
 }
+else if global.Type = 2 then{
+	var _text = "Mission"
+}
 draw_text(_pos_x + 390,_pos_y + 4,_text)
 
 //Type

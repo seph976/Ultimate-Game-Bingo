@@ -44,6 +44,13 @@ function recieved_packet_client(argument0) {
 					ii++
 				}
 			}
+			else if global.Type = 2 then{ //Mission mode
+				var ii = 0
+				repeat(5){
+					ds_list_set(global.board,ii,buffer_read(buffer,buffer_u32))
+					ii++
+				}
+			}
 			ds_list_add(global.players,global.Name)
 			ds_list_add(global.colors,global.Color)
 			buffer_seek(client_buffer,buffer_seek_start,0)

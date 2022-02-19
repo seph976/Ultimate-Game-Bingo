@@ -3,12 +3,15 @@
 //Topbar
 topbar_step()
 
-//Slots for grid or hex
+//Slots for grid, hex or mission
 if global.Type = 0 then{
 	slots = 25
 }
 else if global.Type = 1 then{
 	slots = 19
+}
+else if global.Type = 2 then{
+	slots = 5
 }
 
 //Game button
@@ -61,6 +64,9 @@ if mouse_x > _pos_x and mouse_x < _pos_x + 400 and mouse_y > _pos_y and mouse_y 
 		global.Type = 1
 	}
 	else if global.Type = 1 then{
+		global.Type = 2
+	}
+	else if global.Type = 2 then{
 		global.Type = 0
 	}
 }

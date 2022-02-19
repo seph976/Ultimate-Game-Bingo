@@ -13,6 +13,9 @@ if global.Type = 0 then{ //Grid mode
 else if global.Type = 1 then{ //Hex mode
 	var _slots = 19
 }
+else if global.Type = 2 then{ //Mission mode
+	var _slots = 5
+}
 
 //Create empty amounts list
 repeat(_slots) {
@@ -44,5 +47,8 @@ if global.Type = 0 then{ //Grid mode
 }
 else if global.Type = 1 then{ //Hex mode
 	var _type = "Hex Mode"
+}
+else if global.Type = 2 then{ //Mission mode
+	var _type = "Mission Mode"
 }
 ds_list_add(global.log,"Type: " + string(_type) + ", Seed: " + string(global.Seed))

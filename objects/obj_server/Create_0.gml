@@ -25,3 +25,8 @@ else if global.Type = 1 then{ //Hex
 		ds_list_add(global.board,0)
 	}
 }
+else if global.Type = 2 then{ //Mission
+	repeat(5){
+		ds_list_add(global.board,0)
+	}
+}

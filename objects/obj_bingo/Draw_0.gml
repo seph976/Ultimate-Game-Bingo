@@ -219,6 +219,73 @@ else if global.Type = 1 then{ //Hex mode
 		}
 	}
 }
+else if global.Type = 2 then{ //Mission mode
+	//Draw row tags
+	draw_set_font(font_bahnschrift_11)
+	draw_set_halign(fa_right)
+	var i
+	for (i = 1; i < 6; i += 1){
+		draw_text_outline("Task " + string(i),_board_x + 55,_board_y -6 + (i * 55),c_white,c_black)
+	}
+	//Draw board icons
+	for (i = 0; i < 5; i += 1){
+		//Draw icons
+		draw_sprite(spr_icon,0,_board_x + 88,_board_y + 57 + (i * 55))
+		//Draw items
+		if ds_list_find_value(global.board,i - 1) = 0 then{
+			draw_sprite(spr_icon_unknown,0,_board_x + 88,_board_y + 57 + (i * 55))
+		}
+		else{
+			draw_sprite(bingo_item_get(-1,0),bingo_item_get(ds_list_find_value(global.items,i),0),_board_x + 88,_board_y + 57 + (i * 55))
+			if ds_list_find_value(global.items_amounts,i) = undefined and bingo_item_get(ds_list_find_value(global.items,i),3) != undefined then{
+				ds_list_set(global.items_amounts,i,bingo_item_get(ds_list_find_value(global.items,i),3))
+			}
+			if ds_list_find_value(global.items_amounts,i) != undefined then{
+				draw_set_font(font_bahnschrift_11)
+				draw_set_halign(fa_center)
+				draw_text_outline(ds_list_find_value(global.items_amounts,i),_board_x + 88,_board_y + 57 + 5 + (i * 55),c_white,c_black)
+			}
+		}
+		//Draw text
+		draw_set_font(font_bahnschrift_11)
+		draw_set_halign(fa_left)
+		if ds_list_find_value(global.board,i - 1) = 0 then{
+			draw_text_outline("LOCKED!",_board_x + 120,_board_y + 40 + (i * 55),c_grey,c_black)
+			draw_text_outline("Complete previous to view!",_board_x + 120,_board_y + 55 + (i * 55),c_grey,c_black)
+		}
+		else{
+			if string_length(bingo_item_get(ds_list_find_value(global.items,i),1)) > 30 then{
+				draw_text_outline(string_copy(bingo_item_get(ds_list_find_value(global.items,i),1),1,30) + "...",_board_x + 120,_board_y + 40 + (i * 55),c_white,c_black)
+			}
+			else{
+				draw_text_outline(bingo_item_get(ds_list_find_value(global.items,i),1),_board_x + 120,_board_y + 40 + (i * 55),c_white,c_black)
+			}
+			if string_length(bingo_item_get(ds_list_find_value(global.items,i),2)) > 30 then{
+				draw_text_outline(string_copy(bingo_item_get(ds_list_find_value(global.items,i),2),1,30) + "...",_board_x + 120,_board_y + 55 + (i * 55),c_white,c_black)
+			}
+			else{
+				draw_text_outline(bingo_item_get(ds_list_find_value(global.items,i),2),_board_x + 120,_board_y + 55 + (i * 55),c_white,c_black)
+			}
+		}
+		//Show overlay color
+		if ds_list_find_value(global.board,i) != 0 then{
+			draw_sprite_ext(spr_iconset,0,_board_x + 88,_board_y + 57 + (i * 55),1,1,0,ds_list_find_value(global.board,i),0.7)
+		}
+		//Hover highlight and info
+		if mouse_x > _board_x + 88 - 25 and mouse_x < _board_x + 88 + 250 and mouse_y > _board_y + 57 - 25 + (i * 55) and mouse_y < _board_y + 57 + 25 + (i * 55) then{
+			//Highlight
+			draw_rectangle_color(_board_x + 63,_board_y + 57 - 25 + (i * 55),_board_x + 63 + 283,_board_y + 57 + 25 + (i * 55),col_highlight,col_highlight,col_highlight,col_highlight,true)
+			draw_rectangle_color(_board_x + 1 + 63,_board_y + 1 + 57 - 25 + (i * 55),_board_x - 1 + 63 + 283,_board_y - 1 + 57 + 25 + (i * 55),col_highlight,col_highlight,col_highlight,col_highlight,true)
+			draw_rectangle_color(_board_x + 2 + 63,_board_y + 2 + 57 - 25 + (i * 55),_board_x - 2 + 63 + 283,_board_y - 2 + 57 + 25 + (i * 55),col_highlight,col_highlight,col_highlight,col_highlight,true)
+			//Information
+			draw_rectangle_color(1,310 + global.topbar,500 - 2,448 + global.topbar,c_black,c_black,c_black,c_black,false)
+			draw_set_font(font_bahnschrift_11)
+			draw_set_halign(fa_left)
+			draw_text_outline(bingo_item_get(ds_list_find_value(global.items,i),1),10,320 + global.topbar,c_white,c_black)
+			draw_text_outline(bingo_item_get(ds_list_find_value(global.items,i),2),10,340 + global.topbar,c_white,c_black)
+		}
+	}
+}
 
 //Player list
 draw_set_font(font_bahnschrift_11)
