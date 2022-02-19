@@ -1,7 +1,7 @@
 /// @description Setup
 
 //Set window caption
-window_frame_set_caption("Seed - " + string(global.Seed))
+global.caption = "Seed - " + string(global.Seed)
 
 //Set seed
 random_set_seed(global.Seed)

@@ -1,5 +1,8 @@
 /// @description Do Stuff
 
+//Topbar
+topbar_step()
+
 //Console messages limit
 if ds_list_size(global.log) > 8 then{
 	ds_list_delete(global.log,0)
@@ -7,7 +10,7 @@ if ds_list_size(global.log) > 8 then{
 
 //Board position
 var _board_x = 0
-var _board_y = 0
+var _board_y = 0 + global.topbar
 
 //Clicking items
 if global.Type = 0 then{ //Grid mode
@@ -25,6 +28,9 @@ if global.Type = 0 then{ //Grid mode
 						var _col = global.Color
 					}
 					ds_list_set(global.board,_number,_col)
+					if global.Sounds = true then{
+						audio_play_sound(sfx_cursor,1,false)
+					}
 					network_bingo_send(_number,_col)
 				}
 			}
@@ -48,6 +54,9 @@ else if global.Type = 1 then{ //Hex mode
 						var _col = global.Color
 					}
 					ds_list_set(global.board,_number,_col)
+					if global.Sounds = true then{
+						audio_play_sound(sfx_cursor,1,false)
+					}
 					network_bingo_send(_number,_col)
 				}
 			}
@@ -63,6 +72,9 @@ else if global.Type = 1 then{ //Hex mode
 						var _col = global.Color
 					}
 					ds_list_set(global.board,_number,_col)
+					if global.Sounds = true then{
+						audio_play_sound(sfx_cursor,1,false)
+					}
 					network_bingo_send(_number,_col)
 				}
 			}
@@ -78,6 +90,9 @@ else if global.Type = 1 then{ //Hex mode
 						var _col = global.Color
 					}
 					ds_list_set(global.board,_number,_col)
+					if global.Sounds = true then{
+						audio_play_sound(sfx_cursor,1,false)
+					}
 					network_bingo_send(_number,_col)
 				}
 			}
@@ -93,6 +108,9 @@ else if global.Type = 1 then{ //Hex mode
 						var _col = global.Color
 					}
 					ds_list_set(global.board,_number,_col)
+					if global.Sounds = true then{
+						audio_play_sound(sfx_cursor,1,false)
+					}
 					network_bingo_send(_number,_col)
 				}
 			}
@@ -108,6 +126,9 @@ else if global.Type = 1 then{ //Hex mode
 						var _col = global.Color
 					}
 					ds_list_set(global.board,_number,_col)
+					if global.Sounds = true then{
+						audio_play_sound(sfx_cursor,1,false)
+					}
 					network_bingo_send(_number,_col)
 				}
 			}

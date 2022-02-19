@@ -1,8 +1,11 @@
 /// @description Setup
 
+//Topbar
+topbar_step()
+
 //IP button
 var _pos_x  = 50
-var _pos_y = 50
+var _pos_y = 50 + global.topbar
 if mouse_x > _pos_x and mouse_x < _pos_x + 400 and mouse_y > _pos_y and mouse_y < _pos_y + 25 and mouse_check_button_pressed(mb_left) then{
 	if global.Sounds = true then{
 		audio_play_sound(sfx_cursor,1,false)
@@ -11,7 +14,7 @@ if mouse_x > _pos_x and mouse_x < _pos_x + 400 and mouse_y > _pos_y and mouse_y 
 }
 //PORT button
 var _pos_x  = 50
-var _pos_y = 75
+var _pos_y = 75 + global.topbar
 if mouse_x > _pos_x and mouse_x < _pos_x + 400 and mouse_y > _pos_y and mouse_y < _pos_y + 25 and mouse_check_button_pressed(mb_left) then{
 	if global.Sounds = true then{
 		audio_play_sound(sfx_cursor,1,false)
@@ -21,7 +24,7 @@ if mouse_x > _pos_x and mouse_x < _pos_x + 400 and mouse_y > _pos_y and mouse_y 
 
 //Spectator button
 var _pos_x  = 50
-var _pos_y = 100
+var _pos_y = 100 + global.topbar
 if mouse_x > _pos_x and mouse_x < _pos_x + 400 and mouse_y > _pos_y and mouse_y < _pos_y + 25 and mouse_check_button_pressed(mb_left) then{
 	if global.Sounds = true then{
 		audio_play_sound(sfx_cursor,1,false)
@@ -36,7 +39,7 @@ if mouse_x > _pos_x and mouse_x < _pos_x + 400 and mouse_y > _pos_y and mouse_y 
 
 //Join room button
 var _pos_x  = 50
-var _pos_y = 375
+var _pos_y = 375 + global.topbar
 if mouse_x > _pos_x and mouse_x < _pos_x + 400 and mouse_y > _pos_y and mouse_y < _pos_y + 25 and mouse_check_button_pressed(mb_left) then{
 	if global.Sounds = true then{
 		audio_play_sound(sfx_cursor,1,false)
@@ -54,7 +57,7 @@ if mouse_x > _pos_x and mouse_x < _pos_x + 400 and mouse_y > _pos_y and mouse_y 
 
 //Back button
 var _pos_x  = 50
-var _pos_y = 400
+var _pos_y = 400 + global.topbar
 if mouse_x > _pos_x and mouse_x < _pos_x + 400 and mouse_y > _pos_y and mouse_y < _pos_y + 25 and mouse_check_button_pressed(mb_left) then{
 	if global.Sounds = true then{
 		audio_play_sound(sfx_cursor,1,false)

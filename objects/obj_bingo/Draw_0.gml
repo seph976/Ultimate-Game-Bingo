@@ -1,15 +1,18 @@
 /// @description Draw Stuff
 
+//Topbar
+topbar_draw()
+
 //Log
 draw_set_halign(fa_left)
 draw_set_font(font_bahnschrift_11)
 for (i = 0; i < ds_list_size(global.log); i++) {
-	draw_text(10,320 + (15 * i),global.log[| i])
+	draw_text(10,320 + global.topbar + (15 * i),global.log[| i])
 }
 
 //Board stuff
 var _board_x = 0
-var _board_y = 0
+var _board_y = 0 + global.topbar
 if global.Type = 0 then{ //Grid mode
 	//Draw col tags
 	draw_set_font(font_bahnschrift_11)
@@ -51,11 +54,11 @@ if global.Type = 0 then{ //Grid mode
 			//Highlight
 			draw_sprite_ext(spr_iconhighlight,0,_board_x + 88 + (i * 55),_board_y + 57 + (ii * 55),1,1,0,col_highlight,1)
 			//Information
-			draw_rectangle_color(0,310,500,450,c_black,c_black,c_black,c_black,false)
+			draw_rectangle_color(0,310 + global.topbar,500,450 + global.topbar,c_black,c_black,c_black,c_black,false)
 			draw_set_font(font_bahnschrift_11)
 			draw_set_halign(fa_left)
-			draw_text_outline(bingo_item_get(ds_list_find_value(global.items,_number),1),10,320,c_white,c_black)
-			draw_text_outline(bingo_item_get(ds_list_find_value(global.items,_number),2),10,340,c_white,c_black)
+			draw_text_outline(bingo_item_get(ds_list_find_value(global.items,_number),1),10,320 + global.topbar,c_white,c_black)
+			draw_text_outline(bingo_item_get(ds_list_find_value(global.items,_number),2),10,340 + global.topbar,c_white,c_black)
 		}
 		if i = 4 and ii < 4 then{
 			i = -1
@@ -67,11 +70,11 @@ else if global.Type = 1 then{ //Hex mode
 	//Draw row tags
 	draw_set_font(font_bahnschrift_11)
 	draw_set_halign(fa_right)
-	draw_text_outline("ROW 1",110,-6 + (1 * 55),c_white,c_black)
-	draw_text_outline("ROW 2",82,-6 + (2 * 55),c_white,c_black)
-	draw_text_outline("ROW 3",55,-6 + (3 * 55),c_white,c_black)
-	draw_text_outline("ROW 4",82,-6 + (4 * 55),c_white,c_black)
-	draw_text_outline("ROW 5",110,-6 + (5 * 55),c_white,c_black)
+	draw_text_outline("ROW 1",110,-6 + global.topbar + (1 * 55),c_white,c_black)
+	draw_text_outline("ROW 2",82,-6 + global.topbar + (2 * 55),c_white,c_black)
+	draw_text_outline("ROW 3",55,-6 + global.topbar + (3 * 55),c_white,c_black)
+	draw_text_outline("ROW 4",82,-6 + global.topbar + (4 * 55),c_white,c_black)
+	draw_text_outline("ROW 5",110,-6 + global.topbar + (5 * 55),c_white,c_black)
 	//Draw arrows
 	draw_sprite(spr_arrows,1,_board_x,_board_y)
 	//Draw board icons
@@ -96,11 +99,11 @@ else if global.Type = 1 then{ //Hex mode
 			//Highlight
 			draw_sprite_ext(spr_iconhighlight,0,_board_x + 88 + (i * 55),_board_y + 57 + (0 * 55),1,1,0,col_highlight,1)
 			//Information
-			draw_rectangle_color(0,310,500,450,c_black,c_black,c_black,c_black,false)
+			draw_rectangle_color(0,310 + global.topbar,500,450 + global.topbar,c_black,c_black,c_black,c_black,false)
 			draw_set_font(font_bahnschrift_11)
 			draw_set_halign(fa_left)
-			draw_text_outline(bingo_item_get(ds_list_find_value(global.items,_number),1),10,320,c_white,c_black)
-			draw_text_outline(bingo_item_get(ds_list_find_value(global.items,_number),2),10,340,c_white,c_black)
+			draw_text_outline(bingo_item_get(ds_list_find_value(global.items,_number),1),10,320 + global.topbar,c_white,c_black)
+			draw_text_outline(bingo_item_get(ds_list_find_value(global.items,_number),2),10,340 + global.topbar,c_white,c_black)
 		}
 	}
 	for (i = 0; i < 4; i += 1){
@@ -124,11 +127,11 @@ else if global.Type = 1 then{ //Hex mode
 			//Highlight
 			draw_sprite_ext(spr_iconhighlight,0,_board_x + 115 + (i * 55),_board_y + 57 + (1 * 55),1,1,0,col_highlight,1)
 			//Information
-			draw_rectangle_color(0,310,500,450,c_black,c_black,c_black,c_black,false)
+			draw_rectangle_color(0,310 + global.topbar,500,450 + global.topbar,c_black,c_black,c_black,c_black,false)
 			draw_set_font(font_bahnschrift_11)
 			draw_set_halign(fa_left)
-			draw_text_outline(bingo_item_get(ds_list_find_value(global.items,_number),1),10,320,c_white,c_black)
-			draw_text_outline(bingo_item_get(ds_list_find_value(global.items,_number),2),10,340,c_white,c_black)
+			draw_text_outline(bingo_item_get(ds_list_find_value(global.items,_number),1),10,320 + global.topbar,c_white,c_black)
+			draw_text_outline(bingo_item_get(ds_list_find_value(global.items,_number),2),10,340 + global.topbar,c_white,c_black)
 		}
 	}
 	for (i = 0; i < 5; i += 1){
@@ -152,11 +155,11 @@ else if global.Type = 1 then{ //Hex mode
 			//Highlight
 			draw_sprite_ext(spr_iconhighlight,0,_board_x + 88 + (i * 55),_board_y + 57 + (2 * 55),1,1,0,col_highlight,1)
 			//Information
-			draw_rectangle_color(0,310,500,450,c_black,c_black,c_black,c_black,false)
+			draw_rectangle_color(0,310 + global.topbar,500,450 + global.topbar,c_black,c_black,c_black,c_black,false)
 			draw_set_font(font_bahnschrift_11)
 			draw_set_halign(fa_left)
-			draw_text_outline(bingo_item_get(ds_list_find_value(global.items,_number),1),10,320,c_white,c_black)
-			draw_text_outline(bingo_item_get(ds_list_find_value(global.items,_number),2),10,340,c_white,c_black)
+			draw_text_outline(bingo_item_get(ds_list_find_value(global.items,_number),1),10,320 + global.topbar,c_white,c_black)
+			draw_text_outline(bingo_item_get(ds_list_find_value(global.items,_number),2),10,340 + global.topbar,c_white,c_black)
 		}
 	}
 	for (i = 0; i < 4; i += 1){
@@ -180,11 +183,11 @@ else if global.Type = 1 then{ //Hex mode
 			//Highlight
 			draw_sprite_ext(spr_iconhighlight,0,_board_x + 115 + (i * 55),_board_y + 57 + (3 * 55),1,1,0,col_highlight,1)
 			//Information
-			draw_rectangle_color(0,310,500,450,c_black,c_black,c_black,c_black,false)
+			draw_rectangle_color(0,310 + global.topbar,500,450 + global.topbar,c_black,c_black,c_black,c_black,false)
 			draw_set_font(font_bahnschrift_11)
 			draw_set_halign(fa_left)
-			draw_text_outline(bingo_item_get(ds_list_find_value(global.items,_number),1),10,320,c_white,c_black)
-			draw_text_outline(bingo_item_get(ds_list_find_value(global.items,_number),2),10,340,c_white,c_black)
+			draw_text_outline(bingo_item_get(ds_list_find_value(global.items,_number),1),10,320 + global.topbar,c_white,c_black)
+			draw_text_outline(bingo_item_get(ds_list_find_value(global.items,_number),2),10,340 + global.topbar,c_white,c_black)
 		}
 	}
 	for (i = 1; i < 4; i += 1){
@@ -208,11 +211,11 @@ else if global.Type = 1 then{ //Hex mode
 			//Highlight
 			draw_sprite_ext(spr_iconhighlight,0,_board_x + 88 + (i * 55),_board_y + 57 + (4 * 55),1,1,0,col_highlight,1)
 			//Information
-			draw_rectangle_color(0,310,500,450,c_black,c_black,c_black,c_black,false)
+			draw_rectangle_color(0,310 + global.topbar,500,450 + global.topbar,c_black,c_black,c_black,c_black,false)
 			draw_set_font(font_bahnschrift_11)
 			draw_set_halign(fa_left)
-			draw_text_outline(bingo_item_get(ds_list_find_value(global.items,_number),1),10,320,c_white,c_black)
-			draw_text_outline(bingo_item_get(ds_list_find_value(global.items,_number),2),10,340,c_white,c_black)
+			draw_text_outline(bingo_item_get(ds_list_find_value(global.items,_number),1),10,320 + global.topbar,c_white,c_black)
+			draw_text_outline(bingo_item_get(ds_list_find_value(global.items,_number),2),10,340 + global.topbar,c_white,c_black)
 		}
 	}
 }
@@ -220,11 +223,11 @@ else if global.Type = 1 then{ //Hex mode
 //Player list
 draw_set_font(font_bahnschrift_11)
 draw_set_halign(fa_center)
-draw_text_outline("PLAYERS",425,10,c_white,c_black)
+draw_text_outline("PLAYERS",425,10 + global.topbar,c_white,c_black)
 for (var i = 0; i < ds_list_size(global.players); ++i) {
-    draw_text_outline(ds_list_find_value(global.players,i),425,30 + (i * 20),ds_list_find_value(global.colors,i),c_black)
+    draw_text_outline(ds_list_find_value(global.players,i),425,30 + global.topbar + (i * 20),ds_list_find_value(global.colors,i),c_black)
 }
 
 //Seperation line
 draw_set_color(c_white)
-draw_line(350,10,350,300)
+draw_line(350,10 + global.topbar,350,300 + global.topbar)

@@ -1,12 +1,15 @@
 /// @description Setup
 
-//Window setup
-was_ready = false
-
 //Setup
-global.Version = "1.0.2"
+global.Version = "1.1.0"
 randomize()
-window_set_caption("Ultimate Game Bingo - " + string(global.Version))
+global.caption = "Ultimate Game Bingo - " + string(global.Version)
+global.topbar = 32
+global.holding = false
+global.mx = 0
+global.my = 0
+global.posx = 0
+global.posy = 0
 global.max_players = 6
 global.players = ds_list_create()
 global.colors = ds_list_create()

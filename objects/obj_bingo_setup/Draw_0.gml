@@ -1,37 +1,40 @@
 /// @description Draw Stuff
 
 //Background
-draw_sprite(spr_background,0,0,0)
+draw_sprite(spr_background,0,0,0 + global.topbar)
+
+//Topbar
+topbar_draw()
 
 //Draw setup text
 draw_set_halign(fa_center)
 draw_set_font(font_bahnschrift_11)
-draw_text(250,20,"SETUP BINGO SETTINGS")
+draw_text(250,20 + global.topbar,"SETUP BINGO SETTINGS")
 
 //Draw buttons
 draw_set_color(c_white)
 
 //Game
 var _pos_x  = 50
-var _pos_y = 50
+var _pos_y = 50 + global.topbar
 draw_line(_pos_x,_pos_y,_pos_x + 400,_pos_y)
 draw_line(_pos_x,_pos_y + 25,_pos_x + 400,_pos_y + 25)
 
 //Seed
 var _pos_x  = 50
-var _pos_y = 75
+var _pos_y = 75 + global.topbar
 draw_line(_pos_x,_pos_y,_pos_x + 400,_pos_y)
 draw_line(_pos_x,_pos_y + 25,_pos_x + 400,_pos_y + 25)
 
 //Type
 var _pos_x  = 50
-var _pos_y = 100
+var _pos_y = 100 + global.topbar
 draw_line(_pos_x,_pos_y,_pos_x + 400,_pos_y)
 draw_line(_pos_x,_pos_y + 25,_pos_x + 400,_pos_y + 25)
 
 //Dupes
 var _pos_x  = 50
-var _pos_y = 125
+var _pos_y = 125 + global.topbar
 draw_line(_pos_x,_pos_y,_pos_x + 400,_pos_y)
 draw_line(_pos_x,_pos_y + 25,_pos_x + 400,_pos_y + 25)
 
@@ -39,32 +42,32 @@ draw_line(_pos_x,_pos_y + 25,_pos_x + 400,_pos_y + 25)
 if global.Game = game_oot then{
 	//Basic items
 	var _pos_x  = 50
-	var _pos_y = 150
+	var _pos_y = 150 + global.topbar
 	draw_line(_pos_x,_pos_y,_pos_x + 400,_pos_y)
 	draw_line(_pos_x,_pos_y + 25,_pos_x + 400,_pos_y + 25)
 	//Upgrade items
 	var _pos_x  = 50
-	var _pos_y = 175
+	var _pos_y = 175 + global.topbar
 	draw_line(_pos_x,_pos_y,_pos_x + 400,_pos_y)
 	draw_line(_pos_x,_pos_y + 25,_pos_x + 400,_pos_y + 25)
 	//Songs
 	var _pos_x  = 50
-	var _pos_y = 200
+	var _pos_y = 200 + global.topbar
 	draw_line(_pos_x,_pos_y,_pos_x + 400,_pos_y)
 	draw_line(_pos_x,_pos_y + 25,_pos_x + 400,_pos_y + 25)
 	//Dungeon items
 	var _pos_x  = 50
-	var _pos_y = 225
+	var _pos_y = 225 + global.topbar
 	draw_line(_pos_x,_pos_y,_pos_x + 400,_pos_y)
 	draw_line(_pos_x,_pos_y + 25,_pos_x + 400,_pos_y + 25)
 	//Skulltulas
 	var _pos_x  = 50
-	var _pos_y = 250
+	var _pos_y = 250 + global.topbar
 	draw_line(_pos_x,_pos_y,_pos_x + 400,_pos_y)
 	draw_line(_pos_x,_pos_y + 25,_pos_x + 400,_pos_y + 25)
 	//Quests
 	var _pos_x  = 50
-	var _pos_y = 275
+	var _pos_y = 275 + global.topbar
 	draw_line(_pos_x,_pos_y,_pos_x + 400,_pos_y)
 	draw_line(_pos_x,_pos_y + 25,_pos_x + 400,_pos_y + 25)
 }
@@ -72,35 +75,35 @@ if global.Game = game_oot then{
 if global.Game = game_ct then{
 	//Key items
 	var _pos_x  = 50
-	var _pos_y = 150
+	var _pos_y = 150 + global.topbar
 	draw_line(_pos_x,_pos_y,_pos_x + 400,_pos_y)
 	draw_line(_pos_x,_pos_y + 25,_pos_x + 400,_pos_y + 25)
 	var _pos_x  = 50
-	var _pos_y = 175
+	var _pos_y = 175 + global.topbar
 	draw_line(_pos_x,_pos_y,_pos_x + 400,_pos_y)
 	draw_line(_pos_x,_pos_y + 25,_pos_x + 400,_pos_y + 25)
 	var _pos_x  = 50
-	var _pos_y = 200
+	var _pos_y = 200 + global.topbar
 	draw_line(_pos_x,_pos_y,_pos_x + 400,_pos_y)
 	draw_line(_pos_x,_pos_y + 25,_pos_x + 400,_pos_y + 25)
 }
 
 //Start
 var _pos_x  = 50
-var _pos_y = 375
+var _pos_y = 375 + global.topbar
 draw_line(_pos_x,_pos_y,_pos_x + 400,_pos_y)
 draw_line(_pos_x,_pos_y + 25,_pos_x + 400,_pos_y + 25)
 
 //Back
 var _pos_x  = 50
-var _pos_y = 400
+var _pos_y = 400 + global.topbar
 draw_line(_pos_x,_pos_y,_pos_x + 400,_pos_y)
 draw_line(_pos_x,_pos_y + 25,_pos_x + 400,_pos_y + 25)
 
 //Draw button highlights
 //Game
 var _pos_x  = 50
-var _pos_y = 50
+var _pos_y = 50 + global.topbar
 if mouse_x > _pos_x and mouse_x < _pos_x + 400 and mouse_y > _pos_y and mouse_y < _pos_y + 25 then{
 	draw_set_alpha(0.3)
 	draw_rectangle(_pos_x,_pos_y,_pos_x + 400,_pos_y + 25,false)
@@ -111,7 +114,7 @@ if mouse_x > _pos_x and mouse_x < _pos_x + 400 and mouse_y > _pos_y and mouse_y 
 
 //Seed
 var _pos_x  = 50
-var _pos_y = 75
+var _pos_y = 75 + global.topbar
 if mouse_x > _pos_x and mouse_x < _pos_x + 400 and mouse_y > _pos_y and mouse_y < _pos_y + 25 then{
 	draw_set_alpha(0.3)
 	draw_rectangle(_pos_x,_pos_y,_pos_x + 400,_pos_y + 25,false)
@@ -122,7 +125,7 @@ if mouse_x > _pos_x and mouse_x < _pos_x + 400 and mouse_y > _pos_y and mouse_y 
 
 //Type
 var _pos_x  = 50
-var _pos_y = 100
+var _pos_y = 100 + global.topbar
 if mouse_x > _pos_x and mouse_x < _pos_x + 400 and mouse_y > _pos_y and mouse_y < _pos_y + 25 then{
 	draw_set_alpha(0.3)
 	draw_rectangle(_pos_x,_pos_y,_pos_x + 400,_pos_y + 25,false)
@@ -133,7 +136,7 @@ if mouse_x > _pos_x and mouse_x < _pos_x + 400 and mouse_y > _pos_y and mouse_y 
 
 //Dupes
 var _pos_x  = 50
-var _pos_y = 125
+var _pos_y = 125 + global.topbar
 if mouse_x > _pos_x and mouse_x < _pos_x + 400 and mouse_y > _pos_y and mouse_y < _pos_y + 25 then{
 	draw_set_alpha(0.3)
 	draw_rectangle(_pos_x,_pos_y,_pos_x + 400,_pos_y + 25,false)
@@ -146,7 +149,7 @@ if mouse_x > _pos_x and mouse_x < _pos_x + 400 and mouse_y > _pos_y and mouse_y 
 if global.Game = game_oot then{
 	//Basic items
 	var _pos_x  = 50
-	var _pos_y = 150
+	var _pos_y = 150 + global.topbar
 	if mouse_x > _pos_x and mouse_x < _pos_x + 400 and mouse_y > _pos_y and mouse_y < _pos_y + 25 then{
 		draw_set_alpha(0.3)
 		draw_rectangle(_pos_x,_pos_y,_pos_x + 400,_pos_y + 25,false)
@@ -156,7 +159,7 @@ if global.Game = game_oot then{
 	}
 	//Upgrade items
 	var _pos_x  = 50
-	var _pos_y = 175
+	var _pos_y = 175 + global.topbar
 	if mouse_x > _pos_x and mouse_x < _pos_x + 400 and mouse_y > _pos_y and mouse_y < _pos_y + 25 then{
 		draw_set_alpha(0.3)
 		draw_rectangle(_pos_x,_pos_y,_pos_x + 400,_pos_y + 25,false)
@@ -166,7 +169,7 @@ if global.Game = game_oot then{
 	}
 	//Songs
 	var _pos_x  = 50
-	var _pos_y = 200
+	var _pos_y = 200 + global.topbar
 	if mouse_x > _pos_x and mouse_x < _pos_x + 400 and mouse_y > _pos_y and mouse_y < _pos_y + 25 then{
 		draw_set_alpha(0.3)
 		draw_rectangle(_pos_x,_pos_y,_pos_x + 400,_pos_y + 25,false)
@@ -176,7 +179,7 @@ if global.Game = game_oot then{
 	}
 	//Dungeon items
 	var _pos_x  = 50
-	var _pos_y = 225
+	var _pos_y = 225 + global.topbar
 	if mouse_x > _pos_x and mouse_x < _pos_x + 400 and mouse_y > _pos_y and mouse_y < _pos_y + 25 then{
 		draw_set_alpha(0.3)
 		draw_rectangle(_pos_x,_pos_y,_pos_x + 400,_pos_y + 25,false)
@@ -186,7 +189,7 @@ if global.Game = game_oot then{
 	}
 	//Skulltulas
 	var _pos_x  = 50
-	var _pos_y = 250
+	var _pos_y = 250 + global.topbar
 	if mouse_x > _pos_x and mouse_x < _pos_x + 400 and mouse_y > _pos_y and mouse_y < _pos_y + 25 then{
 		draw_set_alpha(0.3)
 		draw_rectangle(_pos_x,_pos_y,_pos_x + 400,_pos_y + 25,false)
@@ -196,7 +199,7 @@ if global.Game = game_oot then{
 	}
 	//Quests
 	var _pos_x  = 50
-	var _pos_y = 275
+	var _pos_y = 275 + global.topbar
 	if mouse_x > _pos_x and mouse_x < _pos_x + 400 and mouse_y > _pos_y and mouse_y < _pos_y + 25 then{
 		draw_set_alpha(0.3)
 		draw_rectangle(_pos_x,_pos_y,_pos_x + 400,_pos_y + 25,false)
@@ -208,7 +211,7 @@ if global.Game = game_oot then{
 //Chrono Trigger options
 if global.Game = game_ct then{
 	var _pos_x  = 50
-	var _pos_y = 150
+	var _pos_y = 150 + global.topbar
 	if mouse_x > _pos_x and mouse_x < _pos_x + 400 and mouse_y > _pos_y and mouse_y < _pos_y + 25 then{
 		draw_set_alpha(0.3)
 		draw_rectangle(_pos_x,_pos_y,_pos_x + 400,_pos_y + 25,false)
@@ -217,7 +220,7 @@ if global.Game = game_ct then{
 		draw_rectangle_color(_pos_x + 1,_pos_y + 1,_pos_x + 400 - 1,_pos_y + 25 - 1,col_highlight,col_highlight,col_highlight,col_highlight,true)
 	}
 	var _pos_x  = 50
-	var _pos_y = 175
+	var _pos_y = 175 + global.topbar
 	if mouse_x > _pos_x and mouse_x < _pos_x + 400 and mouse_y > _pos_y and mouse_y < _pos_y + 25 then{
 		draw_set_alpha(0.3)
 		draw_rectangle(_pos_x,_pos_y,_pos_x + 400,_pos_y + 25,false)
@@ -226,7 +229,7 @@ if global.Game = game_ct then{
 		draw_rectangle_color(_pos_x + 1,_pos_y + 1,_pos_x + 400 - 1,_pos_y + 25 - 1,col_highlight,col_highlight,col_highlight,col_highlight,true)
 	}
 	var _pos_x  = 50
-	var _pos_y = 200
+	var _pos_y = 200 + global.topbar
 	if mouse_x > _pos_x and mouse_x < _pos_x + 400 and mouse_y > _pos_y and mouse_y < _pos_y + 25 then{
 		draw_set_alpha(0.3)
 		draw_rectangle(_pos_x,_pos_y,_pos_x + 400,_pos_y + 25,false)
@@ -238,7 +241,7 @@ if global.Game = game_ct then{
 
 //Start
 var _pos_x  = 50
-var _pos_y = 375
+var _pos_y = 375 + global.topbar
 if mouse_x > _pos_x and mouse_x < _pos_x + 400 and mouse_y > _pos_y and mouse_y < _pos_y + 25 then{
 	draw_set_alpha(0.3)
 	draw_rectangle(_pos_x,_pos_y,_pos_x + 400,_pos_y + 25,false)
@@ -249,7 +252,7 @@ if mouse_x > _pos_x and mouse_x < _pos_x + 400 and mouse_y > _pos_y and mouse_y 
 
 //Back
 var _pos_x  = 50
-var _pos_y = 400
+var _pos_y = 400 + global.topbar
 if mouse_x > _pos_x and mouse_x < _pos_x + 400 and mouse_y > _pos_y and mouse_y < _pos_y + 25 then{
 	draw_set_alpha(0.3)
 	draw_rectangle(_pos_x,_pos_y,_pos_x + 400,_pos_y + 25,false)
@@ -262,7 +265,7 @@ if mouse_x > _pos_x and mouse_x < _pos_x + 400 and mouse_y > _pos_y and mouse_y 
 draw_set_font(font_bahnschrift_11)
 //Game
 var _pos_x  = 50
-var _pos_y = 50
+var _pos_y = 50 + global.topbar
 draw_set_halign(fa_left)
 draw_text(_pos_x + 10,_pos_y + 4,"Game")
 draw_set_halign(fa_right)
@@ -270,7 +273,7 @@ draw_text(_pos_x + 390,_pos_y + 4,global.Game)
 
 //Seed
 var _pos_x  = 50
-var _pos_y = 75
+var _pos_y = 75 + global.topbar
 draw_set_halign(fa_left)
 draw_text(_pos_x + 10,_pos_y + 4,"Seed")
 draw_set_halign(fa_right)
@@ -278,7 +281,7 @@ draw_text(_pos_x + 390,_pos_y + 4,global.Seed)
 
 //Type
 var _pos_x  = 50
-var _pos_y = 100
+var _pos_y = 100 + global.topbar
 draw_set_halign(fa_left)
 draw_text(_pos_x + 10,_pos_y + 4,"Bingo Type")
 draw_set_halign(fa_right)
@@ -292,7 +295,7 @@ draw_text(_pos_x + 390,_pos_y + 4,_text)
 
 //Type
 var _pos_x  = 50
-var _pos_y = 125
+var _pos_y = 125 + global.topbar
 draw_set_halign(fa_left)
 draw_text(_pos_x + 10,_pos_y + 4,"Allow Dupes")
 draw_set_halign(fa_right)
@@ -308,7 +311,7 @@ draw_text(_pos_x + 390,_pos_y + 4,_text)
 if global.Game = game_oot then{
 	//Basic items
 	var _pos_x  = 50
-	var _pos_y = 150
+	var _pos_y = 150 + global.topbar
 	draw_set_halign(fa_left)
 	draw_text(_pos_x + 10,_pos_y + 4,"Basic Items (50)")
 	draw_set_halign(fa_right)
@@ -321,7 +324,7 @@ if global.Game = game_oot then{
 	draw_text(_pos_x + 390,_pos_y + 4,_text)
 	//Upgrade items
 	var _pos_x  = 50
-	var _pos_y = 175
+	var _pos_y = 175 + global.topbar
 	draw_set_halign(fa_left)
 	draw_text(_pos_x + 10,_pos_y + 4,"Progressive Items (19)")
 	draw_set_halign(fa_right)
@@ -334,7 +337,7 @@ if global.Game = game_oot then{
 	draw_text(_pos_x + 390,_pos_y + 4,_text)
 	//Songs
 	var _pos_x  = 50
-	var _pos_y = 200
+	var _pos_y = 200 + global.topbar
 	draw_set_halign(fa_left)
 	draw_text(_pos_x + 10,_pos_y + 4,"Songs (13)")
 	draw_set_halign(fa_right)
@@ -347,7 +350,7 @@ if global.Game = game_oot then{
 	draw_text(_pos_x + 390,_pos_y + 4,_text)
 	//Dungeon items
 	var _pos_x  = 50
-	var _pos_y = 225
+	var _pos_y = 225 + global.topbar
 	draw_set_halign(fa_left)
 	draw_text(_pos_x + 10,_pos_y + 4,"Dungeon Items (28)")
 	draw_set_halign(fa_right)
@@ -360,7 +363,7 @@ if global.Game = game_oot then{
 	draw_text(_pos_x + 390,_pos_y + 4,_text)
 	//Skulltulas
 	var _pos_x  = 50
-	var _pos_y = 250
+	var _pos_y = 250 + global.topbar
 	draw_set_halign(fa_left)
 	draw_text(_pos_x + 10,_pos_y + 4,"Skulltulas (9)")
 	draw_set_halign(fa_right)
@@ -373,7 +376,7 @@ if global.Game = game_oot then{
 	draw_text(_pos_x + 390,_pos_y + 4,_text)
 	//Quests
 	var _pos_x  = 50
-	var _pos_y = 275
+	var _pos_y = 275 + global.topbar
 	draw_set_halign(fa_left)
 	draw_text(_pos_x + 10,_pos_y + 4,"Quests (17)")
 	draw_set_halign(fa_right)
@@ -389,7 +392,7 @@ if global.Game = game_oot then{
 if global.Game = game_ct then{
 	//Key items
 	var _pos_x  = 50
-	var _pos_y = 150
+	var _pos_y = 150 + global.topbar
 	draw_set_halign(fa_left)
 	draw_text(_pos_x + 10,_pos_y + 4,"Key Items (18)")
 	draw_set_halign(fa_right)
@@ -402,7 +405,7 @@ if global.Game = game_ct then{
 	draw_text(_pos_x + 390,_pos_y + 4,_text)
 	//Characters
 	var _pos_x  = 50
-	var _pos_y = 175
+	var _pos_y = 175 + global.topbar
 	draw_set_halign(fa_left)
 	draw_text(_pos_x + 10,_pos_y + 4,"Characters (7)")
 	draw_set_halign(fa_right)
@@ -415,7 +418,7 @@ if global.Game = game_ct then{
 	draw_text(_pos_x + 390,_pos_y + 4,_text)
 	//Bosses
 	var _pos_x  = 50
-	var _pos_y = 200
+	var _pos_y = 200 + global.topbar
 	draw_set_halign(fa_left)
 	draw_text(_pos_x + 10,_pos_y + 4,"Bosses (19)")
 	draw_set_halign(fa_right)
@@ -430,12 +433,12 @@ if global.Game = game_ct then{
 
 //Start
 var _pos_x  = 50
-var _pos_y = 375
+var _pos_y = 375 + global.topbar
 draw_set_halign(fa_center)
 draw_text(_pos_x + 200,_pos_y + 4,"Create Room")
 
 //Start
 var _pos_x  = 50
-var _pos_y = 400
+var _pos_y = 400 + global.topbar
 draw_set_halign(fa_center)
 draw_text(_pos_x + 200,_pos_y + 4,"Back")
