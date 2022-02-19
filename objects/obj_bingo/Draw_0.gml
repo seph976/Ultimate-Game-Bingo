@@ -54,7 +54,7 @@ if global.Type = 0 then{ //Grid mode
 			//Highlight
 			draw_sprite_ext(spr_iconhighlight,0,_board_x + 88 + (i * 55),_board_y + 57 + (ii * 55),1,1,0,col_highlight,1)
 			//Information
-			draw_rectangle_color(0,310 + global.topbar,500,450 + global.topbar,c_black,c_black,c_black,c_black,false)
+			draw_rectangle_color(1,310 + global.topbar,500 - 2,448 + global.topbar,c_black,c_black,c_black,c_black,false)
 			draw_set_font(font_bahnschrift_11)
 			draw_set_halign(fa_left)
 			draw_text_outline(bingo_item_get(ds_list_find_value(global.items,_number),1),10,320 + global.topbar,c_white,c_black)
@@ -99,7 +99,7 @@ else if global.Type = 1 then{ //Hex mode
 			//Highlight
 			draw_sprite_ext(spr_iconhighlight,0,_board_x + 88 + (i * 55),_board_y + 57 + (0 * 55),1,1,0,col_highlight,1)
 			//Information
-			draw_rectangle_color(0,310 + global.topbar,500,450 + global.topbar,c_black,c_black,c_black,c_black,false)
+			draw_rectangle_color(1,310 + global.topbar,500 - 2,448 + global.topbar,c_black,c_black,c_black,c_black,false)
 			draw_set_font(font_bahnschrift_11)
 			draw_set_halign(fa_left)
 			draw_text_outline(bingo_item_get(ds_list_find_value(global.items,_number),1),10,320 + global.topbar,c_white,c_black)
@@ -127,7 +127,7 @@ else if global.Type = 1 then{ //Hex mode
 			//Highlight
 			draw_sprite_ext(spr_iconhighlight,0,_board_x + 115 + (i * 55),_board_y + 57 + (1 * 55),1,1,0,col_highlight,1)
 			//Information
-			draw_rectangle_color(0,310 + global.topbar,500,450 + global.topbar,c_black,c_black,c_black,c_black,false)
+			draw_rectangle_color(1,310 + global.topbar,500 - 2,448 + global.topbar,c_black,c_black,c_black,c_black,false)
 			draw_set_font(font_bahnschrift_11)
 			draw_set_halign(fa_left)
 			draw_text_outline(bingo_item_get(ds_list_find_value(global.items,_number),1),10,320 + global.topbar,c_white,c_black)
@@ -155,7 +155,7 @@ else if global.Type = 1 then{ //Hex mode
 			//Highlight
 			draw_sprite_ext(spr_iconhighlight,0,_board_x + 88 + (i * 55),_board_y + 57 + (2 * 55),1,1,0,col_highlight,1)
 			//Information
-			draw_rectangle_color(0,310 + global.topbar,500,450 + global.topbar,c_black,c_black,c_black,c_black,false)
+			draw_rectangle_color(1,310 + global.topbar,500 - 2,448 + global.topbar,c_black,c_black,c_black,c_black,false)
 			draw_set_font(font_bahnschrift_11)
 			draw_set_halign(fa_left)
 			draw_text_outline(bingo_item_get(ds_list_find_value(global.items,_number),1),10,320 + global.topbar,c_white,c_black)
@@ -183,7 +183,7 @@ else if global.Type = 1 then{ //Hex mode
 			//Highlight
 			draw_sprite_ext(spr_iconhighlight,0,_board_x + 115 + (i * 55),_board_y + 57 + (3 * 55),1,1,0,col_highlight,1)
 			//Information
-			draw_rectangle_color(0,310 + global.topbar,500,450 + global.topbar,c_black,c_black,c_black,c_black,false)
+			draw_rectangle_color(1,310 + global.topbar,500 - 2,448 + global.topbar,c_black,c_black,c_black,c_black,false)
 			draw_set_font(font_bahnschrift_11)
 			draw_set_halign(fa_left)
 			draw_text_outline(bingo_item_get(ds_list_find_value(global.items,_number),1),10,320 + global.topbar,c_white,c_black)
@@ -211,7 +211,7 @@ else if global.Type = 1 then{ //Hex mode
 			//Highlight
 			draw_sprite_ext(spr_iconhighlight,0,_board_x + 88 + (i * 55),_board_y + 57 + (4 * 55),1,1,0,col_highlight,1)
 			//Information
-			draw_rectangle_color(0,310 + global.topbar,500,450 + global.topbar,c_black,c_black,c_black,c_black,false)
+			draw_rectangle_color(1,310 + global.topbar,500 - 2,448 + global.topbar,c_black,c_black,c_black,c_black,false)
 			draw_set_font(font_bahnschrift_11)
 			draw_set_halign(fa_left)
 			draw_text_outline(bingo_item_get(ds_list_find_value(global.items,_number),1),10,320 + global.topbar,c_white,c_black)
