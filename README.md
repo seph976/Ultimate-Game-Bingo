@@ -1,10 +1,5 @@
 # Ultimate Game Bingo
 
-**NOTE**
-
-People have been telling me that windows defender detects this as a trojan, this is a false positive and the result of windows defender being shit, the entire
-thing is open source so feel free to look at the code and build it yourself if youre sceptical, if not, just add an exception to your antivirus.
-
 **About**
 
 This is the continuation of my Ocarina of Time bingo board that i made a while back, i decided to remake the project from scratch to make it an online
