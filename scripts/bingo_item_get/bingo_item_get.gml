@@ -2201,6 +2201,23 @@ function bingo_item_get(argument0,argument1){
 					break
 				}
 			break
+			case 136:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 124
+					break
+					case 1: //Name
+						return "Bottles"
+					break
+					case 2: //Description
+						return "Have at least the specified amount of bottles"
+					break
+					case 3: //Amount
+						var _random = 1 + irandom(3)
+						return _random
+					break
+				}
+			break
 		}
 	}
 	else if global.Game = game_ct then{ //Chrono Trigger

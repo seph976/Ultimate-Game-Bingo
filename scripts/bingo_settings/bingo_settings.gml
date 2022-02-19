@@ -29,6 +29,7 @@ function bingo_settings(){
 			ds_list_add(global.availableitems,116)
 			ds_list_add(global.availableitems,117)
 			ds_list_add(global.availableitems,118)
+			ds_list_add(global.availableitems,136)
 		}
 		if global.oot_upgrades = true then{
 			ds_list_add(global.availableitems,7)

@@ -24,8 +24,10 @@ function topbar_draw(){
 function topbar_step(){
 	var _pos_x = 455
 	var _pos_y = 2
-	if mouse_x > _pos_x and mouse_x < _pos_x + 40 and mouse_y > _pos_y and mouse_y < _pos_y + 28 and mouse_check_button_pressed(mb_left) then{
-		game_end()
+	if mouse_x > _pos_x and mouse_x < _pos_x + 40 and mouse_y > _pos_y and mouse_y < _pos_y + 28 then{
+		if mouse_check_button_released(mb_left) then{
+			game_end()
+		}
 	}
 	else{
 		if mouse_x > 0 and mouse_x < 500 and mouse_y > 0 and mouse_y < 32 and mouse_check_button_pressed(mb_left) then{
