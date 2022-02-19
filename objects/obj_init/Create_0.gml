@@ -59,7 +59,7 @@ else{
 
 //Bingo settings
 global.Game = game_oot
-global.Seed = 100000 + irandom(8999999999)
+global.Seed = irandom(2147483647)
 global.Type = 0 //0 - Grid, 1 - Hex
 global.Dupes = false
 //Ocarina of Time

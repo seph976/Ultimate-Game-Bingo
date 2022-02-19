@@ -33,7 +33,7 @@ if mouse_x > _pos_x and mouse_x < _pos_x + 400 and mouse_y > _pos_y and mouse_y 
 	if global.Sounds = true then{
 		audio_play_sound(sfx_cursor,1,false)
 	}
-	global.Seed = 100000 + irandom(8999999999)
+	global.Seed = irandom(2147483647)
 }
 if mouse_x > _pos_x and mouse_x < _pos_x + 400 and mouse_y > _pos_y and mouse_y < _pos_y + 25 and mouse_check_button_pressed(mb_right) then{
 	if global.Sounds = true then{
@@ -41,7 +41,12 @@ if mouse_x > _pos_x and mouse_x < _pos_x + 400 and mouse_y > _pos_y and mouse_y 
 	}
 	var _seed = get_integer("Set your seed:",global.Seed)
 	if _seed != undefined then{
-		global.Seed = _seed
+		if _seed > 2147483647 then{
+			show_message("Seed cannot exceed 2147483647.")
+		}
+		else{
+			global.Seed = _seed
+		}
 	}
 }
 
