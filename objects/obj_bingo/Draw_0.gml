@@ -278,11 +278,19 @@ else if global.Type = 2 then{ //Mission mode
 			draw_rectangle_color(_board_x + 1 + 63,_board_y + 1 + 57 - 25 + (i * 55),_board_x - 1 + 63 + 283,_board_y - 1 + 57 + 25 + (i * 55),col_highlight,col_highlight,col_highlight,col_highlight,true)
 			draw_rectangle_color(_board_x + 2 + 63,_board_y + 2 + 57 - 25 + (i * 55),_board_x - 2 + 63 + 283,_board_y - 2 + 57 + 25 + (i * 55),col_highlight,col_highlight,col_highlight,col_highlight,true)
 			//Information
-			draw_rectangle_color(1,310 + global.topbar,500 - 2,448 + global.topbar,c_black,c_black,c_black,c_black,false)
-			draw_set_font(font_bahnschrift_11)
-			draw_set_halign(fa_left)
-			draw_text_outline(bingo_item_get(ds_list_find_value(global.items,i),1),10,320 + global.topbar,c_white,c_black)
-			draw_text_outline(bingo_item_get(ds_list_find_value(global.items,i),2),10,340 + global.topbar,c_white,c_black)
+			if ds_list_find_value(global.board,i - 1) = 0 then{
+				draw_rectangle_color(1,310 + global.topbar,500 - 2,448 + global.topbar,c_black,c_black,c_black,c_black,false)
+				draw_set_font(font_bahnschrift_11)
+				draw_set_halign(fa_left)
+				draw_text_outline("Hidden.",10,320 + global.topbar,c_white,c_black)
+			}
+			else{
+				draw_rectangle_color(1,310 + global.topbar,500 - 2,448 + global.topbar,c_black,c_black,c_black,c_black,false)
+				draw_set_font(font_bahnschrift_11)
+				draw_set_halign(fa_left)
+				draw_text_outline(bingo_item_get(ds_list_find_value(global.items,i),1),10,320 + global.topbar,c_white,c_black)
+				draw_text_outline(bingo_item_get(ds_list_find_value(global.items,i),2),10,340 + global.topbar,c_white,c_black)	
+			}
 		}
 	}
 }

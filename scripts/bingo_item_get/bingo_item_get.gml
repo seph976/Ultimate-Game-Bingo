@@ -894,7 +894,7 @@ function bingo_item_get(argument0,argument1){
 						return "Weird Egg"
 					break
 					case 2: //Description
-						return "Obtain the Weird Egg.\n(You keep this even after it hatches.)"
+						return "Obtain the Weird Egg, you keep this even after it hatches."
 					break
 					case 3: //Amount
 						return undefined
