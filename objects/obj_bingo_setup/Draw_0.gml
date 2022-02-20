@@ -381,7 +381,7 @@ if global.Game = game_oot then{
 	var _pos_x  = 50
 	var _pos_y = 275 + global.topbar
 	draw_set_halign(fa_left)
-	draw_text(_pos_x + 10,_pos_y + 4,"Quests (17)")
+	draw_text(_pos_x + 10,_pos_y + 4,"Quests (19)")
 	draw_set_halign(fa_right)
 	if global.oot_quests = true then{
 		var _text = "Yes"

@@ -2234,6 +2234,22 @@ function bingo_item_get(argument0,argument1){
 					break
 				}
 			break
+			case 138:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 123
+					break
+					case 1: //Name
+						return "Quest"
+					break
+					case 2: //Description
+						return "Find an ice trap."
+					break
+					case 3: //Amount
+						return undefined
+					break
+				}
+			break
 		}
 	}
 	else if global.Game = game_ct then{ //Chrono Trigger

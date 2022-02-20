@@ -74,6 +74,7 @@ function bingo_settings(){
 				ds_list_add(global.availableitems,i)
 			}
 			ds_list_add(global.availableitems,137)
+			ds_list_add(global.availableitems,138)
 		}
 	}
 	else if global.Game = game_ct then{
