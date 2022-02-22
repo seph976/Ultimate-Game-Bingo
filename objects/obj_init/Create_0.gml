@@ -47,6 +47,7 @@ global.Port = 64000
 global.Sounds = true
 global.RememberSettings = true
 global.RememberSeed = true
+global.Backgrounds = true
 
 if file_exists("settings.ini") then{
 	settings_load()

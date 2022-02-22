@@ -7,5 +7,6 @@ function settings_save(){
 	ini_write_string("SETTINGS","Sound Effects",global.Sounds)
 	ini_write_string("SETTINGS","Remember Settings",global.RememberSettings)
 	ini_write_string("SETTINGS","Remember Seed",global.RememberSeed)
+	ini_write_string("SETTINGS","Backgrounds",global.Backgrounds)
 	ini_close()
 }

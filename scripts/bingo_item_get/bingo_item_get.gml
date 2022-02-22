@@ -2286,7 +2286,7 @@ function bingo_item_get(argument0,argument1){
 						return "Moon Stone"
 					break
 					case 2: //Description
-						return "Obtain the Moon Stone.\n(Keep this even after it becomes a sun stone.)"
+						return "Obtain the Moon Stone. (Keep this even after it becomes a sun stone.)"
 					break
 					case 3: //Amount
 						return undefined

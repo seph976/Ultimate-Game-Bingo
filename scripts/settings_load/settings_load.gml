@@ -7,5 +7,6 @@ function settings_load(){
 	global.Sounds = ini_read_real("SETTINGS","Sound Effects",global.Sounds)
 	global.RememberSettings = ini_read_real("SETTINGS","Remember Settings",global.RememberSettings)
 	global.RememberSeed = ini_read_real("SETTINGS","Remember Seed",global.RememberSeed)
+	global.Backgrounds = ini_read_real("SETTINGS","Backgrounds",global.Backgrounds)
 	ini_close()
 }

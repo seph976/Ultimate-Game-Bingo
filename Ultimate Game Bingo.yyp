@@ -40,6 +40,7 @@
     {"id":{"name":"font_bahnschrift_11","path":"fonts/font_bahnschrift_11/font_bahnschrift_11.yy",},"order":0,},
     {"id":{"name":"bingo_item_get","path":"scripts/bingo_item_get/bingo_item_get.yy",},"order":5,},
     {"id":{"name":"bingosettings_load","path":"scripts/bingosettings_load/bingosettings_load.yy",},"order":8,},
+    {"id":{"name":"spr_backgrounds","path":"sprites/spr_backgrounds/spr_backgrounds.yy",},"order":14,},
     {"id":{"name":"room_menu","path":"rooms/room_menu/room_menu.yy",},"order":0,},
   ],
   "Options": [

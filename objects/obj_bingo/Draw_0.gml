@@ -1,19 +1,39 @@
 /// @description Draw Stuff
 
+//Check BG
+if global.Backgrounds = true then{
+	if global.Game = game_oot then{
+		var _bg = 1
+	}
+	if global.Game = game_ct then{
+		var _bg = 2
+	}
+}
+else{
+	var _bg = 0
+}
+
+//Background
+draw_sprite(spr_backgrounds,_bg,0,global.topbar)
+
 //Topbar
 topbar_draw()
 
 //Log
 draw_set_halign(fa_left)
 draw_set_font(font_bahnschrift_11)
+draw_set_alpha(0.5)
+draw_rectangle_color(1,310 + global.topbar,500 - 2,448 + global.topbar,c_black,c_black,c_black,c_black,false)
+draw_set_alpha(1.0)
 for (i = 0; i < ds_list_size(global.log); i++) {
-	draw_text(10,320 + global.topbar + (15 * i),global.log[| i])
+	draw_text_outline(global.log[| i],10,317 + global.topbar + (15 * i),c_white,c_black)
 }
 
 //Board stuff
-var _board_x = 0
-var _board_y = 0 + global.topbar
 if global.Type = 0 then{ //Grid mode
+	//Position
+	var _board_x = 0
+	var _board_y = 0 + global.topbar
 	//Draw col tags
 	draw_set_font(font_bahnschrift_11)
 	draw_set_halign(fa_center)
@@ -58,11 +78,14 @@ if global.Type = 0 then{ //Grid mode
 			//Highlight
 			draw_sprite_ext(spr_iconhighlight,0,_board_x + 88 + (i * 55),_board_y + 57 + (ii * 55),1,1,0,col_highlight,1)
 			//Information
+			draw_sprite_part(spr_backgrounds,_bg,1,310,500 - 2,139,1,310 + global.topbar)
+			draw_set_alpha(0.5)
 			draw_rectangle_color(1,310 + global.topbar,500 - 2,448 + global.topbar,c_black,c_black,c_black,c_black,false)
+			draw_set_alpha(1.0)
 			draw_set_font(font_bahnschrift_11)
 			draw_set_halign(fa_left)
-			draw_text_outline(bingo_item_get(ds_list_find_value(global.items,_number),1),10,320 + global.topbar,c_white,c_black)
-			draw_text_outline(bingo_item_get(ds_list_find_value(global.items,_number),2),10,340 + global.topbar,c_white,c_black)
+			draw_text_outline(bingo_item_get(ds_list_find_value(global.items,_number),1),10,317 + global.topbar,c_white,c_black)
+			draw_text_outline(bingo_item_get(ds_list_find_value(global.items,_number),2),10,337 + global.topbar,c_white,c_black)
 		}
 		if i = 4 and ii < 4 then{
 			i = -1
@@ -71,14 +94,17 @@ if global.Type = 0 then{ //Grid mode
 	}
 }
 else if global.Type = 1 then{ //Hex mode
+	//Position
+	var _board_x = 0
+	var _board_y = -10 + global.topbar
 	//Draw row tags
 	draw_set_font(font_bahnschrift_11)
 	draw_set_halign(fa_right)
-	draw_text_outline("ROW 1",110,-6 + global.topbar + (1 * 55),c_white,c_black)
-	draw_text_outline("ROW 2",82,-6 + global.topbar + (2 * 55),c_white,c_black)
-	draw_text_outline("ROW 3",55,-6 + global.topbar + (3 * 55),c_white,c_black)
-	draw_text_outline("ROW 4",82,-6 + global.topbar + (4 * 55),c_white,c_black)
-	draw_text_outline("ROW 5",110,-6 + global.topbar + (5 * 55),c_white,c_black)
+	draw_text_outline("ROW 1",_board_x + 110,_board_y - 6 + (1 * 55),c_white,c_black)
+	draw_text_outline("ROW 2",_board_x + 82,_board_y - 6 + (2 * 55),c_white,c_black)
+	draw_text_outline("ROW 3",_board_x + 55,_board_y - 6 + (3 * 55),c_white,c_black)
+	draw_text_outline("ROW 4",_board_x + 82,_board_y - 6 + (4 * 55),c_white,c_black)
+	draw_text_outline("ROW 5",_board_x + 110,_board_y - 6 + (5 * 55),c_white,c_black)
 	//Draw arrows
 	draw_sprite(spr_arrows,1,_board_x,_board_y)
 	//Draw board icons
@@ -107,11 +133,14 @@ else if global.Type = 1 then{ //Hex mode
 			//Highlight
 			draw_sprite_ext(spr_iconhighlight,0,_board_x + 88 + (i * 55),_board_y + 57 + (0 * 55),1,1,0,col_highlight,1)
 			//Information
+			draw_sprite_part(spr_backgrounds,_bg,1,310,500 - 2,139,1,310 + global.topbar)
+			draw_set_alpha(0.5)
 			draw_rectangle_color(1,310 + global.topbar,500 - 2,448 + global.topbar,c_black,c_black,c_black,c_black,false)
+			draw_set_alpha(1.0)
 			draw_set_font(font_bahnschrift_11)
 			draw_set_halign(fa_left)
-			draw_text_outline(bingo_item_get(ds_list_find_value(global.items,_number),1),10,320 + global.topbar,c_white,c_black)
-			draw_text_outline(bingo_item_get(ds_list_find_value(global.items,_number),2),10,340 + global.topbar,c_white,c_black)
+			draw_text_outline(bingo_item_get(ds_list_find_value(global.items,_number),1),10,317 + global.topbar,c_white,c_black)
+			draw_text_outline(bingo_item_get(ds_list_find_value(global.items,_number),2),10,337 + global.topbar,c_white,c_black)
 		}
 	}
 	for (i = 0; i < 4; i += 1){
@@ -139,11 +168,14 @@ else if global.Type = 1 then{ //Hex mode
 			//Highlight
 			draw_sprite_ext(spr_iconhighlight,0,_board_x + 115 + (i * 55),_board_y + 57 + (1 * 55),1,1,0,col_highlight,1)
 			//Information
+			draw_sprite_part(spr_backgrounds,_bg,1,310,500 - 2,139,1,310 + global.topbar)
+			draw_set_alpha(0.5)
 			draw_rectangle_color(1,310 + global.topbar,500 - 2,448 + global.topbar,c_black,c_black,c_black,c_black,false)
+			draw_set_alpha(1.0)
 			draw_set_font(font_bahnschrift_11)
 			draw_set_halign(fa_left)
-			draw_text_outline(bingo_item_get(ds_list_find_value(global.items,_number),1),10,320 + global.topbar,c_white,c_black)
-			draw_text_outline(bingo_item_get(ds_list_find_value(global.items,_number),2),10,340 + global.topbar,c_white,c_black)
+			draw_text_outline(bingo_item_get(ds_list_find_value(global.items,_number),1),10,317 + global.topbar,c_white,c_black)
+			draw_text_outline(bingo_item_get(ds_list_find_value(global.items,_number),2),10,337 + global.topbar,c_white,c_black)
 		}
 	}
 	for (i = 0; i < 5; i += 1){
@@ -171,11 +203,14 @@ else if global.Type = 1 then{ //Hex mode
 			//Highlight
 			draw_sprite_ext(spr_iconhighlight,0,_board_x + 88 + (i * 55),_board_y + 57 + (2 * 55),1,1,0,col_highlight,1)
 			//Information
+			draw_sprite_part(spr_backgrounds,_bg,1,310,500 - 2,139,1,310 + global.topbar)
+			draw_set_alpha(0.5)
 			draw_rectangle_color(1,310 + global.topbar,500 - 2,448 + global.topbar,c_black,c_black,c_black,c_black,false)
+			draw_set_alpha(1.0)
 			draw_set_font(font_bahnschrift_11)
 			draw_set_halign(fa_left)
-			draw_text_outline(bingo_item_get(ds_list_find_value(global.items,_number),1),10,320 + global.topbar,c_white,c_black)
-			draw_text_outline(bingo_item_get(ds_list_find_value(global.items,_number),2),10,340 + global.topbar,c_white,c_black)
+			draw_text_outline(bingo_item_get(ds_list_find_value(global.items,_number),1),10,317 + global.topbar,c_white,c_black)
+			draw_text_outline(bingo_item_get(ds_list_find_value(global.items,_number),2),10,337 + global.topbar,c_white,c_black)
 		}
 	}
 	for (i = 0; i < 4; i += 1){
@@ -203,11 +238,14 @@ else if global.Type = 1 then{ //Hex mode
 			//Highlight
 			draw_sprite_ext(spr_iconhighlight,0,_board_x + 115 + (i * 55),_board_y + 57 + (3 * 55),1,1,0,col_highlight,1)
 			//Information
+			draw_sprite_part(spr_backgrounds,_bg,1,310,500 - 2,139,1,310 + global.topbar)
+			draw_set_alpha(0.5)
 			draw_rectangle_color(1,310 + global.topbar,500 - 2,448 + global.topbar,c_black,c_black,c_black,c_black,false)
+			draw_set_alpha(1.0)
 			draw_set_font(font_bahnschrift_11)
 			draw_set_halign(fa_left)
-			draw_text_outline(bingo_item_get(ds_list_find_value(global.items,_number),1),10,320 + global.topbar,c_white,c_black)
-			draw_text_outline(bingo_item_get(ds_list_find_value(global.items,_number),2),10,340 + global.topbar,c_white,c_black)
+			draw_text_outline(bingo_item_get(ds_list_find_value(global.items,_number),1),10,317 + global.topbar,c_white,c_black)
+			draw_text_outline(bingo_item_get(ds_list_find_value(global.items,_number),2),10,337 + global.topbar,c_white,c_black)
 		}
 	}
 	for (i = 1; i < 4; i += 1){
@@ -235,15 +273,21 @@ else if global.Type = 1 then{ //Hex mode
 			//Highlight
 			draw_sprite_ext(spr_iconhighlight,0,_board_x + 88 + (i * 55),_board_y + 57 + (4 * 55),1,1,0,col_highlight,1)
 			//Information
+			draw_sprite_part(spr_backgrounds,_bg,1,310,500 - 2,139,1,310 + global.topbar)
+			draw_set_alpha(0.5)
 			draw_rectangle_color(1,310 + global.topbar,500 - 2,448 + global.topbar,c_black,c_black,c_black,c_black,false)
+			draw_set_alpha(1.0)
 			draw_set_font(font_bahnschrift_11)
 			draw_set_halign(fa_left)
-			draw_text_outline(bingo_item_get(ds_list_find_value(global.items,_number),1),10,320 + global.topbar,c_white,c_black)
-			draw_text_outline(bingo_item_get(ds_list_find_value(global.items,_number),2),10,340 + global.topbar,c_white,c_black)
+			draw_text_outline(bingo_item_get(ds_list_find_value(global.items,_number),1),10,317 + global.topbar,c_white,c_black)
+			draw_text_outline(bingo_item_get(ds_list_find_value(global.items,_number),2),10,337 + global.topbar,c_white,c_black)
 		}
 	}
 }
 else if global.Type = 2 then{ //Mission mode
+	//Position
+	var _board_x = 0
+	var _board_y = -10 + global.topbar
 	//Draw row tags
 	draw_set_font(font_bahnschrift_11)
 	draw_set_halign(fa_right)
@@ -303,17 +347,23 @@ else if global.Type = 2 then{ //Mission mode
 			draw_rectangle_color(_board_x + 2 + 63,_board_y + 2 + 57 - 25 + (i * 55),_board_x - 2 + 63 + 283,_board_y - 2 + 57 + 25 + (i * 55),col_highlight,col_highlight,col_highlight,col_highlight,true)
 			//Information
 			if ds_list_find_value(global.board,i - 1) = 0 then{
+				draw_sprite_part(spr_backgrounds,_bg,1,310,500 - 2,139,1,310 + global.topbar)
+				draw_set_alpha(0.5)
 				draw_rectangle_color(1,310 + global.topbar,500 - 2,448 + global.topbar,c_black,c_black,c_black,c_black,false)
+				draw_set_alpha(1.0)
 				draw_set_font(font_bahnschrift_11)
 				draw_set_halign(fa_left)
-				draw_text_outline("Hidden.",10,320 + global.topbar,c_white,c_black)
+				draw_text_outline("Hidden.",10,317 + global.topbar,c_white,c_black)
 			}
 			else{
+				draw_sprite_part(spr_backgrounds,_bg,1,310,500 - 2,139,1,310 + global.topbar)
+				draw_set_alpha(0.5)
 				draw_rectangle_color(1,310 + global.topbar,500 - 2,448 + global.topbar,c_black,c_black,c_black,c_black,false)
+				draw_set_alpha(1.0)
 				draw_set_font(font_bahnschrift_11)
 				draw_set_halign(fa_left)
-				draw_text_outline(bingo_item_get(ds_list_find_value(global.items,i),1),10,320 + global.topbar,c_white,c_black)
-				draw_text_outline(bingo_item_get(ds_list_find_value(global.items,i),2),10,340 + global.topbar,c_white,c_black)	
+				draw_text_outline(bingo_item_get(ds_list_find_value(global.items,i),1),10,317 + global.topbar,c_white,c_black)
+				draw_text_outline(bingo_item_get(ds_list_find_value(global.items,i),2),10,337 + global.topbar,c_white,c_black)	
 			}
 		}
 	}
@@ -328,5 +378,9 @@ for (var i = 0; i < ds_list_size(global.players); ++i) {
 }
 
 //Seperation line
+draw_set_color(c_black)
+draw_line(349,9 + global.topbar,349,301 + global.topbar)
+draw_line(351,9 + global.topbar,351,301 + global.topbar)
+draw_line(350,9 + global.topbar,350,301 + global.topbar)
 draw_set_color(c_white)
 draw_line(350,10 + global.topbar,350,300 + global.topbar)

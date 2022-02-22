@@ -2,7 +2,7 @@
 
 //Setup
 server_buffer = buffer_create(1024,buffer_fixed,1)
-network_create_server(network_socket_tcp,global.Port,global.max_players)
+network_create_server(network_socket_tcp,global.Port,global.max_players - 1)
 
 //Clear and add self to player list
 ds_list_clear(global.players)
