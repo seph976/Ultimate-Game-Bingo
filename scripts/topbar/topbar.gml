@@ -16,7 +16,24 @@ function topbar_draw(){
 	draw_sprite(spr_baricon,0,16,16)
 	draw_set_font(font_system_8)
 	draw_set_halign(fa_left)
-	draw_text_color(32,10,global.caption,c_black,c_black,c_black,c_black,1)
+	if instance_exists(obj_bingo) then{
+		var _hours = (global.timer div 3600) mod 100
+		if _hours < 10 then{
+			_hours = "0" + string(_hours)
+		}
+		var _minutes = (global.timer div 60) mod 60
+		if _minutes < 10 then{
+			_minutes = "0" + string(_minutes)
+		}
+		var _seconds = (global.timer div 1) mod 60
+		if _seconds < 10 then{
+			_seconds = "0" + string(_seconds)
+		}
+		draw_text_color(32,10,string(global.caption) + " - Time: " + string(_hours) + ":" + string(_minutes) + ":" + string(_seconds),c_black,c_black,c_black,c_black,1)
+	}
+	else{
+		draw_text_color(32,10,global.caption,c_black,c_black,c_black,c_black,1)
+	}
 	draw_set_color(c_white)
 }
 

@@ -1,7 +1,7 @@
 /// @description Setup
 
 //Set window caption
-global.caption = "Seed - " + string(global.Seed)
+global.caption = "Seed: " + string(global.Seed)
 
 //Set seed
 random_set_seed(global.Seed)
@@ -39,6 +39,9 @@ while(ds_list_size(global.items) < _slots) {
 	}
 }
 ds_list_destroy(_list)
+
+//Timer
+alarm[0] = 60
 
 //Send local log message
 ds_list_add(global.log,"Joined room for game " + string(global.Game))

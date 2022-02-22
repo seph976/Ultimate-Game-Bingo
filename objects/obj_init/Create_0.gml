@@ -11,6 +11,7 @@ global.my = 0
 global.posx = 0
 global.posy = 0
 global.max_players = 6
+global.timer = 0
 global.players = ds_list_create()
 global.colors = ds_list_create()
 global.playerid = ds_list_create()
