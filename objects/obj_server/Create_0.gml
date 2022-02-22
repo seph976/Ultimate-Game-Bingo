@@ -18,11 +18,13 @@ ds_list_clear(global.board)
 if global.Type = 0 then{ //Grid
 	repeat(25){
 		ds_list_add(global.board,0)
+		ds_list_add(global.board_x,0)
 	}
 }
 else if global.Type = 1 then{ //Hex
 	repeat(19){
 		ds_list_add(global.board,0)
+		ds_list_add(global.board_x,0)
 	}
 }
 else if global.Type = 2 then{ //Mission

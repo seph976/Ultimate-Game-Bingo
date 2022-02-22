@@ -34,6 +34,7 @@ function recieved_packet_client(argument0) {
 				var ii = 0
 				repeat(25){
 					ds_list_set(global.board,ii,buffer_read(buffer,buffer_u32))
+					ds_list_set(global.board_x,ii,0)
 					ii++
 				}
 			}
@@ -41,6 +42,7 @@ function recieved_packet_client(argument0) {
 				var ii = 0
 				repeat(19){
 					ds_list_set(global.board,ii,buffer_read(buffer,buffer_u32))
+					ds_list_set(global.board_x,ii,0)
 					ii++
 				}
 			}

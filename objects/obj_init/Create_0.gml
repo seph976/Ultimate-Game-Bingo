@@ -1,7 +1,7 @@
 /// @description Setup
 
 //Setup
-global.Version = "1.2.1 DEV"
+global.Version = "1.3.0 DEV"
 randomize()
 global.caption = "Ultimate Game Bingo - " + string(global.Version)
 global.topbar = 32
@@ -15,6 +15,7 @@ global.players = ds_list_create()
 global.colors = ds_list_create()
 global.playerid = ds_list_create()
 global.board = ds_list_create()
+global.board_x = ds_list_create()
 global.items = ds_list_create()
 global.items_amounts = ds_list_create()
 global.availableitems = ds_list_create()

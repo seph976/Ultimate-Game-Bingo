@@ -34,6 +34,18 @@ if global.Type = 0 then{ //Grid mode
 					network_bingo_send(_number,_col)
 				}
 			}
+			else if mouse_x > _board_x + 88 - 25 + (i * 55) and mouse_x < _board_x + 88 + 25 + (i * 55) and mouse_y > _board_y + 57 - 25 + (ii * 55) and mouse_y < _board_y + 57 + 25 + (ii * 55) and mouse_check_button_pressed(mb_right) then{
+				var _number = i + (ii * 5)
+				if ds_list_find_value(global.board_x,_number) = 0 then{
+					ds_list_replace(global.board_x,_number,1)
+				}
+				else{
+					ds_list_replace(global.board_x,_number,0)
+				}
+				if global.Sounds = true then{
+					audio_play_sound(sfx_cursor,1,false)
+				}
+			}
 			if i = 4 and ii < 4 then{
 				i = -1
 				ii += 1
@@ -60,6 +72,18 @@ else if global.Type = 1 then{ //Hex mode
 					network_bingo_send(_number,_col)
 				}
 			}
+			else if mouse_x > _board_x + 88 - 25 + (i * 55) and mouse_x < _board_x + 88 + 25 + (i * 55) and mouse_y > _board_y + 57 - 25 + (0 * 55) and mouse_y < _board_y + 57 + 25 + (0 * 55) and mouse_check_button_pressed(mb_right) then{
+				var _number = i - 1
+				if ds_list_find_value(global.board_x,_number) = 0 then{
+					ds_list_replace(global.board_x,_number,1)
+				}
+				else{
+					ds_list_replace(global.board_x,_number,0)
+				}
+				if global.Sounds = true then{
+					audio_play_sound(sfx_cursor,1,false)
+				}
+			}
 		}
 		for (i = 0; i < 4; i += 1){
 			if mouse_x > _board_x + 115 - 25 + (i * 55) and mouse_x < _board_x + 115 + 25 + (i * 55) and mouse_y > _board_y + 57 - 25 + (1 * 55) and mouse_y < _board_y + 57 + 25 + (1 * 55) and mouse_check_button_pressed(mb_left) then{
@@ -76,6 +100,18 @@ else if global.Type = 1 then{ //Hex mode
 						audio_play_sound(sfx_cursor,1,false)
 					}
 					network_bingo_send(_number,_col)
+				}
+			}
+			else if mouse_x > _board_x + 115 - 25 + (i * 55) and mouse_x < _board_x + 115 + 25 + (i * 55) and mouse_y > _board_y + 57 - 25 + (1 * 55) and mouse_y < _board_y + 57 + 25 + (1 * 55) and mouse_check_button_pressed(mb_right) then{
+				var _number = i + 3
+				if ds_list_find_value(global.board_x,_number) = 0 then{
+					ds_list_replace(global.board_x,_number,1)
+				}
+				else{
+					ds_list_replace(global.board_x,_number,0)
+				}
+				if global.Sounds = true then{
+					audio_play_sound(sfx_cursor,1,false)
 				}
 			}
 		}
@@ -96,6 +132,18 @@ else if global.Type = 1 then{ //Hex mode
 					network_bingo_send(_number,_col)
 				}
 			}
+			else if mouse_x > _board_x + 88 - 25 + (i * 55) and mouse_x < _board_x + 88 + 25 + (i * 55) and mouse_y > _board_y + 57 - 25 + (2 * 55) and mouse_y < _board_y + 57 + 25 + (2 * 55) and mouse_check_button_pressed(mb_right) then{
+				var _number = i + 7
+				if ds_list_find_value(global.board_x,_number) = 0 then{
+					ds_list_replace(global.board_x,_number,1)
+				}
+				else{
+					ds_list_replace(global.board_x,_number,0)
+				}
+				if global.Sounds = true then{
+					audio_play_sound(sfx_cursor,1,false)
+				}
+			}
 		}
 		for (i = 0; i < 4; i += 1){
 			if mouse_x > _board_x + 115 - 25 + (i * 55) and mouse_x < _board_x + 115 + 25 + (i * 55) and mouse_y > _board_y + 57 - 25 + (3 * 55) and mouse_y < _board_y + 57 + 25 + (3 * 55) and mouse_check_button_pressed(mb_left) then{
@@ -114,6 +162,18 @@ else if global.Type = 1 then{ //Hex mode
 					network_bingo_send(_number,_col)
 				}
 			}
+			if mouse_x > _board_x + 115 - 25 + (i * 55) and mouse_x < _board_x + 115 + 25 + (i * 55) and mouse_y > _board_y + 57 - 25 + (3 * 55) and mouse_y < _board_y + 57 + 25 + (3 * 55) and mouse_check_button_pressed(mb_right) then{
+				var _number = i + 12
+				if ds_list_find_value(global.board_x,_number) = 0 then{
+					ds_list_replace(global.board_x,_number,1)
+				}
+				else{
+					ds_list_replace(global.board_x,_number,0)
+				}
+				if global.Sounds = true then{
+					audio_play_sound(sfx_cursor,1,false)
+				}
+			}
 		}
 		for (i = 1; i < 4; i += 1){
 			if mouse_x > _board_x + 88 - 25 + (i * 55) and mouse_x < _board_x + 88 + 25 + (i * 55) and mouse_y > _board_y + 57 - 25 + (4 * 55) and mouse_y < _board_y + 57 + 25 + (4 * 55) and mouse_check_button_pressed(mb_left) then{
@@ -130,6 +190,18 @@ else if global.Type = 1 then{ //Hex mode
 						audio_play_sound(sfx_cursor,1,false)
 					}
 					network_bingo_send(_number,_col)
+				}
+			}
+			if mouse_x > _board_x + 88 - 25 + (i * 55) and mouse_x < _board_x + 88 + 25 + (i * 55) and mouse_y > _board_y + 57 - 25 + (4 * 55) and mouse_y < _board_y + 57 + 25 + (4 * 55) and mouse_check_button_pressed(mb_right) then{
+				var _number = i + 15
+				if ds_list_find_value(global.board_x,_number) = 0 then{
+					ds_list_replace(global.board_x,_number,1)
+				}
+				else{
+					ds_list_replace(global.board_x,_number,0)
+				}
+				if global.Sounds = true then{
+					audio_play_sound(sfx_cursor,1,false)
 				}
 			}
 		}

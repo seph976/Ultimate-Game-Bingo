@@ -49,6 +49,10 @@ if global.Type = 0 then{ //Grid mode
 		if ds_list_find_value(global.board,_number) != 0 then{
 			draw_sprite_ext(spr_iconset,0,_board_x + 88 + (i * 55),_board_y + 57 + (ii * 55),1,1,0,ds_list_find_value(global.board,_number),0.7)
 		}
+		//Show crossout
+		if ds_list_find_value(global.board_x,_number) != 0 then{
+			draw_sprite(spr_crossout,0,_board_x + 88 + (i * 55),_board_y + 57 + (ii * 55))
+		}
 		//Hover highlight and info
 		if mouse_x > _board_x + 88 - 25 + (i * 55) and mouse_x < _board_x + 88 + 25 + (i * 55) and mouse_y > _board_y + 57 - 25 + (ii * 55) and mouse_y < _board_y + 57 + 25 + (ii * 55) then{
 			//Highlight
@@ -95,6 +99,10 @@ else if global.Type = 1 then{ //Hex mode
 		if ds_list_find_value(global.board,i - 1) != 0 then{
 			draw_sprite_ext(spr_iconset,0,_board_x + 88 + (i * 55),_board_y + 57 + (0 * 55),1,1,0,ds_list_find_value(global.board,_number),0.7)
 		}
+		//Show crossout
+		if ds_list_find_value(global.board_x,i - 1) != 0 then{
+			draw_sprite(spr_crossout,0,_board_x + 88 + (i * 55),_board_y + 57 + (0 * 55))
+		}
 		if mouse_x > _board_x + 88 - 25 + (i * 55) and mouse_x < _board_x + 88 + 25 + (i * 55) and mouse_y > _board_y + 57 - 25 + (0 * 55) and mouse_y < _board_y + 57 + 25 + (0 * 55) then{
 			//Highlight
 			draw_sprite_ext(spr_iconhighlight,0,_board_x + 88 + (i * 55),_board_y + 57 + (0 * 55),1,1,0,col_highlight,1)
@@ -122,6 +130,10 @@ else if global.Type = 1 then{ //Hex mode
 		//Show overlay color
 		if ds_list_find_value(global.board,i + 3) != 0 then{
 			draw_sprite_ext(spr_iconset,0,_board_x + 115 + (i * 55),_board_y + 57 + (1 * 55),1,1,0,ds_list_find_value(global.board,_number),0.7)
+		}
+		//Show crossout
+		if ds_list_find_value(global.board_x,i + 3) != 0 then{
+			draw_sprite(spr_crossout,0,_board_x + 115 + (i * 55),_board_y + 57 + (1 * 55))
 		}
 		if mouse_x > _board_x + 115 - 25 + (i * 55) and mouse_x < _board_x + 115 + 25 + (i * 55) and mouse_y > _board_y + 57 - 25 + (1 * 55) and mouse_y < _board_y + 57 + 25 + (1 * 55) then{
 			//Highlight
@@ -151,6 +163,10 @@ else if global.Type = 1 then{ //Hex mode
 		if ds_list_find_value(global.board,i + 7) != 0 then{
 			draw_sprite_ext(spr_iconset,0,_board_x + 88 + (i * 55),_board_y + 57 + (2 * 55),1,1,0,ds_list_find_value(global.board,_number),0.7)
 		}
+		//Show crossout
+		if ds_list_find_value(global.board_x,i + 7) != 0 then{
+			draw_sprite(spr_crossout,0,_board_x + 88 + (i * 55),_board_y + 57 + (2 * 55))
+		}
 		if mouse_x > _board_x + 88 - 25 + (i * 55) and mouse_x < _board_x + 88 + 25 + (i * 55) and mouse_y > _board_y + 57 - 25 + (2 * 55) and mouse_y < _board_y + 57 + 25 + (2 * 55) then{
 			//Highlight
 			draw_sprite_ext(spr_iconhighlight,0,_board_x + 88 + (i * 55),_board_y + 57 + (2 * 55),1,1,0,col_highlight,1)
@@ -179,6 +195,10 @@ else if global.Type = 1 then{ //Hex mode
 		if ds_list_find_value(global.board,i + 12) != 0 then{
 			draw_sprite_ext(spr_iconset,0,_board_x + 115 + (i * 55),_board_y + 57 + (3 * 55),1,1,0,ds_list_find_value(global.board,_number),0.7)
 		}
+		//Show crossout
+		if ds_list_find_value(global.board_x,i + 12) != 0 then{
+			draw_sprite(spr_crossout,0,_board_x + 115 + (i * 55),_board_y + 57 + (3 * 55))
+		}
 		if mouse_x > _board_x + 115 - 25 + (i * 55) and mouse_x < _board_x + 115 + 25 + (i * 55) and mouse_y > _board_y + 57 - 25 + (3 * 55) and mouse_y < _board_y + 57 + 25 + (3 * 55) then{
 			//Highlight
 			draw_sprite_ext(spr_iconhighlight,0,_board_x + 115 + (i * 55),_board_y + 57 + (3 * 55),1,1,0,col_highlight,1)
@@ -206,6 +226,10 @@ else if global.Type = 1 then{ //Hex mode
 		//Show overlay color
 		if ds_list_find_value(global.board,i + 15) != 0 then{
 			draw_sprite_ext(spr_iconset,0,_board_x + 88 + (i * 55),_board_y + 57 + (4 * 55),1,1,0,ds_list_find_value(global.board,_number),0.7)
+		}
+		//Show crossout
+		if ds_list_find_value(global.board_x,i + 15) != 0 then{
+			draw_sprite(spr_crossout,0,_board_x + 88 + (i * 55),_board_y + 57 + (4 * 55))
 		}
 		if mouse_x > _board_x + 88 - 25 + (i * 55) and mouse_x < _board_x + 88 + 25 + (i * 55) and mouse_y > _board_y + 57 - 25 + (4 * 55) and mouse_y < _board_y + 57 + 25 + (4 * 55) then{
 			//Highlight
