@@ -9,6 +9,7 @@ switch (type_event){
 		socket = ds_map_find_value(async_load,"socket")
 		buffer_seek(server_buffer,buffer_seek_start,0)
 		buffer_write(server_buffer,buffer_u8,0) //Connected
+		buffer_write(server_buffer,buffer_u32,global.timer)
 		buffer_write(server_buffer,buffer_string,global.Game)
 		buffer_write(server_buffer,buffer_string,global.Seed)
 		buffer_write(server_buffer,buffer_u8,global.Type)
@@ -55,7 +56,6 @@ switch (type_event){
 				}
 			}
 		}
-		buffer_write(server_buffer,buffer_string,global.timer)
 		network_send_packet(socket,server_buffer,buffer_tell(server_buffer))
 		break
 	case network_type_disconnect:
