@@ -1,7 +1,7 @@
 /// @description Setup
 
 //Setup
-global.Version = "1.2.1"
+global.Version = "1.2.2 DEV"
 randomize()
 global.caption = "Ultimate Game Bingo - " + string(global.Version)
 global.topbar = 32

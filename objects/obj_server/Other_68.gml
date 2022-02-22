@@ -55,7 +55,7 @@ switch (type_event){
 				}
 			}
 		}
-		buffer_write(server_buffer,buffer_u32,global.timer)
+		buffer_write(server_buffer,buffer_string,global.timer)
 		network_send_packet(socket,server_buffer,buffer_tell(server_buffer))
 		break
 	case network_type_disconnect:

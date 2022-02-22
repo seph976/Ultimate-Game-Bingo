@@ -53,7 +53,7 @@ function recieved_packet_client(argument0) {
 					ii++
 				}
 			}
-			global.timer = buffer_read(buffer,buffer_u32)
+			global.timer = real(buffer_read(buffer,buffer_string))
 			ds_list_add(global.players,global.Name)
 			ds_list_add(global.colors,global.Color)
 			buffer_seek(client_buffer,buffer_seek_start,0)
