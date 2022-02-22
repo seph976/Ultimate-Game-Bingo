@@ -233,10 +233,16 @@ if mouse_x > _pos_x and mouse_x < _pos_x + 400 and mouse_y > _pos_y and mouse_y 
 		ds_list_clear(global.availableitems)
 	}
 	else{
-		ds_list_clear(global.availableitems)
-		bingosettings_save()
-		instance_create_layer(0,0,"Instances",obj_server)
-		room_goto(room_bingo)
+		if ds_list_size(global.availableitems) != 0 then{
+			ds_list_clear(global.availableitems)
+			bingosettings_save()
+			instance_create_layer(0,0,"Instances",obj_server)
+			room_goto(room_bingo)
+		}
+		else{
+			show_message("You cant start with 0 items.")
+			ds_list_clear(global.availableitems)
+		}
 	}
 }
 //Back button
