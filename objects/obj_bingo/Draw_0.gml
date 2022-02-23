@@ -374,7 +374,10 @@ draw_set_font(font_bahnschrift_11)
 draw_set_halign(fa_center)
 draw_text_outline("PLAYERS",425,10 + global.topbar,c_white,c_black)
 for (var i = 0; i < ds_list_size(global.players); ++i) {
-    draw_text_outline(ds_list_find_value(global.players,i),425,30 + global.topbar + (i * 20),ds_list_find_value(global.colors,i),c_black)
+	draw_set_alpha(0.5)
+	draw_rectangle_color(360,29 + global.topbar + (i * 20),490,29 + global.topbar + 18 + (i * 20),c_black,c_black,c_black,c_black,false)
+    draw_set_alpha(1.0)
+	draw_text_outline(ds_list_find_value(global.players,i),425,30 + global.topbar + (i * 20),ds_list_find_value(global.colors,i),c_black)
 }
 
 //Seperation line
