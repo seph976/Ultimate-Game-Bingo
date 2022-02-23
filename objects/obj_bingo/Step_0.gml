@@ -8,12 +8,12 @@ if ds_list_size(global.log) > 8 then{
 	ds_list_delete(global.log,0)
 }
 
-//Board position
-var _board_x = 0
-var _board_y = 0 + global.topbar
 
 //Clicking items
 if global.Type = 0 then{ //Grid mode
+	//Board position
+	var _board_x = 0
+	var _board_y = 0 + global.topbar
 	if global.Color != c_ltgray then{
 		var ii = 0
 		for (i = 0; i < 5; i += 1){
@@ -54,6 +54,9 @@ if global.Type = 0 then{ //Grid mode
 	}
 }
 else if global.Type = 1 then{ //Hex mode
+	//Board position
+	var _board_x = 0
+	var _board_y = -10 + global.topbar
 	if global.Color != c_ltgray then{
 		for (i = 1; i < 4; i += 1){
 			if mouse_x > _board_x + 88 - 25 + (i * 55) and mouse_x < _board_x + 88 + 25 + (i * 55) and mouse_y > _board_y + 57 - 25 + (0 * 55) and mouse_y < _board_y + 57 + 25 + (0 * 55) and mouse_check_button_pressed(mb_left) then{
@@ -208,6 +211,9 @@ else if global.Type = 1 then{ //Hex mode
 	}
 }
 else if global.Type = 2 then{ //Mission mode
+	//Board position
+	var _board_x = 0
+	var _board_y = -10 + global.topbar
 	if global.Color != c_ltgray then{
 		for (i = 0; i < 5; i += 1){
 			draw_sprite(spr_icon,0,_board_x + 88,_board_y + 57 + (i * 55))
