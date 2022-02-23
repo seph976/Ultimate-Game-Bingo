@@ -25,6 +25,9 @@ if mouse_x > _pos_x and mouse_x < _pos_x + 400 and mouse_y > _pos_y and mouse_y 
 		global.Game = game_ct
 	}
 	else if global.Game = game_ct then{
+		global.Game = game_lttp
+	}
+	else if global.Game = game_lttp then{
 		global.Game = game_oot
 	}
 }
@@ -215,6 +218,65 @@ if global.Game = game_ct then{
 		}
 		else if global.ct_bosses = false then{
 			global.ct_bosses = true
+		}
+	}
+}
+//Link to the Past options
+if global.Game = game_lttp then{
+	//Items
+	var _pos_x  = 50
+	var _pos_y = 150 + global.topbar
+	if mouse_x > _pos_x and mouse_x < _pos_x + 400 and mouse_y > _pos_y and mouse_y < _pos_y + 25 and mouse_check_button_pressed(mb_left) then{
+		if global.Sounds = true then{
+			audio_play_sound(sfx_cursor,1,false)
+		}
+		if global.lttp_items = true then{
+			global.lttp_items = false
+		}
+		else if global.lttp_items = false then{
+			global.lttp_items = true
+		}
+	}
+	//Dungeon
+	var _pos_x  = 50
+	var _pos_y = 175 + global.topbar
+	if mouse_x > _pos_x and mouse_x < _pos_x + 400 and mouse_y > _pos_y and mouse_y < _pos_y + 25 and mouse_check_button_pressed(mb_left) then{
+		if global.Sounds = true then{
+			audio_play_sound(sfx_cursor,1,false)
+		}
+		if global.lttp_dungeon = true then{
+			global.lttp_dungeon = false
+		}
+		else if global.lttp_dungeon = false then{
+			global.lttp_dungeon = true
+		}
+	}
+	//Bosses
+	var _pos_x  = 50
+	var _pos_y = 200 + global.topbar
+	if mouse_x > _pos_x and mouse_x < _pos_x + 400 and mouse_y > _pos_y and mouse_y < _pos_y + 25 and mouse_check_button_pressed(mb_left) then{
+		if global.Sounds = true then{
+			audio_play_sound(sfx_cursor,1,false)
+		}
+		if global.lttp_bosses = true then{
+			global.lttp_bosses = false
+		}
+		else if global.lttp_bosses = false then{
+			global.lttp_bosses = true
+		}
+	}
+	//Quests
+	var _pos_x  = 50
+	var _pos_y = 225 + global.topbar
+	if mouse_x > _pos_x and mouse_x < _pos_x + 400 and mouse_y > _pos_y and mouse_y < _pos_y + 25 and mouse_check_button_pressed(mb_left) then{
+		if global.Sounds = true then{
+			audio_play_sound(sfx_cursor,1,false)
+		}
+		if global.lttp_quests = true then{
+			global.lttp_quests = false
+		}
+		else if global.lttp_quests = false then{
+			global.lttp_quests = true
 		}
 	}
 }

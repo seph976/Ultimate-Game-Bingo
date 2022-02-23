@@ -8,6 +8,9 @@ if global.Backgrounds = true then{
 	if global.Game = game_ct then{
 		var _bg = 2
 	}
+	if global.Game = game_lttp then{
+		var _bg = 3
+	}
 }
 else{
 	var _bg = 0

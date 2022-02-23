@@ -94,4 +94,26 @@ function bingo_settings(){
 			}
 		}
 	}
+	else if global.Game = game_lttp then{
+		if global.lttp_items = true then{
+			for (var i = 0; i <= 49; ++i) {
+				ds_list_add(global.availableitems,i)
+			}
+		}
+		if global.lttp_dungeon = true then{
+			for (var i = 50; i <= 69; ++i) {
+				ds_list_add(global.availableitems,i)
+			}
+		}
+		if global.lttp_bosses = true then{
+			for (var i = 70; i <= 82; ++i) {
+				ds_list_add(global.availableitems,i)
+			}
+		}
+		if global.lttp_quests = true then{
+			for (var i = 83; i <= 86; ++i) {
+				ds_list_add(global.availableitems,i)
+			}
+		}
+	}
 }

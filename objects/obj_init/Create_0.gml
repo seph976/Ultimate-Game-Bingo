@@ -1,7 +1,7 @@
 /// @description Setup
 
 //Setup
-global.Version = "1.2.2 DEV"
+global.Version = "1.3.0"
 randomize()
 global.caption = "Ultimate Game Bingo - " + string(global.Version)
 global.topbar = 32
@@ -59,6 +59,7 @@ else{
 //Game name macros
 #macro game_oot "Zelda: Ocarina of Time"
 #macro game_ct "Chrono Trigger"
+#macro game_lttp "Zelda: A Link to the Past"
 
 //Bingo settings
 global.Game = game_oot
@@ -76,6 +77,11 @@ global.oot_quests = true
 global.ct_keyitems = true
 global.ct_characters = true
 global.ct_bosses = true
+//Link to the Past
+global.lttp_items = true
+global.lttp_dungeon = true
+global.lttp_bosses = true
+global.lttp_quests = true
 
 if file_exists("bingosettings.ini") then{
 	bingosettings_load()

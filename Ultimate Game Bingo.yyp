@@ -4,6 +4,7 @@
     {"id":{"name":"obj_menu","path":"objects/obj_menu/obj_menu.yy",},"order":2,},
     {"id":{"name":"room_bingo","path":"rooms/room_bingo/room_bingo.yy",},"order":1,},
     {"id":{"name":"obj_bingo","path":"objects/obj_bingo/obj_bingo.yy",},"order":1,},
+    {"id":{"name":"spr_items_lttp","path":"sprites/spr_items_lttp/spr_items_lttp.yy",},"order":15,},
     {"id":{"name":"topbar","path":"scripts/topbar/topbar.yy",},"order":9,},
     {"id":{"name":"settings_load","path":"scripts/settings_load/settings_load.yy",},"order":2,},
     {"id":{"name":"room_connecting","path":"rooms/room_connecting/room_connecting.yy",},"order":6,},

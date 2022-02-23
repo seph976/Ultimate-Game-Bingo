@@ -18,6 +18,11 @@ function bingosettings_load(){
 		global.ct_keyitems = ini_read_string("CT","Keyitems",global.ct_keyitems)
 		global.ct_characters = ini_read_string("CT","Characters",global.ct_characters)
 		global.ct_bosses = ini_read_string("CT","Bosses",global.ct_bosses)
+		//Link to the Past
+		global.lttp_items = ini_read_string("LTTP","Items",global.lttp_items)
+		global.lttp_dungeon = ini_read_string("LTTP","Dungeon",global.lttp_dungeon)
+		global.lttp_bosses = ini_read_string("LTTP","Bosses",global.lttp_bosses)
+		global.lttp_quests = ini_read_string("LTTP","Quests",global.lttp_quests)
 	}
 	//Seed
 	if global.RememberSeed = true then{

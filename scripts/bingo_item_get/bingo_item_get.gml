@@ -2967,4 +2967,1414 @@ function bingo_item_get(argument0,argument1){
 			break
 		}
 	}
+	else if global.Game = game_lttp then{ //Link to the Past
+		switch (argument0) { //Items
+			case -1:
+		        switch (argument1) { //Game information
+					case 0: //Sprite to use
+						return spr_items_lttp
+					break
+				}
+			break
+			case 0:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 0
+					break
+					case 1: //Name
+						return "Bow"
+					break
+					case 2: //Description
+						return "Obtain the Bow."
+					break
+					case 3: //Amount
+						return undefined
+					break
+				}
+			break
+			case 1:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 1
+					break
+					case 1: //Name
+						return "Silver Arrow Bow"
+					break
+					case 2: //Description
+						return "Obtain the Bow with the Silver Arrows."
+					break
+					case 3: //Amount
+						return undefined
+					break
+				}
+			break
+			case 2:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 2
+					break
+					case 1: //Name
+						return "Boomerang"
+					break
+					case 2: //Description
+						return "Obtain the Boomerang."
+					break
+					case 3: //Amount
+						return undefined
+					break
+				}
+			break
+			case 3:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 3
+					break
+					case 1: //Name
+						return "Magical Boomerang"
+					break
+					case 2: //Description
+						return "Obtain the Magical Boomerang."
+					break
+					case 3: //Amount
+						return undefined
+					break
+				}
+			break
+			case 4:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 4
+					break
+					case 1: //Name
+						return "Hookshot"
+					break
+					case 2: //Description
+						return "Obtain the Hookshot."
+					break
+					case 3: //Amount
+						return undefined
+					break
+				}
+			break
+			case 5:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 5
+					break
+					case 1: //Name
+						return "Bombs"
+					break
+					case 2: //Description
+						return "Obtain Bombs for the first time."
+					break
+					case 3: //Amount
+						return undefined
+					break
+				}
+			break
+			case 6:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 6
+					break
+					case 1: //Name
+						return "Magic Powder"
+					break
+					case 2: //Description
+						return "Obtain the Magic Powder."
+					break
+					case 3: //Amount
+						return undefined
+					break
+				}
+			break
+			case 7:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 7
+					break
+					case 1: //Name
+						return "Fire Rod"
+					break
+					case 2: //Description
+						return "Obtain the Fire Rod."
+					break
+					case 3: //Amount
+						return undefined
+					break
+				}
+			break
+			case 8:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 8
+					break
+					case 1: //Name
+						return "Ice Rod"
+					break
+					case 2: //Description
+						return "Obtain the Ice Rod."
+					break
+					case 3: //Amount
+						return undefined
+					break
+				}
+			break
+			case 9:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 9
+					break
+					case 1: //Name
+						return "Bombos Medallion"
+					break
+					case 2: //Description
+						return "Obtain the Bombos Medallion."
+					break
+					case 3: //Amount
+						return undefined
+					break
+				}
+			break
+			case 10:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 10
+					break
+					case 1: //Name
+						return "Ether Medallion"
+					break
+					case 2: //Description
+						return "Obtain the Ether Medallion."
+					break
+					case 3: //Amount
+						return undefined
+					break
+				}
+			break
+			case 11:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 11
+					break
+					case 1: //Name
+						return "Quake Medallion"
+					break
+					case 2: //Description
+						return "Obtain the Quake Medallion."
+					break
+					case 3: //Amount
+						return undefined
+					break
+				}
+			break
+			case 12:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 12
+					break
+					case 1: //Name
+						return "Lamp"
+					break
+					case 2: //Description
+						return "Obtain the Lamp."
+					break
+					case 3: //Amount
+						return undefined
+					break
+				}
+			break
+			case 13:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 13
+					break
+					case 1: //Name
+						return "Magic Hammer"
+					break
+					case 2: //Description
+						return "Obtain the Magic Hammer."
+					break
+					case 3: //Amount
+						return undefined
+					break
+				}
+			break
+			case 14:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 14
+					break
+					case 1: //Name
+						return "Flute"
+					break
+					case 2: //Description
+						return "Obtain the Flute."
+					break
+					case 3: //Amount
+						return undefined
+					break
+				}
+			break
+			case 15:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 15
+					break
+					case 1: //Name
+						return "Bug-Catching Net"
+					break
+					case 2: //Description
+						return "Obtain the Bug-Catching Net."
+					break
+					case 3: //Amount
+						return undefined
+					break
+				}
+			break
+			case 16:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 16
+					break
+					case 1: //Name
+						return "Book of Mudora"
+					break
+					case 2: //Description
+						return "Obtain the Book of Mudora."
+					break
+					case 3: //Amount
+						return undefined
+					break
+				}
+			break
+			case 17:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 17
+					break
+					case 1: //Name
+						return "Bottles"
+					break
+					case 2: //Description
+						return "Obtain at least the specified amount of Bottles."
+					break
+					case 3: //Amount
+						var _random = 1 + irandom(3)
+						return _random
+					break
+				}
+			break
+			case 18:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 18
+					break
+					case 1: //Name
+						return "Cane of Somaria"
+					break
+					case 2: //Description
+						return "Obtain the Cane of Somaria."
+					break
+					case 3: //Amount
+						return undefined
+					break
+				}
+			break
+			case 19:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 19
+					break
+					case 1: //Name
+						return "Cane of Byrna"
+					break
+					case 2: //Description
+						return "Obtain the Cane of Byrna."
+					break
+					case 3: //Amount
+						return undefined
+					break
+				}
+			break
+			case 20:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 20
+					break
+					case 1: //Name
+						return "Magic Cape"
+					break
+					case 2: //Description
+						return "Obtain the Magic Cape."
+					break
+					case 3: //Amount
+						return undefined
+					break
+				}
+			break
+			case 21:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 21
+					break
+					case 1: //Name
+						return "Magic Mirror"
+					break
+					case 2: //Description
+						return "Obtain the Magic Mirror."
+					break
+					case 3: //Amount
+						return undefined
+					break
+				}
+			break
+			case 22:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 22
+					break
+					case 1: //Name
+						return "Shovel"
+					break
+					case 2: //Description
+						return "Obtain the Shovel."
+					break
+					case 3: //Amount
+						return undefined
+					break
+				}
+			break
+			case 23:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 23
+					break
+					case 1: //Name
+						return "Moon Pearl"
+					break
+					case 2: //Description
+						return "Obtain the Moon Pearl."
+					break
+					case 3: //Amount
+						return undefined
+					break
+				}
+			break
+			case 24:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 24
+					break
+					case 1: //Name
+						return "Pegasus Boots"
+					break
+					case 2: //Description
+						return "Obtain the Pegasus Boots."
+					break
+					case 3: //Amount
+						return undefined
+					break
+				}
+			break
+			case 25:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 25
+					break
+					case 1: //Name
+						return "Zora's Flippers"
+					break
+					case 2: //Description
+						return "Obtain Zora's Flippers."
+					break
+					case 3: //Amount
+						return undefined
+					break
+				}
+			break
+			case 26:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 26
+					break
+					case 1: //Name
+						return "Hearts"
+					break
+					case 2: //Description
+						return "Have at least the specified amount of hearts."
+					break
+					case 3: //Amount
+						var _random = 6 + irandom(14)
+						return _random
+					break
+				}
+			break
+			case 27:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 27
+					break
+					case 1: //Name
+						return "Mushroom"
+					break
+					case 2: //Description
+						return "Obtain the Mushroom. (Stays after you use it.)"
+					break
+					case 3: //Amount
+						return undefined
+					break
+				}
+			break
+			case 28:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 28
+					break
+					case 1: //Name
+						return "Rupees"
+					break
+					case 2: //Description
+						return "Have at least the specified amount of Rupees.\n(Can go over, only lasts as long as you keep the Rupees.)"
+					break
+					case 3: //Amount
+						var _random = 1 + irandom(998)
+						return _random
+					break
+				}
+			break
+			case 29:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 29
+					break
+					case 1: //Name
+						return "Power Glove"
+					break
+					case 2: //Description
+						return "Obtain the Power Glove."
+					break
+					case 3: //Amount
+						return undefined
+					break
+				}
+			break
+			case 30:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 30
+					break
+					case 1: //Name
+						return "Titan's Mitt"
+					break
+					case 2: //Description
+						return "Obtain the Titan's Mitt."
+					break
+					case 3: //Amount
+						return undefined
+					break
+				}
+			break
+			case 31:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 31
+					break
+					case 1: //Name
+						return "Red Potion"
+					break
+					case 2: //Description
+						return "Have a Red Potion in your inventory.\n(This slot only counts as long as you keep the potion.)"
+					break
+					case 3: //Amount
+						return undefined
+					break
+				}
+			break
+			case 32:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 32
+					break
+					case 1: //Name
+						return "Green Potion"
+					break
+					case 2: //Description
+						return "Have a Green Potion in your inventory.\n(This slot only counts as long as you keep the potion.)"
+					break
+					case 3: //Amount
+						return undefined
+					break
+				}
+			break
+			case 33:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 33
+					break
+					case 1: //Name
+						return "Blue Potion"
+					break
+					case 2: //Description
+						return "Have a Blue Potion in your inventory.\n(This slot only counts as long as you keep the potion.)"
+					break
+					case 3: //Amount
+						return undefined
+					break
+				}
+			break
+			case 34:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 34
+					break
+					case 1: //Name
+						return "Bee"
+					break
+					case 2: //Description
+						return "Have a caught bee in your inventory.\n(This slot only counts as long as you keep the bee.)"
+					break
+					case 3: //Amount
+						return undefined
+					break
+				}
+			break
+			case 35:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 35
+					break
+					case 1: //Name
+						return "Fairy"
+					break
+					case 2: //Description
+						return "Have a caught fairy in your inventory.\n(This slot only counts as long as you keep the fairy.)"
+					break
+					case 3: //Amount
+						return undefined
+					break
+				}
+			break
+			case 36:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 36
+					break
+					case 1: //Name
+						return "Red Mail"
+					break
+					case 2: //Description
+						return "Obtain the Red Mail."
+					break
+					case 3: //Amount
+						return undefined
+					break
+				}
+			break
+			case 37:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 37
+					break
+					case 1: //Name
+						return "Blue Mail"
+					break
+					case 2: //Description
+						return "Obtain the Blue Mail."
+					break
+					case 3: //Amount
+						return undefined
+					break
+				}
+			break
+			case 38:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 38
+					break
+					case 1: //Name
+						return "Fighter's Sword (Lv1)"
+					break
+					case 2: //Description
+						return "Obtain the Fighter's Sword. (Lv1)"
+					break
+					case 3: //Amount
+						return undefined
+					break
+				}
+			break
+			case 39:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 39
+					break
+					case 1: //Name
+						return "Master Sword (Lv2)"
+					break
+					case 2: //Description
+						return "Obtain the Master Sword. (Lv2)"
+					break
+					case 3: //Amount
+						return undefined
+					break
+				}
+			break
+			case 40:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 40
+					break
+					case 1: //Name
+						return "Tempered Sword (Lv3)"
+					break
+					case 2: //Description
+						return "Obtain the Tempered Sword. (Lv3)"
+					break
+					case 3: //Amount
+						return undefined
+					break
+				}
+			break
+			case 41:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 41
+					break
+					case 1: //Name
+						return "Golden Sword (Lv4)"
+					break
+					case 2: //Description
+						return "Obtain the Golden Sword. (Lv4)"
+					break
+					case 3: //Amount
+						return undefined
+					break
+				}
+			break
+			case 42:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 42
+					break
+					case 1: //Name
+						return "Fighter's Shield"
+					break
+					case 2: //Description
+						return "Obtain the Fighter's Shield."
+					break
+					case 3: //Amount
+						return undefined
+					break
+				}
+			break
+			case 43:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 43
+					break
+					case 1: //Name
+						return "Fire Shield"
+					break
+					case 2: //Description
+						return "Obtain the Fire Shield."
+					break
+					case 3: //Amount
+						return undefined
+					break
+				}
+			break
+			case 44:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 44
+					break
+					case 1: //Name
+						return "Mirror Shield"
+					break
+					case 2: //Description
+						return "Obtain the Mirror Shield."
+					break
+					case 3: //Amount
+						return undefined
+					break
+				}
+			break
+			case 45:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 45
+					break
+					case 1: //Name
+						return "Cane of Somaria and Byrna"
+					break
+					case 2: //Description
+						return "Obtain both magical canes."
+					break
+					case 3: //Amount
+						return undefined
+					break
+				}
+			break
+			case 46:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 46
+					break
+					case 1: //Name
+						return "All Medallions"
+					break
+					case 2: //Description
+						return "Obtain all three magical medallions."
+					break
+					case 3: //Amount
+						return undefined
+					break
+				}
+			break
+			case 47:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 47
+					break
+					case 1: //Name
+						return "Magic Upgrade"
+					break
+					case 2: //Description
+						return "Obtain an upgrade to your magic."
+					break
+					case 3: //Amount
+						return "1/2"
+					break
+				}
+			break
+			case 48:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 48
+					break
+					case 1: //Name
+						return "Super Bomb"
+					break
+					case 2: //Description
+						return "Obtain the Super Bomb."
+					break
+					case 3: //Amount
+						return undefined
+					break
+				}
+			break
+			case 49:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 49
+					break
+					case 1: //Name
+						return "Heart Piece"
+					break
+					case 2: //Description
+						return "Find a heart piece."
+					break
+					case 3: //Amount
+						return undefined
+					break
+				}
+			break
+			case 50:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 50
+					break
+					case 1: //Name
+						return "Maps"
+					break
+					case 2: //Description
+						return "Have at least the specified amount of maps."
+					break
+					case 3: //Amount
+						var _random = 1 + irandom(10)
+						return _random
+					break
+				}
+			break
+			case 51:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 51
+					break
+					case 1: //Name
+						return "Compasses"
+					break
+					case 2: //Description
+						return "Have at least the specified amount of compasses."
+					break
+					case 3: //Amount
+						var _random = 1 + irandom(10)
+						return _random
+					break
+				}
+			break
+			case 52:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 52
+					break
+					case 1: //Name
+						return "Big Keys"
+					break
+					case 2: //Description
+						return "Have at least the specified amount of big keys."
+					break
+					case 3: //Amount
+						var _random = 1 + irandom(6)
+						return _random
+					break
+				}
+			break
+			case 53:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 53
+					break
+					case 1: //Name
+						return "Pendant of Courage"
+					break
+					case 2: //Description
+						return "Obtain the Pendant of Courage."
+					break
+					case 3: //Amount
+						return undefined
+					break
+				}
+			break
+			case 54:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 54
+					break
+					case 1: //Name
+						return "Pendant of Power"
+					break
+					case 2: //Description
+						return "Obtain the Pendant of Power."
+					break
+					case 3: //Amount
+						return undefined
+					break
+				}
+			break
+			case 55:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 55
+					break
+					case 1: //Name
+						return "Pendant of Wisdom"
+					break
+					case 2: //Description
+						return "Obtain the Pendant of Wisdom."
+					break
+					case 3: //Amount
+						return undefined
+					break
+				}
+			break
+			case 56:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 56
+					break
+					case 1: //Name
+						return "Crystals"
+					break
+					case 2: //Description
+						return "Have at least the specified amount of crystals."
+					break
+					case 3: //Amount
+						var _random = 1 + irandom(6)
+						return _random
+					break
+				}
+			break
+			case 57:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 58
+					break
+					case 1: //Name
+						return "Eastern Palace"
+					break
+					case 2: //Description
+						return "Complete the Eastern Palace dungeon."
+					break
+					case 3: //Amount
+						return undefined
+					break
+				}
+			break
+			case 58:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 58
+					break
+					case 1: //Name
+						return "Desert Palace"
+					break
+					case 2: //Description
+						return "Complete the Desert Palace dungeon."
+					break
+					case 3: //Amount
+						return undefined
+					break
+				}
+			break
+			case 59:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 58
+					break
+					case 1: //Name
+						return "Tower of Hera"
+					break
+					case 2: //Description
+						return "Complete the Tower of Hera dungeon."
+					break
+					case 3: //Amount
+						return undefined
+					break
+				}
+			break
+			case 60:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 58
+					break
+					case 1: //Name
+						return "Hyrule Castle Tower"
+					break
+					case 2: //Description
+						return "Complete the Hyrule Castle Tower dungeon."
+					break
+					case 3: //Amount
+						return undefined
+					break
+				}
+			break
+			case 61:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 58
+					break
+					case 1: //Name
+						return "Dark Palace"
+					break
+					case 2: //Description
+						return "Complete the Dark Palace temple."
+					break
+					case 3: //Amount
+						return undefined
+					break
+				}
+			break
+			case 62:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 58
+					break
+					case 1: //Name
+						return "Swamp Palace"
+					break
+					case 2: //Description
+						return "Complete the Swamp Palace temple."
+					break
+					case 3: //Amount
+						return undefined
+					break
+				}
+			break
+			case 63:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 58
+					break
+					case 1: //Name
+						return "Skull Woods"
+					break
+					case 2: //Description
+						return "Complete the Skull Woods temple."
+					break
+					case 3: //Amount
+						return undefined
+					break
+				}
+			break
+			case 64:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 58
+					break
+					case 1: //Name
+						return "Gargoyle's Domain"
+					break
+					case 2: //Description
+						return "Complete the Gargoyle's Domain temple."
+					break
+					case 3: //Amount
+						return undefined
+					break
+				}
+			break
+			case 65:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 58
+					break
+					case 1: //Name
+						return "Ice Palace"
+					break
+					case 2: //Description
+						return "Complete the Ice Palace temple."
+					break
+					case 3: //Amount
+						return undefined
+					break
+				}
+			break
+			case 66:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 58
+					break
+					case 1: //Name
+						return "Misery Mire"
+					break
+					case 2: //Description
+						return "Complete the Misery Mire temple."
+					break
+					case 3: //Amount
+						return undefined
+					break
+				}
+			break
+			case 67:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 58
+					break
+					case 1: //Name
+						return "Turtle Rock"
+					break
+					case 2: //Description
+						return "Complete the Turtle Rock temple."
+					break
+					case 3: //Amount
+						return undefined
+					break
+				}
+			break
+			case 68:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 58
+					break
+					case 1: //Name
+						return "Ganons Tower"
+					break
+					case 2: //Description
+						return "Complete the Ganons Tower temple."
+					break
+					case 3: //Amount
+						return undefined
+					break
+				}
+			break
+			case 69:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 59
+					break
+					case 1: //Name
+						return "All Pendants"
+					break
+					case 2: //Description
+						return "Obtain all the pendants."
+					break
+					case 3: //Amount
+						return undefined
+					break
+				}
+			break
+			case 70:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 64
+					break
+					case 1: //Name
+						return "Armos Knight"
+					break
+					case 2: //Description
+						return "Defeat Armos Knight."
+					break
+					case 3: //Amount
+						return undefined
+					break
+				}
+			break
+			case 71:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 65
+					break
+					case 1: //Name
+						return "Lanmola"
+					break
+					case 2: //Description
+						return "Defeat Lanmola."
+					break
+					case 3: //Amount
+						return undefined
+					break
+				}
+			break
+			case 72:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 66
+					break
+					case 1: //Name
+						return "Moldorm"
+					break
+					case 2: //Description
+						return "Defeat Moldorm."
+					break
+					case 3: //Amount
+						return undefined
+					break
+				}
+			break
+			case 73:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 67
+					break
+					case 1: //Name
+						return "Agahnim 1st"
+					break
+					case 2: //Description
+						return "Defeat Agahnim. (First battle.)"
+					break
+					case 3: //Amount
+						return "1st"
+					break
+				}
+			break
+			case 74:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 68
+					break
+					case 1: //Name
+						return "Helmasaur King"
+					break
+					case 2: //Description
+						return "Defeat Helmasaur King."
+					break
+					case 3: //Amount
+						return undefined
+					break
+				}
+			break
+			case 75:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 69
+					break
+					case 1: //Name
+						return "Arrghus"
+					break
+					case 2: //Description
+						return "Defeat Arrghus."
+					break
+					case 3: //Amount
+						return undefined
+					break
+				}
+			break
+			case 76:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 70
+					break
+					case 1: //Name
+						return "Mothula"
+					break
+					case 2: //Description
+						return "Defeat Mothula."
+					break
+					case 3: //Amount
+						return undefined
+					break
+				}
+			break
+			case 77:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 71
+					break
+					case 1: //Name
+						return "Blind"
+					break
+					case 2: //Description
+						return "Defeat Blind."
+					break
+					case 3: //Amount
+						return undefined
+					break
+				}
+			break
+			case 78:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 72
+					break
+					case 1: //Name
+						return "Kholdstare"
+					break
+					case 2: //Description
+						return "Defeat Kholdstare."
+					break
+					case 3: //Amount
+						return undefined
+					break
+				}
+			break
+			case 79:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 73
+					break
+					case 1: //Name
+						return "Vitreous"
+					break
+					case 2: //Description
+						return "Defeat Vitreous."
+					break
+					case 3: //Amount
+						return undefined
+					break
+				}
+			break
+			case 80:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 74
+					break
+					case 1: //Name
+						return "Trinexx"
+					break
+					case 2: //Description
+						return "Defeat Trinexx."
+					break
+					case 3: //Amount
+						return undefined
+					break
+				}
+			break
+			case 81:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 75
+					break
+					case 1: //Name
+						return "Ganon"
+					break
+					case 2: //Description
+						return "Defeat Ganon."
+					break
+					case 3: //Amount
+						return undefined
+					break
+				}
+			break
+			case 82:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 67
+					break
+					case 1: //Name
+						return "Agahnim 2nd"
+					break
+					case 2: //Description
+						return "Defeat Agahnim. (Second battle.)"
+					break
+					case 3: //Amount
+						return "2nd"
+					break
+				}
+			break
+			case 83:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 60
+					break
+					case 1: //Name
+						return "Its Fairy Time"
+					break
+					case 2: //Description
+						return "Find a great fairy."
+					break
+					case 3: //Amount
+						return undefined
+					break
+				}
+			break
+			case 84:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 61
+					break
+					case 1: //Name
+						return "Duck Season"
+					break
+					case 2: //Description
+						return "Gain the ability to fly.. using a duck!"
+					break
+					case 3: //Amount
+						return undefined
+					break
+				}
+			break
+			case 85:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 62
+					break
+					case 1: //Name
+						return "I Am Become Bunny"
+					break
+					case 2: //Description
+						return "Become bunny link."
+					break
+					case 3: //Amount
+						return undefined
+					break
+				}
+			break
+			case 86:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 76
+					break
+					case 1: //Name
+						return "Chris Houlihan"
+					break
+					case 2: //Description
+						return "Enter the secret blue rupee room."
+					break
+					case 3: //Amount
+						return undefined
+					break
+				}
+			break
+		}
+	}
 }

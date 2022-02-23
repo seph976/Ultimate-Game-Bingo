@@ -17,5 +17,10 @@ function bingosettings_save(){
 	ini_write_string("CT","Keyitems",global.ct_keyitems)
 	ini_write_string("CT","Characters",global.ct_characters)
 	ini_write_string("CT","Bosses",global.ct_bosses)
+	//Link to the Past
+	ini_write_string("LTTP","Items",global.lttp_items)
+	ini_write_string("LTTP","Dungeon",global.lttp_dungeon)
+	ini_write_string("LTTP","Bosses",global.lttp_bosses)
+	ini_write_string("LTTP","Quests",global.lttp_quests)
 	ini_close()
 }

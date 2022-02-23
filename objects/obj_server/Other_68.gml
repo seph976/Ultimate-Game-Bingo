@@ -27,6 +27,12 @@ switch (type_event){
 			buffer_write(server_buffer,buffer_u8,global.ct_characters)
 			buffer_write(server_buffer,buffer_u8,global.ct_bosses)
 		}
+		if global.Game = game_lttp then{
+			buffer_write(server_buffer,buffer_u8,global.lttp_items)
+			buffer_write(server_buffer,buffer_u8,global.lttp_dungeon)
+			buffer_write(server_buffer,buffer_u8,global.lttp_bosses)
+			buffer_write(server_buffer,buffer_u8,global.lttp_quests)
+		}
 		var _players = ds_list_size(global.players) - 1
 		buffer_write(server_buffer,buffer_u8,_players)
 		for (i = 0; i <= _players; i++) {
