@@ -106,7 +106,7 @@ function bingo_settings(){
 			}
 		}
 		if global.lttp_bosses = true then{
-			for (var i = 70; i <= 82; ++i) {
+			for (var i = 70; i <= 81; ++i) {
 				ds_list_add(global.availableitems,i)
 			}
 		}

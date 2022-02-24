@@ -3825,7 +3825,7 @@ function bingo_item_get(argument0,argument1){
 						return "Have at least the specified amount of big keys."
 					break
 					case 3: //Amount
-						var _random = 1 + irandom(6)
+						var _random = 1 + irandom(10)
 						return _random
 					break
 				}
@@ -4282,22 +4282,6 @@ function bingo_item_get(argument0,argument1){
 			case 81:
 		        switch (argument1) { //Info
 					case 0: //Icon
-						return 75
-					break
-					case 1: //Name
-						return "Ganon"
-					break
-					case 2: //Description
-						return "Defeat Ganon."
-					break
-					case 3: //Amount
-						return undefined
-					break
-				}
-			break
-			case 82:
-		        switch (argument1) { //Info
-					case 0: //Icon
 						return 67
 					break
 					case 1: //Name
@@ -4308,6 +4292,22 @@ function bingo_item_get(argument0,argument1){
 					break
 					case 3: //Amount
 						return "2nd"
+					break
+				}
+			break
+			case 82:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 75
+					break
+					case 1: //Name
+						return "Ganon"
+					break
+					case 2: //Description
+						return "Defeat Ganon."
+					break
+					case 3: //Amount
+						return undefined
 					break
 				}
 			break
