@@ -537,7 +537,7 @@ if global.Game = game_lttp then{
 	var _pos_x  = 50
 	var _pos_y = 225 + global.topbar
 	draw_set_halign(fa_left)
-	draw_text(_pos_x + 10,_pos_y + 4,"Quests (4)")
+	draw_text(_pos_x + 10,_pos_y + 4,"Quests (5)")
 	draw_set_halign(fa_right)
 	if global.lttp_quests = true then{
 		var _text = "Yes"

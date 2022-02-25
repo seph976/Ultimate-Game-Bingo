@@ -4343,6 +4343,22 @@ function bingo_item_get(argument0,argument1){
 					break
 				}
 			break
+			case 85:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 77
+					break
+					case 1: //Name
+						return "Angry Angry Chickens"
+					break
+					case 2: //Description
+						return "Anger the alimighty Cucco by attacking it."
+					break
+					case 3: //Amount
+						return undefined
+					break
+				}
+			break
 		}
 	}
 }
