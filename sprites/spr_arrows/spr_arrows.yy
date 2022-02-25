@@ -63,7 +63,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_arrows","path":"sprites/spr_arrows/spr_arrows.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_arrows",
     "tags": [],
     "resourceType": "GMSequence",

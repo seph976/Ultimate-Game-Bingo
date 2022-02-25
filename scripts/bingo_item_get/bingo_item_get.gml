@@ -4157,13 +4157,13 @@ function bingo_item_get(argument0,argument1){
 						return 67
 					break
 					case 1: //Name
-						return "Agahnim 1st"
+						return "Agahnim"
 					break
 					case 2: //Description
-						return "Defeat Agahnim. (First battle.)"
+						return "Defeat Agahnim."
 					break
 					case 3: //Amount
-						return "1st"
+						return undefined
 					break
 				}
 			break
@@ -4282,38 +4282,6 @@ function bingo_item_get(argument0,argument1){
 			case 81:
 		        switch (argument1) { //Info
 					case 0: //Icon
-						return 67
-					break
-					case 1: //Name
-						return "Agahnim 2nd"
-					break
-					case 2: //Description
-						return "Defeat Agahnim. (Second battle.)"
-					break
-					case 3: //Amount
-						return "2nd"
-					break
-				}
-			break
-			case 82:
-		        switch (argument1) { //Info
-					case 0: //Icon
-						return 75
-					break
-					case 1: //Name
-						return "Ganon"
-					break
-					case 2: //Description
-						return "Defeat Ganon."
-					break
-					case 3: //Amount
-						return undefined
-					break
-				}
-			break
-			case 83:
-		        switch (argument1) { //Info
-					case 0: //Icon
 						return 60
 					break
 					case 1: //Name
@@ -4327,7 +4295,7 @@ function bingo_item_get(argument0,argument1){
 					break
 				}
 			break
-			case 84:
+			case 82:
 		        switch (argument1) { //Info
 					case 0: //Icon
 						return 61
@@ -4343,7 +4311,7 @@ function bingo_item_get(argument0,argument1){
 					break
 				}
 			break
-			case 85:
+			case 83:
 		        switch (argument1) { //Info
 					case 0: //Icon
 						return 62
@@ -4359,7 +4327,7 @@ function bingo_item_get(argument0,argument1){
 					break
 				}
 			break
-			case 86:
+			case 84:
 		        switch (argument1) { //Info
 					case 0: //Icon
 						return 76

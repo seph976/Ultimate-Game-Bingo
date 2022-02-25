@@ -555,7 +555,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_items_oot","path":"sprites/spr_items_oot/spr_items_oot.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_items_oot",
     "tags": [],
     "resourceType": "GMSequence",

@@ -231,7 +231,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_items_ct","path":"sprites/spr_items_ct/spr_items_ct.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_items_ct",
     "tags": [],
     "resourceType": "GMSequence",

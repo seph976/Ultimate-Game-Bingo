@@ -363,7 +363,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_items_lttp","path":"sprites/spr_items_lttp/spr_items_lttp.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_items_lttp",
     "tags": [],
     "resourceType": "GMSequence",

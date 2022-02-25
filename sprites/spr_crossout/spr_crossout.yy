@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_crossout","path":"sprites/spr_crossout/spr_crossout.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_crossout",
     "tags": [],
     "resourceType": "GMSequence",

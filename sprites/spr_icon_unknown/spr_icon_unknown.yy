@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_icon_unknown","path":"sprites/spr_icon_unknown/spr_icon_unknown.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_icon_unknown",
     "tags": [],
     "resourceType": "GMSequence",

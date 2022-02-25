@@ -106,12 +106,12 @@ function bingo_settings(){
 			}
 		}
 		if global.lttp_bosses = true then{
-			for (var i = 70; i <= 81; ++i) {
+			for (var i = 70; i <= 80; ++i) {
 				ds_list_add(global.availableitems,i)
 			}
 		}
 		if global.lttp_quests = true then{
-			for (var i = 83; i <= 86; ++i) {
+			for (var i = 81; i <= 84; ++i) {
 				ds_list_add(global.availableitems,i)
 			}
 		}

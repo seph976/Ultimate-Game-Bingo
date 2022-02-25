@@ -63,7 +63,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_barbutton_x","path":"sprites/spr_barbutton_x/spr_barbutton_x.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_barbutton_x",
     "tags": [],
     "resourceType": "GMSequence",

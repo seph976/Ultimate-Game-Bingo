@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_iconset","path":"sprites/spr_iconset/spr_iconset.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_iconset",
     "tags": [],
     "resourceType": "GMSequence",

@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_baricon","path":"sprites/spr_baricon/spr_baricon.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_baricon",
     "tags": [],
     "resourceType": "GMSequence",
