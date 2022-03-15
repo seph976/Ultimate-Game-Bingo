@@ -73,8 +73,9 @@ function bingo_settings(){
 			for (var i = 119; i <= 135; ++i) {
 				ds_list_add(global.availableitems,i)
 			}
-			ds_list_add(global.availableitems,137)
-			ds_list_add(global.availableitems,138)
+			for (var i = 137; i <= 141; ++i) {
+				ds_list_add(global.availableitems,i)
+			}
 		}
 	}
 	else if global.Game = game_ct then{

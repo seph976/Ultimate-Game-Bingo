@@ -2250,6 +2250,54 @@ function bingo_item_get(argument0,argument1){
 					break
 				}
 			break
+			case 139:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 123
+					break
+					case 1: //Name
+						return "Quest"
+					break
+					case 2: //Description
+						return "Defeat a giant crow."
+					break
+					case 3: //Amount
+						return undefined
+					break
+				}
+			break
+			case 140:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 123
+					break
+					case 1: //Name
+						return "Quest"
+					break
+					case 2: //Description
+						return "Defeat a giant leever."
+					break
+					case 3: //Amount
+						return undefined
+					break
+				}
+			break
+			case 141:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 123
+					break
+					case 1: //Name
+						return "Quest"
+					break
+					case 2: //Description
+						return "Defeat a giant skeleton, crow and leever."
+					break
+					case 3: //Amount
+						return undefined
+					break
+				}
+			break
 		}
 	}
 	else if global.Game = game_ct then{ //Chrono Trigger
