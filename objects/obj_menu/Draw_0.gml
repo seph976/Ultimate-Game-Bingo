@@ -35,7 +35,7 @@ if global.Update = true then{
 	}
 	draw_set_halign(fa_center)
 	draw_set_font(font_bahnschrift_11)
-	draw_text(_pos_x + 200,_pos_y + 4,"GitHub Link")
+	draw_text(_pos_x + 200,_pos_y + 4,"Download")
 }
 
 //Draw buttons

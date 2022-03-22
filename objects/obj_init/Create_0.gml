@@ -1,10 +1,11 @@
 /// @description Setup
 
 //Setup
-global.Version = "1.3.2 DEV"
+global.Version = "1.3.2"
 global.Latest = global.Version
 global.CheckVer = false
 global.Update = false
+global.Download = undefined
 gitinfo = http_get("https://api.github.com/repos/seph976/Ultimate-Game-Bingo/releases/latest")
 randomize()
 global.caption = "Ultimate Game Bingo - " + string(global.Version)

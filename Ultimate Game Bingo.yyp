@@ -26,6 +26,7 @@
     {"id":{"name":"sfx_cursor","path":"sounds/sfx_cursor/sfx_cursor.yy",},"order":0,},
     {"id":{"name":"settings_save","path":"scripts/settings_save/settings_save.yy",},"order":1,},
     {"id":{"name":"room_bingo_setup","path":"rooms/room_bingo_setup/room_bingo_setup.yy",},"order":4,},
+    {"id":{"name":"obj_downloading","path":"objects/obj_downloading/obj_downloading.yy",},"order":8,},
     {"id":{"name":"draw_text_outline","path":"scripts/draw_text_outline/draw_text_outline.yy",},"order":0,},
     {"id":{"name":"spr_icon","path":"sprites/spr_icon/spr_icon.yy",},"order":1,},
     {"id":{"name":"recieved_packet_client","path":"scripts/recieved_packet_client/recieved_packet_client.yy",},"order":4,},
@@ -37,6 +38,7 @@
     {"id":{"name":"obj_server","path":"objects/obj_server/obj_server.yy",},"order":4,},
     {"id":{"name":"obj_settings","path":"objects/obj_settings/obj_settings.yy",},"order":3,},
     {"id":{"name":"spr_crossout","path":"sprites/spr_crossout/spr_crossout.yy",},"order":13,},
+    {"id":{"name":"room_downloading","path":"rooms/room_downloading/room_downloading.yy",},"order":7,},
     {"id":{"name":"spr_icon_unknown","path":"sprites/spr_icon_unknown/spr_icon_unknown.yy",},"order":12,},
     {"id":{"name":"font_bahnschrift_11","path":"fonts/font_bahnschrift_11/font_bahnschrift_11.yy",},"order":0,},
     {"id":{"name":"bingo_item_get","path":"scripts/bingo_item_get/bingo_item_get.yy",},"order":5,},
@@ -66,6 +68,7 @@
     {"roomId":{"name":"room_bingo_setup","path":"rooms/room_bingo_setup/room_bingo_setup.yy",},},
     {"roomId":{"name":"room_join","path":"rooms/room_join/room_join.yy",},},
     {"roomId":{"name":"room_connecting","path":"rooms/room_connecting/room_connecting.yy",},},
+    {"roomId":{"name":"room_downloading","path":"rooms/room_downloading/room_downloading.yy",},},
   ],
   "Folders": [
     {"folderPath":"folders/Sprites.yy","order":1,"resourceVersion":"1.0","name":"Sprites","tags":[],"resourceType":"GMFolder",},

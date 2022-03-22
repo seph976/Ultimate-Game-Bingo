@@ -11,7 +11,7 @@ if global.Update = true then{
 		if global.Sounds = true then{
 			audio_play_sound(sfx_cursor,1,false)
 		}
-		url_open("https://github.com/seph976/Ultimate-Game-Bingo/releases")
+		room_goto(room_downloading)
 	}
 }
 
