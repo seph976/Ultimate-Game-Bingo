@@ -1,7 +1,7 @@
 /// @description Setup
 
 //Setup
-global.Version = "1.3.2"
+global.Version = "1.3.3 DEV"
 global.Latest = global.Version
 global.CheckVer = false
 global.Update = false
