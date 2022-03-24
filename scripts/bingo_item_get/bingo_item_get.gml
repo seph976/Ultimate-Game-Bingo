@@ -2298,6 +2298,38 @@ function bingo_item_get(argument0,argument1){
 					break
 				}
 			break
+			case 142:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 123
+					break
+					case 1: //Name
+						return "Quest"
+					break
+					case 2: //Description
+						return "Defeat Deadhands with sticks."
+					break
+					case 3: //Amount
+						return undefined
+					break
+				}
+			break
+			case 143:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 123
+					break
+					case 1: //Name
+						return "Quest"
+					break
+					case 2: //Description
+						return "Find a way to get squished."
+					break
+					case 3: //Amount
+						return undefined
+					break
+				}
+			break
 		}
 	}
 	else if global.Game = game_ct then{ //Chrono Trigger

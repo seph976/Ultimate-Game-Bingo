@@ -73,7 +73,7 @@ function bingo_settings(){
 			for (var i = 119; i <= 135; ++i) {
 				ds_list_add(global.availableitems,i)
 			}
-			for (var i = 137; i <= 141; ++i) {
+			for (var i = 137; i <= 143; ++i) {
 				ds_list_add(global.availableitems,i)
 			}
 		}
