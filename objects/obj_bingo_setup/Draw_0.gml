@@ -78,10 +78,12 @@ if global.Game = game_ct then{
 	var _pos_y = 150 + global.topbar
 	draw_line(_pos_x,_pos_y,_pos_x + 400,_pos_y)
 	draw_line(_pos_x,_pos_y + 25,_pos_x + 400,_pos_y + 25)
+	//Characters
 	var _pos_x  = 50
 	var _pos_y = 175 + global.topbar
 	draw_line(_pos_x,_pos_y,_pos_x + 400,_pos_y)
 	draw_line(_pos_x,_pos_y + 25,_pos_x + 400,_pos_y + 25)
+	//Bosses
 	var _pos_x  = 50
 	var _pos_y = 200 + global.topbar
 	draw_line(_pos_x,_pos_y,_pos_x + 400,_pos_y)
@@ -89,19 +91,45 @@ if global.Game = game_ct then{
 }
 //Link to the Past options
 if global.Game = game_lttp then{
-	//Key items
+	//Items
 	var _pos_x  = 50
 	var _pos_y = 150 + global.topbar
 	draw_line(_pos_x,_pos_y,_pos_x + 400,_pos_y)
 	draw_line(_pos_x,_pos_y + 25,_pos_x + 400,_pos_y + 25)
+	//Dungeons
 	var _pos_x  = 50
 	var _pos_y = 175 + global.topbar
 	draw_line(_pos_x,_pos_y,_pos_x + 400,_pos_y)
 	draw_line(_pos_x,_pos_y + 25,_pos_x + 400,_pos_y + 25)
+	//Bosses
 	var _pos_x  = 50
 	var _pos_y = 200 + global.topbar
 	draw_line(_pos_x,_pos_y,_pos_x + 400,_pos_y)
 	draw_line(_pos_x,_pos_y + 25,_pos_x + 400,_pos_y + 25)
+	//Quests
+	var _pos_x  = 50
+	var _pos_y = 225 + global.topbar
+	draw_line(_pos_x,_pos_y,_pos_x + 400,_pos_y)
+	draw_line(_pos_x,_pos_y + 25,_pos_x + 400,_pos_y + 25)
+}
+//Secret of Mana options
+if global.Game = game_som then{
+	//Basic
+	var _pos_x  = 50
+	var _pos_y = 150 + global.topbar
+	draw_line(_pos_x,_pos_y,_pos_x + 400,_pos_y)
+	draw_line(_pos_x,_pos_y + 25,_pos_x + 400,_pos_y + 25)
+	//Extended weapons
+	var _pos_x  = 50
+	var _pos_y = 175 + global.topbar
+	draw_line(_pos_x,_pos_y,_pos_x + 400,_pos_y)
+	draw_line(_pos_x,_pos_y + 25,_pos_x + 400,_pos_y + 25)
+	//Characters
+	var _pos_x  = 50
+	var _pos_y = 200 + global.topbar
+	draw_line(_pos_x,_pos_y,_pos_x + 400,_pos_y)
+	draw_line(_pos_x,_pos_y + 25,_pos_x + 400,_pos_y + 25)
+	//Bosses
 	var _pos_x  = 50
 	var _pos_y = 225 + global.topbar
 	draw_line(_pos_x,_pos_y,_pos_x + 400,_pos_y)
@@ -260,6 +288,45 @@ if global.Game = game_ct then{
 }
 //Link to the Past options
 if global.Game = game_lttp then{
+	var _pos_x  = 50
+	var _pos_y = 150 + global.topbar
+	if mouse_x > _pos_x and mouse_x < _pos_x + 400 and mouse_y > _pos_y and mouse_y < _pos_y + 25 then{
+		draw_set_alpha(0.3)
+		draw_rectangle(_pos_x,_pos_y,_pos_x + 400,_pos_y + 25,false)
+		draw_set_alpha(1)
+		draw_rectangle_color(_pos_x + 2,_pos_y + 2,_pos_x + 400 - 2,_pos_y + 25 - 2,col_highlight,col_highlight,col_highlight,col_highlight,true)
+		draw_rectangle_color(_pos_x + 1,_pos_y + 1,_pos_x + 400 - 1,_pos_y + 25 - 1,col_highlight,col_highlight,col_highlight,col_highlight,true)
+	}
+	var _pos_x  = 50
+	var _pos_y = 175 + global.topbar
+	if mouse_x > _pos_x and mouse_x < _pos_x + 400 and mouse_y > _pos_y and mouse_y < _pos_y + 25 then{
+		draw_set_alpha(0.3)
+		draw_rectangle(_pos_x,_pos_y,_pos_x + 400,_pos_y + 25,false)
+		draw_set_alpha(1)
+		draw_rectangle_color(_pos_x + 2,_pos_y + 2,_pos_x + 400 - 2,_pos_y + 25 - 2,col_highlight,col_highlight,col_highlight,col_highlight,true)
+		draw_rectangle_color(_pos_x + 1,_pos_y + 1,_pos_x + 400 - 1,_pos_y + 25 - 1,col_highlight,col_highlight,col_highlight,col_highlight,true)
+	}
+	var _pos_x  = 50
+	var _pos_y = 200 + global.topbar
+	if mouse_x > _pos_x and mouse_x < _pos_x + 400 and mouse_y > _pos_y and mouse_y < _pos_y + 25 then{
+		draw_set_alpha(0.3)
+		draw_rectangle(_pos_x,_pos_y,_pos_x + 400,_pos_y + 25,false)
+		draw_set_alpha(1)
+		draw_rectangle_color(_pos_x + 2,_pos_y + 2,_pos_x + 400 - 2,_pos_y + 25 - 2,col_highlight,col_highlight,col_highlight,col_highlight,true)
+		draw_rectangle_color(_pos_x + 1,_pos_y + 1,_pos_x + 400 - 1,_pos_y + 25 - 1,col_highlight,col_highlight,col_highlight,col_highlight,true)
+	}
+	var _pos_x  = 50
+	var _pos_y = 225 + global.topbar
+	if mouse_x > _pos_x and mouse_x < _pos_x + 400 and mouse_y > _pos_y and mouse_y < _pos_y + 25 then{
+		draw_set_alpha(0.3)
+		draw_rectangle(_pos_x,_pos_y,_pos_x + 400,_pos_y + 25,false)
+		draw_set_alpha(1)
+		draw_rectangle_color(_pos_x + 2,_pos_y + 2,_pos_x + 400 - 2,_pos_y + 25 - 2,col_highlight,col_highlight,col_highlight,col_highlight,true)
+		draw_rectangle_color(_pos_x + 1,_pos_y + 1,_pos_x + 400 - 1,_pos_y + 25 - 1,col_highlight,col_highlight,col_highlight,col_highlight,true)
+	}
+}
+//Secret of Mana options
+if global.Game = game_som then{
 	var _pos_x  = 50
 	var _pos_y = 150 + global.topbar
 	if mouse_x > _pos_x and mouse_x < _pos_x + 400 and mouse_y > _pos_y and mouse_y < _pos_y + 25 then{
@@ -543,6 +610,61 @@ if global.Game = game_lttp then{
 		var _text = "Yes"
 	}
 	else if global.lttp_quests = false then{
+		var _text = "No"
+	}
+	draw_text(_pos_x + 390,_pos_y + 4,_text)
+}
+//Secret of Mana options
+if global.Game = game_som then{
+	//Basic
+	var _pos_x  = 50
+	var _pos_y = 150 + global.topbar
+	draw_set_halign(fa_left)
+	draw_text(_pos_x + 10,_pos_y + 4,"Basic (31)")
+	draw_set_halign(fa_right)
+	if global.som_basic = true then{
+		var _text = "Yes"
+	}
+	else if global.som_basic = false then{
+		var _text = "No"
+	}
+	draw_text(_pos_x + 390,_pos_y + 4,_text)
+	//Extended weapons
+	var _pos_x  = 50
+	var _pos_y = 175 + global.topbar
+	draw_set_halign(fa_left)
+	draw_text(_pos_x + 10,_pos_y + 4,"Extended Weapons (16)")
+	draw_set_halign(fa_right)
+	if global.som_extweapon = true then{
+		var _text = "Yes"
+	}
+	else if global.som_extweapon = false then{
+		var _text = "No"
+	}
+	draw_text(_pos_x + 390,_pos_y + 4,_text)
+	//Characters
+	var _pos_x  = 50
+	var _pos_y = 200 + global.topbar
+	draw_set_halign(fa_left)
+	draw_text(_pos_x + 10,_pos_y + 4,"Characters (4)")
+	draw_set_halign(fa_right)
+	if global.som_characters = true then{
+		var _text = "Yes"
+	}
+	else if global.som_characters = false then{
+		var _text = "No"
+	}
+	draw_text(_pos_x + 390,_pos_y + 4,_text)
+	//Bosses
+	var _pos_x  = 50
+	var _pos_y = 225 + global.topbar
+	draw_set_halign(fa_left)
+	draw_text(_pos_x + 10,_pos_y + 4,"Bosses (41)")
+	draw_set_halign(fa_right)
+	if global.som_bosses = true then{
+		var _text = "Yes"
+	}
+	else if global.som_bosses = false then{
 		var _text = "No"
 	}
 	draw_text(_pos_x + 390,_pos_y + 4,_text)

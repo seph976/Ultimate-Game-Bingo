@@ -117,4 +117,26 @@ function bingo_settings(){
 			}
 		}
 	}
+	else if global.Game = game_som then{
+		if global.som_basic = true then{
+			for (var i = 0; i <= 30; ++i) {
+				ds_list_add(global.availableitems,i)
+			}
+		}
+		if global.som_extweapon = true then{
+			for (var i = 31; i <= 46; ++i) {
+				ds_list_add(global.availableitems,i)
+			}
+		}
+		if global.som_characters = true then{
+			for (var i = 47; i <= 50; ++i) {
+				ds_list_add(global.availableitems,i)
+			}
+		}
+		if global.som_bosses = true then{
+			for (var i = 51; i <= 91; ++i) {
+				ds_list_add(global.availableitems,i)
+			}
+		}
+	}
 }

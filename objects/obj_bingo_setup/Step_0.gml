@@ -28,6 +28,9 @@ if mouse_x > _pos_x and mouse_x < _pos_x + 400 and mouse_y > _pos_y and mouse_y 
 		global.Game = game_lttp
 	}
 	else if global.Game = game_lttp then{
+		global.Game = game_som
+	}
+	else if global.Game = game_som then{
 		global.Game = game_oot
 	}
 }
@@ -277,6 +280,65 @@ if global.Game = game_lttp then{
 		}
 		else if global.lttp_quests = false then{
 			global.lttp_quests = true
+		}
+	}
+}
+//Secret of Mana options
+if global.Game = game_som then{
+	//Basic
+	var _pos_x  = 50
+	var _pos_y = 150 + global.topbar
+	if mouse_x > _pos_x and mouse_x < _pos_x + 400 and mouse_y > _pos_y and mouse_y < _pos_y + 25 and mouse_check_button_pressed(mb_left) then{
+		if global.Sounds = true then{
+			audio_play_sound(sfx_cursor,1,false)
+		}
+		if global.som_basic = true then{
+			global.som_basic = false
+		}
+		else if global.som_basic = false then{
+			global.som_basic = true
+		}
+	}
+	//Extended weapons
+	var _pos_x  = 50
+	var _pos_y = 175 + global.topbar
+	if mouse_x > _pos_x and mouse_x < _pos_x + 400 and mouse_y > _pos_y and mouse_y < _pos_y + 25 and mouse_check_button_pressed(mb_left) then{
+		if global.Sounds = true then{
+			audio_play_sound(sfx_cursor,1,false)
+		}
+		if global.som_extweapon = true then{
+			global.som_extweapon = false
+		}
+		else if global.som_extweapon = false then{
+			global.som_extweapon = true
+		}
+	}
+	//Characters
+	var _pos_x  = 50
+	var _pos_y = 200 + global.topbar
+	if mouse_x > _pos_x and mouse_x < _pos_x + 400 and mouse_y > _pos_y and mouse_y < _pos_y + 25 and mouse_check_button_pressed(mb_left) then{
+		if global.Sounds = true then{
+			audio_play_sound(sfx_cursor,1,false)
+		}
+		if global.som_characters = true then{
+			global.som_characters = false
+		}
+		else if global.som_characters = false then{
+			global.som_characters = true
+		}
+	}
+	//Bosses
+	var _pos_x  = 50
+	var _pos_y = 225 + global.topbar
+	if mouse_x > _pos_x and mouse_x < _pos_x + 400 and mouse_y > _pos_y and mouse_y < _pos_y + 25 and mouse_check_button_pressed(mb_left) then{
+		if global.Sounds = true then{
+			audio_play_sound(sfx_cursor,1,false)
+		}
+		if global.som_bosses = true then{
+			global.som_bosses = false
+		}
+		else if global.som_bosses = false then{
+			global.som_bosses = true
 		}
 	}
 }

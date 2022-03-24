@@ -32,6 +32,12 @@ function recieved_packet_client(argument0) {
 				global.lttp_bosses = buffer_read(buffer,buffer_u8)
 				global.lttp_quests = buffer_read(buffer,buffer_u8)
 			}
+			if global.Game = game_som then{
+				global.som_basic = buffer_read(buffer,buffer_u8)
+				global.som_extweapon = buffer_read(buffer,buffer_u8)
+				global.som_characters = buffer_read(buffer,buffer_u8)
+				global.som_bosses = buffer_read(buffer,buffer_u8)
+			}
 			var _players = buffer_read(buffer,buffer_u8)
 			for (i = 0; i <= _players; i++) {
 				ds_list_add(global.players,buffer_read(buffer,buffer_string))

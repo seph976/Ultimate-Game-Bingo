@@ -23,6 +23,11 @@ function bingosettings_load(){
 		global.lttp_dungeon = ini_read_string("LTTP","Dungeon",global.lttp_dungeon)
 		global.lttp_bosses = ini_read_string("LTTP","Bosses",global.lttp_bosses)
 		global.lttp_quests = ini_read_string("LTTP","Quests",global.lttp_quests)
+		//Secret of Mana
+		global.som_basic = ini_read_string("SOM","Basic",global.som_basic)
+		global.som_extweapon = ini_read_string("SOM","ExtendedWeapons",global.som_extweapon)
+		global.som_characters = ini_read_string("SOM","Characters",global.som_characters)
+		global.som_bosses = ini_read_string("SOM","Bosses",global.som_bosses)
 	}
 	//Seed
 	if global.RememberSeed = true then{

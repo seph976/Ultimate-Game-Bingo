@@ -22,5 +22,10 @@ function bingosettings_save(){
 	ini_write_string("LTTP","Dungeon",global.lttp_dungeon)
 	ini_write_string("LTTP","Bosses",global.lttp_bosses)
 	ini_write_string("LTTP","Quests",global.lttp_quests)
+	//Secret of Mana
+	ini_write_string("SOM","Basic",global.som_basic)
+	ini_write_string("SOM","ExtendedWeapons",global.som_extweapon)
+	ini_write_string("SOM","Characters",global.som_characters)
+	ini_write_string("SOM","Bosses",global.som_bosses)
 	ini_close()
 }

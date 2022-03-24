@@ -4409,4 +4409,1504 @@ function bingo_item_get(argument0,argument1){
 			break
 		}
 	}
+	else if global.Game = game_som then{ //Secret of Mana
+		switch (argument0) { //Items
+			case -1:
+		        switch (argument1) { //Game information
+					case 0: //Sprite to use
+						return spr_items_som
+					break
+				}
+			break
+			case 0:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 0
+					break
+					case 1: //Name
+						return "Sword"
+					break
+					case 2: //Description
+						return "Obtain the Sword."
+					break
+					case 3: //Amount
+						return undefined
+					break
+				}
+			break
+			case 1:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 1
+					break
+					case 1: //Name
+						return "Gloves"
+					break
+					case 2: //Description
+						return "Obtain the Gloves."
+					break
+					case 3: //Amount
+						return undefined
+					break
+				}
+			break
+			case 2:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 2
+					break
+					case 1: //Name
+						return "Javelin"
+					break
+					case 2: //Description
+						return "Obtain the Javelin."
+					break
+					case 3: //Amount
+						return undefined
+					break
+				}
+			break
+			case 3:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 3
+					break
+					case 1: //Name
+						return "Spear"
+					break
+					case 2: //Description
+						return "Obtain the Spear."
+					break
+					case 3: //Amount
+						return undefined
+					break
+				}
+			break
+			case 4:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 4
+					break
+					case 1: //Name
+						return "Whip"
+					break
+					case 2: //Description
+						return "Obtain the Whip."
+					break
+					case 3: //Amount
+						return undefined
+					break
+				}
+			break
+			case 5:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 5
+					break
+					case 1: //Name
+						return "Axe"
+					break
+					case 2: //Description
+						return "Obtain the Axe."
+					break
+					case 3: //Amount
+						return undefined
+					break
+				}
+			break
+			case 6:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 6
+					break
+					case 1: //Name
+						return "Boomerang"
+					break
+					case 2: //Description
+						return "Obtain the Boomerang."
+					break
+					case 3: //Amount
+						return undefined
+					break
+				}
+			break
+			case 7:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 7
+					break
+					case 1: //Name
+						return "Bow"
+					break
+					case 2: //Description
+						return "Obtain the Bow."
+					break
+					case 3: //Amount
+						return undefined
+					break
+				}
+			break
+			case 8:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 8
+					break
+					case 1: //Name
+						return "Mana Seeds"
+					break
+					case 2: //Description
+						return "Seal the specified amount of mana seeds."
+					break
+					case 3: //Amount
+						var _random = 1 + irandom(7)
+						return _random
+					break
+				}
+			break
+			case 9:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 9
+					break
+					case 1: //Name
+						return "Wind Seed"
+					break
+					case 2: //Description
+						return "Synchronize with the wind seed."
+					break
+					case 3: //Amount
+						return undefined
+					break
+				}
+			break
+			case 10:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 10
+					break
+					case 1: //Name
+						return "Dark Seed"
+					break
+					case 2: //Description
+						return "Synchronize with the dark seed."
+					break
+					case 3: //Amount
+						return undefined
+					break
+				}
+			break
+			case 11:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 11
+					break
+					case 1: //Name
+						return "Earth Seed"
+					break
+					case 2: //Description
+						return "Synchronize with the earth seed."
+					break
+					case 3: //Amount
+						return undefined
+					break
+				}
+			break
+			case 12:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 12
+					break
+					case 1: //Name
+						return "Fire Seed"
+					break
+					case 2: //Description
+						return "Synchronize with the fire seed."
+					break
+					case 3: //Amount
+						return undefined
+					break
+				}
+			break
+			case 13:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 13
+					break
+					case 1: //Name
+						return "Light Seed"
+					break
+					case 2: //Description
+						return "Synchronize with the light seed."
+					break
+					case 3: //Amount
+						return undefined
+					break
+				}
+			break
+			case 14:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 14
+					break
+					case 1: //Name
+						return "Tree Seed"
+					break
+					case 2: //Description
+						return "Synchronize with the tree seed."
+					break
+					case 3: //Amount
+						return undefined
+					break
+				}
+			break
+			case 15:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 15
+					break
+					case 1: //Name
+						return "Water Seed"
+					break
+					case 2: //Description
+						return "Synchronize with the water seed."
+					break
+					case 3: //Amount
+						return undefined
+					break
+				}
+			break
+			case 16:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 16
+					break
+					case 1: //Name
+						return "Moon Seed"
+					break
+					case 2: //Description
+						return "Synchronize with the moon seed."
+					break
+					case 3: //Amount
+						return undefined
+					break
+				}
+			break
+			case 17:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 17
+					break
+					case 1: //Name
+						return "Undine"
+					break
+					case 2: //Description
+						return "Recruit Undine."
+					break
+					case 3: //Amount
+						return undefined
+					break
+				}
+			break
+			case 18:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 18
+					break
+					case 1: //Name
+						return "Dryad"
+					break
+					case 2: //Description
+						return "Recruit Dryad."
+					break
+					case 3: //Amount
+						return undefined
+					break
+				}
+			break
+			case 19:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 19
+					break
+					case 1: //Name
+						return "Gnome"
+					break
+					case 2: //Description
+						return "Recruit Gnome."
+					break
+					case 3: //Amount
+						return undefined
+					break
+				}
+			break
+			case 20:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 20
+					break
+					case 1: //Name
+						return "Lumina"
+					break
+					case 2: //Description
+						return "Recruit Lumina."
+					break
+					case 3: //Amount
+						return undefined
+					break
+				}
+			break
+			case 21:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 21
+					break
+					case 1: //Name
+						return "Luna"
+					break
+					case 2: //Description
+						return "Recruit Luna."
+					break
+					case 3: //Amount
+						return undefined
+					break
+				}
+			break
+			case 22:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 22
+					break
+					case 1: //Name
+						return "Salamando"
+					break
+					case 2: //Description
+						return "Recruit Salamando."
+					break
+					case 3: //Amount
+						return undefined
+					break
+				}
+			break
+			case 23:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 23
+					break
+					case 1: //Name
+						return "Shade"
+					break
+					case 2: //Description
+						return "Recruit Shade."
+					break
+					case 3: //Amount
+						return undefined
+					break
+				}
+			break
+			case 24:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 24
+					break
+					case 1: //Name
+						return "Sylphid"
+					break
+					case 2: //Description
+						return "Recruit Sylphid."
+					break
+					case 3: //Amount
+						return undefined
+					break
+				}
+			break
+			case 25:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 25
+					break
+					case 1: //Name
+						return "Gold Tower Key"
+					break
+					case 2: //Description
+						return "Find the Gold Tower Key."
+					break
+					case 3: //Amount
+						return undefined
+					break
+				}
+			break
+			case 26:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 26
+					break
+					case 1: //Name
+						return "Magic Rope"
+					break
+					case 2: //Description
+						return "Find the Magic Rope."
+					break
+					case 3: //Amount
+						return undefined
+					break
+				}
+			break
+			case 27:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 27
+					break
+					case 1: //Name
+						return "Midge Mallet"
+					break
+					case 2: //Description
+						return "Find the Midge Mallet."
+					break
+					case 3: //Amount
+						return undefined
+					break
+				}
+			break
+			case 28:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 28
+					break
+					case 1: //Name
+						return "Moogle Belt"
+					break
+					case 2: //Description
+						return "Find the Moogle Belt."
+					break
+					case 3: //Amount
+						return undefined
+					break
+				}
+			break
+			case 29:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 29
+					break
+					case 1: //Name
+						return "Sea Hare's Tail"
+					break
+					case 2: //Description
+						return "Find the Sea Hare's Tail."
+					break
+					case 3: //Amount
+						return undefined
+					break
+				}
+			break
+			case 30:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 30
+					break
+					case 1: //Name
+						return "Flammie Drum"
+					break
+					case 2: //Description
+						return "Find the Flammie Drum."
+					break
+					case 3: //Amount
+						return undefined
+					break
+				}
+			break
+			case 31:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 0
+					break
+					case 1: //Name
+						return "Sword Level"
+					break
+					case 2: //Description
+						return "Reach the required level or higher with the sword."
+					break
+					case 3: //Amount
+						var _random = 1 + irandom(8)
+						return "Lv." + string(_random)
+					break
+				}
+			break
+			case 32:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 1
+					break
+					case 1: //Name
+						return "Gloves Level"
+					break
+					case 2: //Description
+						return "Reach the required level or higher with the gloves."
+					break
+					case 3: //Amount
+						var _random = 1 + irandom(8)
+						return "Lv." + string(_random)
+					break
+				}
+			break
+			case 33:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 2
+					break
+					case 1: //Name
+						return "Javelin Level"
+					break
+					case 2: //Description
+						return "Reach the required level or higher with the javelin."
+					break
+					case 3: //Amount
+						var _random = 1 + irandom(8)
+						return "Lv." + string(_random)
+					break
+				}
+			break
+			case 34:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 3
+					break
+					case 1: //Name
+						return "Spear Level"
+					break
+					case 2: //Description
+						return "Reach the required level or higher with the spear."
+					break
+					case 3: //Amount
+						var _random = 1 + irandom(8)
+						return "Lv." + string(_random)
+					break
+				}
+			break
+			case 35:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 4
+					break
+					case 1: //Name
+						return "Whip Level"
+					break
+					case 2: //Description
+						return "Reach the required level or higher with the whip."
+					break
+					case 3: //Amount
+						var _random = 1 + irandom(8)
+						return "Lv." + string(_random)
+					break
+				}
+			break
+			case 36:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 5
+					break
+					case 1: //Name
+						return "Axe Level"
+					break
+					case 2: //Description
+						return "Reach the required level or higher with the axe."
+					break
+					case 3: //Amount
+						var _random = 1 + irandom(8)
+						return "Lv." + string(_random)
+					break
+				}
+			break
+			case 37:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 6
+					break
+					case 1: //Name
+						return "Boomerang Level"
+					break
+					case 2: //Description
+						return "Reach the required level or higher with the boomerang."
+					break
+					case 3: //Amount
+						var _random = 1 + irandom(8)
+						return "Lv." + string(_random)
+					break
+				}
+			break
+			case 38:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 7
+					break
+					case 1: //Name
+						return "Bow Level"
+					break
+					case 2: //Description
+						return "Reach the required level or higher with the bow."
+					break
+					case 3: //Amount
+						var _random = 1 + irandom(8)
+						return "Lv." + string(_random)
+					break
+				}
+			break
+			case 39:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 36
+					break
+					case 1: //Name
+						return "Sword Orbs"
+					break
+					case 2: //Description
+						return "Find the specified amount of sword orbs."
+					break
+					case 3: //Amount
+						var _random = 1 + irandom(7)
+						return _random
+					break
+				}
+			break
+			case 40:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 37
+					break
+					case 1: //Name
+						return "Gloves Orbs"
+					break
+					case 2: //Description
+						return "Find the specified amount of gloves orbs."
+					break
+					case 3: //Amount
+						var _random = 1 + irandom(7)
+						return _random
+					break
+				}
+			break
+			case 41:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 38
+					break
+					case 1: //Name
+						return "Javelin Orbs"
+					break
+					case 2: //Description
+						return "Find the specified amount of javelin orbs."
+					break
+					case 3: //Amount
+						var _random = 1 + irandom(7)
+						return _random
+					break
+				}
+			break
+			case 42:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 39
+					break
+					case 1: //Name
+						return "Spear Orbs"
+					break
+					case 2: //Description
+						return "Find the specified amount of spear orbs."
+					break
+					case 3: //Amount
+						var _random = 1 + irandom(7)
+						return _random
+					break
+				}
+			break
+			case 43:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 40
+					break
+					case 1: //Name
+						return "Whip Orbs"
+					break
+					case 2: //Description
+						return "Find the specified amount of whip orbs."
+					break
+					case 3: //Amount
+						var _random = 1 + irandom(7)
+						return _random
+					break
+				}
+			break
+			case 44:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 41
+					break
+					case 1: //Name
+						return "Axe Orbs"
+					break
+					case 2: //Description
+						return "Find the specified amount of axe orbs."
+					break
+					case 3: //Amount
+						var _random = 1 + irandom(7)
+						return _random
+					break
+				}
+			break
+			case 45:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 42
+					break
+					case 1: //Name
+						return "Boomerang Orbs"
+					break
+					case 2: //Description
+						return "Find the specified amount of boomerang orbs."
+					break
+					case 3: //Amount
+						var _random = 1 + irandom(7)
+						return _random
+					break
+				}
+			break
+			case 46:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 43
+					break
+					case 1: //Name
+						return "Bow Orbs"
+					break
+					case 2: //Description
+						return "Find the specified amount of bow orbs."
+					break
+					case 3: //Amount
+						var _random = 1 + irandom(7)
+						return _random
+					break
+				}
+			break
+			case 47:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 31
+					break
+					case 1: //Name
+						return "Randi"
+					break
+					case 2: //Description
+						return "Have Randi join your party."
+					break
+					case 3: //Amount
+						return undefined
+					break
+				}
+			break
+			case 48:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 32
+					break
+					case 1: //Name
+						return "Primm"
+					break
+					case 2: //Description
+						return "Have Primm join your party."
+					break
+					case 3: //Amount
+						return undefined
+					break
+				}
+			break
+			case 49:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 33
+					break
+					case 1: //Name
+						return "Popoi"
+					break
+					case 2: //Description
+						return "Have Popoi join your party."
+					break
+					case 3: //Amount
+						return undefined
+					break
+				}
+			break
+			case 50:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 34
+					break
+					case 1: //Name
+						return "Full Party"
+					break
+					case 2: //Description
+						return "Have all three characters join your party."
+					break
+					case 3: //Amount
+						return undefined
+					break
+				}
+			break
+			case 51:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 35
+					break
+					case 1: //Name
+						return "Mantis Ant"
+					break
+					case 2: //Description
+						return "Defeat boss Mantis Ant."
+					break
+					case 3: //Amount
+						return "MaA"
+					break
+				}
+			break
+			case 52:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 35
+					break
+					case 1: //Name
+						return "Tropicallo"
+					break
+					case 2: //Description
+						return "Defeat boss Tropicallo."
+					break
+					case 3: //Amount
+						return "Tr"
+					break
+				}
+			break
+			case 53:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 35
+					break
+					case 1: //Name
+						return "Spikey Tiger"
+					break
+					case 2: //Description
+						return "Defeat boss Spikey Tiger."
+					break
+					case 3: //Amount
+						return "ST"
+					break
+				}
+			break
+			case 54:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 35
+					break
+					case 1: //Name
+						return "Tonpole"
+					break
+					case 2: //Description
+						return "Defeat boss Tonpole."
+					break
+					case 3: //Amount
+						return "To"
+					break
+				}
+			break
+			case 55:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 35
+					break
+					case 1: //Name
+						return "Biting Lizard"
+					break
+					case 2: //Description
+						return "Defeat boss Biting Lizard."
+					break
+					case 3: //Amount
+						return "BL"
+					break
+				}
+			break
+			case 56:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 35
+					break
+					case 1: //Name
+						return "Fire Gigas"
+					break
+					case 2: //Description
+						return "Defeat boss Fire Gigas."
+					break
+					case 3: //Amount
+						return "FiG"
+					break
+				}
+			break
+			case 57:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 35
+					break
+					case 1: //Name
+						return "Wall Face"
+					break
+					case 2: //Description
+						return "Defeat boss Wall Face."
+					break
+					case 3: //Amount
+						return "WF"
+					break
+				}
+			break
+			case 58:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 35
+					break
+					case 1: //Name
+						return "Kilroy"
+					break
+					case 2: //Description
+						return "Defeat boss Kilroy."
+					break
+					case 3: //Amount
+						return "Ki"
+					break
+				}
+			break
+			case 59:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 35
+					break
+					case 1: //Name
+						return "Jabberwocky"
+					break
+					case 2: //Description
+						return "Defeat boss Jabberwocky."
+					break
+					case 3: //Amount
+						return "Ja"
+					break
+				}
+			break
+			case 60:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 35
+					break
+					case 1: //Name
+						return "Spring Beak"
+					break
+					case 2: //Description
+						return "Defeat boss Spring Beak."
+					break
+					case 3: //Amount
+						return "SB"
+					break
+				}
+			break
+			case 61:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 35
+					break
+					case 1: //Name
+						return "Great Viper"
+					break
+					case 2: //Description
+						return "Defeat boss Great Viper."
+					break
+					case 3: //Amount
+						return "GV"
+					break
+				}
+			break
+			case 62:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 35
+					break
+					case 1: //Name
+						return "Mech Rider #1"
+					break
+					case 2: //Description
+						return "Defeat boss Mech Rider #1."
+					break
+					case 3: //Amount
+						return "MR1"
+					break
+				}
+			break
+			case 63:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 35
+					break
+					case 1: //Name
+						return "Boreal Face"
+					break
+					case 2: //Description
+						return "Defeat boss Boreal Face."
+					break
+					case 3: //Amount
+						return "BF"
+					break
+				}
+			break
+			case 64:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 35
+					break
+					case 1: //Name
+						return "Frost Gigas"
+					break
+					case 2: //Description
+						return "Defeat boss Frost Gigas."
+					break
+					case 3: //Amount
+						return "FrG"
+					break
+				}
+			break
+			case 65:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 35
+					break
+					case 1: //Name
+						return "Minotaur"
+					break
+					case 2: //Description
+						return "Defeat boss Minotaur."
+					break
+					case 3: //Amount
+						return "Mi"
+					break
+				}
+			break
+			case 66:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 35
+					break
+					case 1: //Name
+						return "Doom's Wall"
+					break
+					case 2: //Description
+						return "Defeat boss Doom's Wall."
+					break
+					case 3: //Amount
+						return "DW"
+					break
+				}
+			break
+			case 67:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 35
+					break
+					case 1: //Name
+						return "Vampire"
+					break
+					case 2: //Description
+						return "Defeat boss Vampire."
+					break
+					case 3: //Amount
+						return "Va"
+					break
+				}
+			break
+			case 68:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 35
+					break
+					case 1: //Name
+						return "Metal Mantis"
+					break
+					case 2: //Description
+						return "Defeat boss Metal Mantis."
+					break
+					case 3: //Amount
+						return "MeM"
+					break
+				}
+			break
+			case 69:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 35
+					break
+					case 1: //Name
+						return "Mech Rider #2"
+					break
+					case 2: //Description
+						return "Defeat boss Mech Rider #2."
+					break
+					case 3: //Amount
+						return "MR2"
+					break
+				}
+			break
+			case 70:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 35
+					break
+					case 1: //Name
+						return "Lime Slime"
+					break
+					case 2: //Description
+						return "Defeat boss Lime Slime."
+					break
+					case 3: //Amount
+						return "LS"
+					break
+				}
+			break
+			case 71:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 35
+					break
+					case 1: //Name
+						return "Blue Spike"
+					break
+					case 2: //Description
+						return "Defeat boss Blue Spike."
+					break
+					case 3: //Amount
+						return "BS"
+					break
+				}
+			break
+			case 72:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 35
+					break
+					case 1: //Name
+						return "Gorgon Bull"
+					break
+					case 2: //Description
+						return "Defeat boss Gorgon Bull."
+					break
+					case 3: //Amount
+						return "GB"
+					break
+				}
+			break
+			case 73:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 35
+					break
+					case 1: //Name
+						return "Dark Stalker"
+					break
+					case 2: //Description
+						return "Defeat boss Dark Stalker."
+					break
+					case 3: //Amount
+						return "DaS"
+					break
+				}
+			break
+			case 74:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 35
+					break
+					case 1: //Name
+						return "Shadow (Randi)"
+					break
+					case 2: //Description
+						return "Defeat boss Shadow (Randi)."
+					break
+					case 3: //Amount
+						return "SR"
+					break
+				}
+			break
+			case 75:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 35
+					break
+					case 1: //Name
+						return "Shadow (Primm)"
+					break
+					case 2: //Description
+						return "Defeat boss Shadow (Primm)."
+					break
+					case 3: //Amount
+						return "SPr"
+					break
+				}
+			break
+			case 76:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 35
+					break
+					case 1: //Name
+						return "Shadow (Popoi)"
+					break
+					case 2: //Description
+						return "Defeat boss Shadow (Popoi)."
+					break
+					case 3: //Amount
+						return "SPo"
+					break
+				}
+			break
+			case 77:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 35
+					break
+					case 1: //Name
+						return "Aegagropilon"
+					break
+					case 2: //Description
+						return "Defeat boss Aegagropilon."
+					break
+					case 3: //Amount
+						return "Ae"
+					break
+				}
+			break
+			case 78:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 35
+					break
+					case 1: //Name
+						return "Hydra"
+					break
+					case 2: //Description
+						return "Defeat boss Hydra."
+					break
+					case 3: //Amount
+						return "Hy"
+					break
+				}
+			break
+			case 79:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 35
+					break
+					case 1: //Name
+						return "Kettle Kin"
+					break
+					case 2: //Description
+						return "Defeat boss Kettle Kin."
+					break
+					case 3: //Amount
+						return "KK"
+					break
+				}
+			break
+			case 80:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 35
+					break
+					case 1: //Name
+						return "Snap Dragon"
+					break
+					case 2: //Description
+						return "Defeat boss Snap Dragon."
+					break
+					case 3: //Amount
+						return "SnaD"
+					break
+				}
+			break
+			case 81:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 35
+					break
+					case 1: //Name
+						return "Hexas"
+					break
+					case 2: //Description
+						return "Defeat boss Hexas."
+					break
+					case 3: //Amount
+						return "He"
+					break
+				}
+			break
+			case 82:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 35
+					break
+					case 1: //Name
+						return "Mech Rider #3"
+					break
+					case 2: //Description
+						return "Defeat boss Mech Rider #3."
+					break
+					case 3: //Amount
+						return "MR3"
+					break
+				}
+			break
+			case 83:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 35
+					break
+					case 1: //Name
+						return "Dragon Worm"
+					break
+					case 2: //Description
+						return "Defeat boss Dragon Worm."
+					break
+					case 3: //Amount
+						return "DW"
+					break
+				}
+			break
+			case 84:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 35
+					break
+					case 1: //Name
+						return "Snow Dragon"
+					break
+					case 2: //Description
+						return "Defeat boss Snow Dragon."
+					break
+					case 3: //Amount
+						return "SnoD"
+					break
+				}
+			break
+			case 85:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 35
+					break
+					case 1: //Name
+						return "Axe Beak"
+					break
+					case 2: //Description
+						return "Defeat boss Axe Beak."
+					break
+					case 3: //Amount
+						return "AB"
+					break
+				}
+			break
+			case 86:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 35
+					break
+					case 1: //Name
+						return "Red Dragon"
+					break
+					case 2: //Description
+						return "Defeat boss Red Dragon."
+					break
+					case 3: //Amount
+						return "RD"
+					break
+				}
+			break
+			case 87:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 35
+					break
+					case 1: //Name
+						return "Thunder Gigas"
+					break
+					case 2: //Description
+						return "Defeat boss Thunder Gigas."
+					break
+					case 3: //Amount
+						return "TD"
+					break
+				}
+			break
+			case 88:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 35
+					break
+					case 1: //Name
+						return "Blue Dragon"
+					break
+					case 2: //Description
+						return "Defeat boss Blue Dragon."
+					break
+					case 3: //Amount
+						return "BD"
+					break
+				}
+			break
+			case 89:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 35
+					break
+					case 1: //Name
+						return "King Vampire"
+					break
+					case 2: //Description
+						return "Defeat boss King Vampire."
+					break
+					case 3: //Amount
+						return "KV"
+					break
+				}
+			break
+			case 90:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 35
+					break
+					case 1: //Name
+						return "Dread Slime"
+					break
+					case 2: //Description
+						return "Defeat boss Dread Slime."
+					break
+					case 3: //Amount
+						return "DrS"
+					break
+				}
+			break
+			case 91:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 35
+					break
+					case 1: //Name
+						return "Dark Lich"
+					break
+					case 2: //Description
+						return "Defeat boss Dark Lich."
+					break
+					case 3: //Amount
+						return "DL"
+					break
+				}
+			break
+		}
+	}
 }

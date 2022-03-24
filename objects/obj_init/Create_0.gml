@@ -1,7 +1,7 @@
 /// @description Setup
 
 //Setup
-global.Version = "1.3.3 DEV"
+global.Version = "1.4.0 DEV"
 global.Latest = global.Version
 global.CheckVer = false
 global.Update = false
@@ -65,6 +65,7 @@ else{
 #macro game_oot "Zelda: Ocarina of Time"
 #macro game_ct "Chrono Trigger"
 #macro game_lttp "Zelda: A Link to the Past"
+#macro game_som "Secret of Mana"
 
 //Bingo settings
 global.Game = game_oot
@@ -87,6 +88,11 @@ global.lttp_items = true
 global.lttp_dungeon = true
 global.lttp_bosses = true
 global.lttp_quests = true
+//Secret of Mana
+global.som_basic = true
+global.som_extweapon = true
+global.som_characters = true
+global.som_bosses = true
 
 if file_exists("bingosettings.ini") then{
 	bingosettings_load()
@@ -94,7 +100,6 @@ if file_exists("bingosettings.ini") then{
 else{
 	bingosettings_save()
 }
-
 
 //Hightlight animation and setup
 col_mode = 0
