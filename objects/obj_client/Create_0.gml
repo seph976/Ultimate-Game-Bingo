@@ -16,4 +16,4 @@ if connected = -1 then{
 
 //Ping
 ping = true
-alarm[0] = 180
+alarm[0] = 360
