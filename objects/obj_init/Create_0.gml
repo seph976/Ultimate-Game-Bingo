@@ -1,7 +1,7 @@
 /// @description Setup
 
 //Setup
-global.Version = "1.4.0 DEV"
+global.Version = "1.4.0"
 global.Latest = global.Version
 global.CheckVer = false
 global.Update = false
@@ -63,8 +63,8 @@ else{
 
 //Game name macros
 #macro game_oot "Zelda: Ocarina of Time"
-#macro game_ct "Chrono Trigger"
 #macro game_lttp "Zelda: A Link to the Past"
+#macro game_ct "Chrono Trigger"
 #macro game_som "Secret of Mana"
 
 //Bingo settings
