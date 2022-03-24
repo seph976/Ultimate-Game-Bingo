@@ -7,8 +7,9 @@ lockout board and to make it possible to support multiple games.
 
 Currently supported games:<br>
 **Zelda: Ocarina of Time<br>
+Zelda: A Link to the Past<br>
 Chrono Trigger<br>
-Zelda: A Link to the Past**
+Secret of Mana**
 
 All games can be played in either grid mode, hex mode or mission mode with duplicate items on the board enabled or disabled, however games will also have
 their own settings to customize the bingo further.
