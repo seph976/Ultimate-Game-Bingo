@@ -21,18 +21,7 @@ if mouse_x > _pos_x and mouse_x < _pos_x + 400 and mouse_y > _pos_y and mouse_y 
 	if global.Sounds = true then{
 		audio_play_sound(sfx_cursor,1,false)
 	}
-	if global.Game = game_oot then{
-		global.Game = game_ct
-	}
-	else if global.Game = game_ct then{
-		global.Game = game_lttp
-	}
-	else if global.Game = game_lttp then{
-		global.Game = game_som
-	}
-	else if global.Game = game_som then{
-		global.Game = game_oot
-	}
+	room_goto(room_choosegame)
 }
 
 //Seed button
