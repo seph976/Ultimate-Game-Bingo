@@ -1028,7 +1028,7 @@ function bingo_item_get(argument0,argument1){
 						return "Find the specified amount of Boss Keys."
 					break
 					case 3: //Amount
-						var _random = 1 + irandom(5)
+						var _random = 1 + irandom(4)
 						return _random
 					break
 				}
