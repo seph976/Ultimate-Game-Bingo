@@ -67,4 +67,7 @@ function topbar_step(){
 			global.posy = 0
 		}
 	}
+	if keyboard_check_pressed(vk_f1) then{
+		window_center()
+	}
 }
