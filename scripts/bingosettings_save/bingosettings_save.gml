@@ -30,6 +30,7 @@ function bingosettings_save(){
 	//Pokemon
 	ini_write_string("PKMN","Gen1",global.pkmn_gen1)
 	ini_write_string("PKMN","Gen2",global.pkmn_gen2)
+	ini_write_string("PKMN","Gen3",global.pkmn_gen3)
 	ini_write_string("PKMN","Type",global.pkmn_type)
 	ini_close()
 }

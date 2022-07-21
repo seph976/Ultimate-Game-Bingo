@@ -41,6 +41,7 @@ function recieved_packet_client(argument0) {
 			if global.Game = game_pkmn then{
 				global.pkmn_gen1 = buffer_read(buffer,buffer_u8)
 				global.pkmn_gen2 = buffer_read(buffer,buffer_u8)
+				global.pkmn_gen3 = buffer_read(buffer,buffer_u8)
 				global.pkmn_type = buffer_read(buffer,buffer_string)
 			}
 			var _players = buffer_read(buffer,buffer_u8)

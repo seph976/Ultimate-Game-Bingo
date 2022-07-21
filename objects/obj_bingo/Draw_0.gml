@@ -15,7 +15,7 @@ if global.Backgrounds = true then{
 		var _bg = 4
 	}
 	if global.Game = game_pkmn then{
-		var _bg = 1
+		var _bg = 5
 	}
 }
 else{
