@@ -331,6 +331,37 @@ if global.Game = game_som then{
 		}
 	}
 }
+//Pokemon options
+if global.Game = game_pkmn then{
+	//Gen 1
+	var _pos_x  = 50
+	var _pos_y = 150 + global.topbar
+	if mouse_x > _pos_x and mouse_x < _pos_x + 400 and mouse_y > _pos_y and mouse_y < _pos_y + 25 and mouse_check_button_pressed(mb_left) then{
+		if global.Sounds = true then{
+			audio_play_sound(sfx_cursor,1,false)
+		}
+		if global.pkmn_gen1 = true then{
+			global.pkmn_gen1 = false
+		}
+		else if global.pkmn_gen1 = false then{
+			global.pkmn_gen1 = true
+		}
+	}
+	//Gen 2
+	var _pos_x  = 50
+	var _pos_y = 175 + global.topbar
+	if mouse_x > _pos_x and mouse_x < _pos_x + 400 and mouse_y > _pos_y and mouse_y < _pos_y + 25 and mouse_check_button_pressed(mb_left) then{
+		if global.Sounds = true then{
+			audio_play_sound(sfx_cursor,1,false)
+		}
+		if global.pkmn_gen2 = true then{
+			global.pkmn_gen2 = false
+		}
+		else if global.pkmn_gen2 = false then{
+			global.pkmn_gen2 = true
+		}
+	}
+}
 
 //Start room button
 var _pos_x  = 50

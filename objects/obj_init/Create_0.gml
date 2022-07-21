@@ -1,7 +1,7 @@
 /// @description Setup
 
 //Setup
-global.Version = "1.4.1"
+global.Version = "1.5.0 DEV"
 global.Latest = global.Version
 global.CheckVer = false
 global.Update = false
@@ -66,6 +66,7 @@ else{
 #macro game_lttp "Zelda: A Link to the Past"
 #macro game_ct "Chrono Trigger"
 #macro game_som "Secret of Mana"
+#macro game_pkmn "Pokemon"
 
 //Bingo settings
 global.Game = game_oot
@@ -93,6 +94,9 @@ global.som_basic = true
 global.som_extweapon = true
 global.som_characters = true
 global.som_bosses = true
+//Pokemon
+global.pkmn_gen1 = true
+global.pkmn_gen2 = true
 
 if file_exists("bingosettings.ini") then{
 	bingosettings_load()

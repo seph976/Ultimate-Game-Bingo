@@ -38,6 +38,10 @@ function recieved_packet_client(argument0) {
 				global.som_characters = buffer_read(buffer,buffer_u8)
 				global.som_bosses = buffer_read(buffer,buffer_u8)
 			}
+			if global.Game = game_pkmn then{
+				global.pkmn_gen1 = buffer_read(buffer,buffer_u8)
+				global.pkmn_gen2 = buffer_read(buffer,buffer_u8)
+			}
 			var _players = buffer_read(buffer,buffer_u8)
 			for (i = 0; i <= _players; i++) {
 				ds_list_add(global.players,buffer_read(buffer,buffer_string))

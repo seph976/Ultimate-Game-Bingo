@@ -28,6 +28,9 @@ function bingosettings_load(){
 		global.som_extweapon = ini_read_string("SOM","ExtendedWeapons",global.som_extweapon)
 		global.som_characters = ini_read_string("SOM","Characters",global.som_characters)
 		global.som_bosses = ini_read_string("SOM","Bosses",global.som_bosses)
+		//Pokemon
+		global.pkmn_gen1 = ini_read_string("PKMN","Gen1",global.pkmn_gen1)
+		global.pkmn_gen2 = ini_read_string("PKMN","Gen2",global.pkmn_gen2)
 	}
 	//Seed
 	if global.RememberSeed = true then{

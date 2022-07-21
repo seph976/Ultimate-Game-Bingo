@@ -27,5 +27,8 @@ function bingosettings_save(){
 	ini_write_string("SOM","ExtendedWeapons",global.som_extweapon)
 	ini_write_string("SOM","Characters",global.som_characters)
 	ini_write_string("SOM","Bosses",global.som_bosses)
+	//Pokemon
+	ini_write_string("PKMN","Gen1",global.pkmn_gen1)
+	ini_write_string("PKMN","Gen2",global.pkmn_gen2)
 	ini_close()
 }

@@ -139,4 +139,16 @@ function bingo_settings(){
 			}
 		}
 	}
+	else if global.Game = game_pkmn then{
+		if global.pkmn_gen1 = true then{
+			for (var i = 0; i <= 0; ++i) {
+				ds_list_add(global.availableitems,i)
+			}
+		}
+		if global.pkmn_gen2 = true then{
+			for (var i = 0; i <= 0; ++i) {
+				ds_list_add(global.availableitems,i)
+			}
+		}
+	}
 }

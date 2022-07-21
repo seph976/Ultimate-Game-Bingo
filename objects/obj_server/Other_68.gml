@@ -39,6 +39,10 @@ switch (type_event){
 			buffer_write(server_buffer,buffer_u8,global.som_characters)
 			buffer_write(server_buffer,buffer_u8,global.som_bosses)
 		}
+		if global.Game = game_pkmn then{
+			buffer_write(server_buffer,buffer_u8,global.pkmn_gen1)
+			buffer_write(server_buffer,buffer_u8,global.pkmn_gen2)
+		}
 		var _players = ds_list_size(global.players) - 1
 		buffer_write(server_buffer,buffer_u8,_players)
 		for (i = 0; i <= _players; i++) {

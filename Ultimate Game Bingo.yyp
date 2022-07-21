@@ -31,6 +31,7 @@
     {"id":{"name":"obj_downloading","path":"objects/obj_downloading/obj_downloading.yy",},"order":8,},
     {"id":{"name":"draw_text_outline","path":"scripts/draw_text_outline/draw_text_outline.yy",},"order":0,},
     {"id":{"name":"spr_icon","path":"sprites/spr_icon/spr_icon.yy",},"order":1,},
+    {"id":{"name":"spr_items_pkmn","path":"sprites/spr_items_pkmn/spr_items_pkmn.yy",},"order":17,},
     {"id":{"name":"recieved_packet_client","path":"scripts/recieved_packet_client/recieved_packet_client.yy",},"order":4,},
     {"id":{"name":"bingosettings_save","path":"scripts/bingosettings_save/bingosettings_save.yy",},"order":7,},
     {"id":{"name":"room_init","path":"rooms/room_init/room_init.yy",},"order":2,},
@@ -99,7 +100,7 @@
   ],
   "IncludedFiles": [],
   "MetaData": {
-    "IDEVersion": "2022.5.1.16",
+    "IDEVersion": "2022.6.0.23",
   },
   "resourceVersion": "1.5",
   "name": "Ultimate Game Bingo",

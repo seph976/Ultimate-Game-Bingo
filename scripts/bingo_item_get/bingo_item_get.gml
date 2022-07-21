@@ -5941,4 +5941,31 @@ function bingo_item_get(argument0,argument1){
 			break
 		}
 	}
+	else if global.Game = game_pkmn then{ //Pokemon
+		switch (argument0) { //Items
+			case -1:
+		        switch (argument1) { //Game information
+					case 0: //Sprite to use
+						return spr_items_pkmn
+					break
+				}
+			break
+			case 0:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 0
+					break
+					case 1: //Name
+						return ""
+					break
+					case 2: //Description
+						return ""
+					break
+					case 3: //Amount
+						return undefined
+					break
+				}
+			break
+		}
+	}
 }
