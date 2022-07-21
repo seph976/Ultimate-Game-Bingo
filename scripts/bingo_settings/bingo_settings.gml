@@ -141,7 +141,7 @@ function bingo_settings(){
 	}
 	else if global.Game = game_pkmn then{
 		if global.pkmn_gen1 = true then{
-			for (var i = 0; i <= 0; ++i) {
+			for (var i = 0; i <= 150; ++i) {
 				ds_list_add(global.availableitems,i)
 			}
 		}

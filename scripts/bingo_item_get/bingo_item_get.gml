@@ -5956,10 +5956,2410 @@ function bingo_item_get(argument0,argument1){
 						return 0
 					break
 					case 1: //Name
-						return ""
+						return "Bulbasaur"
 					break
 					case 2: //Description
-						return ""
+						return string(global.pkmn_type) + " the pokemon."
+					break
+					case 3: //Amount
+						return undefined
+					break
+				}
+			break
+			case 1:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 1
+					break
+					case 1: //Name
+						return "Ivysaur"
+					break
+					case 2: //Description
+						return string(global.pkmn_type) + " the pokemon."
+					break
+					case 3: //Amount
+						return undefined
+					break
+				}
+			break
+			case 2:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 2
+					break
+					case 1: //Name
+						return "Venusaur"
+					break
+					case 2: //Description
+						return string(global.pkmn_type) + " the pokemon."
+					break
+					case 3: //Amount
+						return undefined
+					break
+				}
+			break
+			case 3:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 3
+					break
+					case 1: //Name
+						return "Charmander"
+					break
+					case 2: //Description
+						return string(global.pkmn_type) + " the pokemon."
+					break
+					case 3: //Amount
+						return undefined
+					break
+				}
+			break
+			case 4:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 4
+					break
+					case 1: //Name
+						return "Charmeleon"
+					break
+					case 2: //Description
+						return string(global.pkmn_type) + " the pokemon."
+					break
+					case 3: //Amount
+						return undefined
+					break
+				}
+			break
+			case 5:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 5
+					break
+					case 1: //Name
+						return "Charizard"
+					break
+					case 2: //Description
+						return string(global.pkmn_type) + " the pokemon."
+					break
+					case 3: //Amount
+						return undefined
+					break
+				}
+			break
+			case 6:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 6
+					break
+					case 1: //Name
+						return "Squirtle"
+					break
+					case 2: //Description
+						return string(global.pkmn_type) + " the pokemon."
+					break
+					case 3: //Amount
+						return undefined
+					break
+				}
+			break
+			case 7:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 7
+					break
+					case 1: //Name
+						return "Wartortle"
+					break
+					case 2: //Description
+						return string(global.pkmn_type) + " the pokemon."
+					break
+					case 3: //Amount
+						return undefined
+					break
+				}
+			break
+			case 8:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 8
+					break
+					case 1: //Name
+						return "Blastoise"
+					break
+					case 2: //Description
+						return string(global.pkmn_type) + " the pokemon."
+					break
+					case 3: //Amount
+						return undefined
+					break
+				}
+			break
+			case 9:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 9
+					break
+					case 1: //Name
+						return "Caterpie"
+					break
+					case 2: //Description
+						return string(global.pkmn_type) + " the pokemon."
+					break
+					case 3: //Amount
+						return undefined
+					break
+				}
+			break
+			case 10:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 10
+					break
+					case 1: //Name
+						return "Metapod"
+					break
+					case 2: //Description
+						return string(global.pkmn_type) + " the pokemon."
+					break
+					case 3: //Amount
+						return undefined
+					break
+				}
+			break
+			case 11:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 11
+					break
+					case 1: //Name
+						return "Butterfree"
+					break
+					case 2: //Description
+						return string(global.pkmn_type) + " the pokemon."
+					break
+					case 3: //Amount
+						return undefined
+					break
+				}
+			break
+			case 12:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 12
+					break
+					case 1: //Name
+						return "Weedle"
+					break
+					case 2: //Description
+						return string(global.pkmn_type) + " the pokemon."
+					break
+					case 3: //Amount
+						return undefined
+					break
+				}
+			break
+			case 13:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 13
+					break
+					case 1: //Name
+						return "Kakuna"
+					break
+					case 2: //Description
+						return string(global.pkmn_type) + " the pokemon."
+					break
+					case 3: //Amount
+						return undefined
+					break
+				}
+			break
+			case 14:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 14
+					break
+					case 1: //Name
+						return "Beedrill"
+					break
+					case 2: //Description
+						return string(global.pkmn_type) + " the pokemon."
+					break
+					case 3: //Amount
+						return undefined
+					break
+				}
+			break
+			case 15:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 15
+					break
+					case 1: //Name
+						return "Pidgey"
+					break
+					case 2: //Description
+						return string(global.pkmn_type) + " the pokemon."
+					break
+					case 3: //Amount
+						return undefined
+					break
+				}
+			break
+			case 16:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 16
+					break
+					case 1: //Name
+						return "Pidgeotto"
+					break
+					case 2: //Description
+						return string(global.pkmn_type) + " the pokemon."
+					break
+					case 3: //Amount
+						return undefined
+					break
+				}
+			break
+			case 17:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 17
+					break
+					case 1: //Name
+						return "Pidgeot"
+					break
+					case 2: //Description
+						return string(global.pkmn_type) + " the pokemon."
+					break
+					case 3: //Amount
+						return undefined
+					break
+				}
+			break
+			case 18:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 18
+					break
+					case 1: //Name
+						return "Rattata"
+					break
+					case 2: //Description
+						return string(global.pkmn_type) + " the pokemon."
+					break
+					case 3: //Amount
+						return undefined
+					break
+				}
+			break
+			case 19:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 19
+					break
+					case 1: //Name
+						return "Raticate"
+					break
+					case 2: //Description
+						return string(global.pkmn_type) + " the pokemon."
+					break
+					case 3: //Amount
+						return undefined
+					break
+				}
+			break
+			case 20:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 20
+					break
+					case 1: //Name
+						return "Spearow"
+					break
+					case 2: //Description
+						return string(global.pkmn_type) + " the pokemon."
+					break
+					case 3: //Amount
+						return undefined
+					break
+				}
+			break
+			case 21:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 21
+					break
+					case 1: //Name
+						return "Fearow"
+					break
+					case 2: //Description
+						return string(global.pkmn_type) + " the pokemon."
+					break
+					case 3: //Amount
+						return undefined
+					break
+				}
+			break
+			case 22:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 22
+					break
+					case 1: //Name
+						return "Ekans"
+					break
+					case 2: //Description
+						return string(global.pkmn_type) + " the pokemon."
+					break
+					case 3: //Amount
+						return undefined
+					break
+				}
+			break
+			case 23:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 23
+					break
+					case 1: //Name
+						return "Arbok"
+					break
+					case 2: //Description
+						return string(global.pkmn_type) + " the pokemon."
+					break
+					case 3: //Amount
+						return undefined
+					break
+				}
+			break
+			case 24:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 24
+					break
+					case 1: //Name
+						return "Pikachu"
+					break
+					case 2: //Description
+						return string(global.pkmn_type) + " the pokemon."
+					break
+					case 3: //Amount
+						return undefined
+					break
+				}
+			break
+			case 25:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 25
+					break
+					case 1: //Name
+						return "Raichu"
+					break
+					case 2: //Description
+						return string(global.pkmn_type) + " the pokemon."
+					break
+					case 3: //Amount
+						return undefined
+					break
+				}
+			break
+			case 26:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 26
+					break
+					case 1: //Name
+						return "Sandshrew"
+					break
+					case 2: //Description
+						return string(global.pkmn_type) + " the pokemon."
+					break
+					case 3: //Amount
+						return undefined
+					break
+				}
+			break
+			case 27:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 27
+					break
+					case 1: //Name
+						return "Sandslash"
+					break
+					case 2: //Description
+						return string(global.pkmn_type) + " the pokemon."
+					break
+					case 3: //Amount
+						return undefined
+					break
+				}
+			break
+			case 28:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 28
+					break
+					case 1: //Name
+						return "Nidoran"
+					break
+					case 2: //Description
+						return string(global.pkmn_type) + " the pokemon."
+					break
+					case 3: //Amount
+						return undefined
+					break
+				}
+			break
+			case 29:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 29
+					break
+					case 1: //Name
+						return "Nidorina"
+					break
+					case 2: //Description
+						return string(global.pkmn_type) + " the pokemon."
+					break
+					case 3: //Amount
+						return undefined
+					break
+				}
+			break
+			case 30:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 30
+					break
+					case 1: //Name
+						return "Nidoqueen"
+					break
+					case 2: //Description
+						return string(global.pkmn_type) + " the pokemon."
+					break
+					case 3: //Amount
+						return undefined
+					break
+				}
+			break
+			case 31:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 31
+					break
+					case 1: //Name
+						return "Nidoran"
+					break
+					case 2: //Description
+						return string(global.pkmn_type) + " the pokemon."
+					break
+					case 3: //Amount
+						return undefined
+					break
+				}
+			break
+			case 32:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 32
+					break
+					case 1: //Name
+						return "Nidorino"
+					break
+					case 2: //Description
+						return string(global.pkmn_type) + " the pokemon."
+					break
+					case 3: //Amount
+						return undefined
+					break
+				}
+			break
+			case 33:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 33
+					break
+					case 1: //Name
+						return "Nidoking"
+					break
+					case 2: //Description
+						return string(global.pkmn_type) + " the pokemon."
+					break
+					case 3: //Amount
+						return undefined
+					break
+				}
+			break
+			case 34:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 34
+					break
+					case 1: //Name
+						return "Clefairy"
+					break
+					case 2: //Description
+						return string(global.pkmn_type) + " the pokemon."
+					break
+					case 3: //Amount
+						return undefined
+					break
+				}
+			break
+			case 35:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 35
+					break
+					case 1: //Name
+						return "Clefable"
+					break
+					case 2: //Description
+						return string(global.pkmn_type) + " the pokemon."
+					break
+					case 3: //Amount
+						return undefined
+					break
+				}
+			break
+			case 36:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 36
+					break
+					case 1: //Name
+						return "Vulpix"
+					break
+					case 2: //Description
+						return string(global.pkmn_type) + " the pokemon."
+					break
+					case 3: //Amount
+						return undefined
+					break
+				}
+			break
+			case 37:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 37
+					break
+					case 1: //Name
+						return "Ninetales"
+					break
+					case 2: //Description
+						return string(global.pkmn_type) + " the pokemon."
+					break
+					case 3: //Amount
+						return undefined
+					break
+				}
+			break
+			case 38:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 38
+					break
+					case 1: //Name
+						return "Jigglypuff"
+					break
+					case 2: //Description
+						return string(global.pkmn_type) + " the pokemon."
+					break
+					case 3: //Amount
+						return undefined
+					break
+				}
+			break
+			case 39:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 39
+					break
+					case 1: //Name
+						return "Wigglytuff"
+					break
+					case 2: //Description
+						return string(global.pkmn_type) + " the pokemon."
+					break
+					case 3: //Amount
+						return undefined
+					break
+				}
+			break
+			case 40:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 40
+					break
+					case 1: //Name
+						return "Zubat"
+					break
+					case 2: //Description
+						return string(global.pkmn_type) + " the pokemon."
+					break
+					case 3: //Amount
+						return undefined
+					break
+				}
+			break
+			case 41:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 41
+					break
+					case 1: //Name
+						return "Golbat"
+					break
+					case 2: //Description
+						return string(global.pkmn_type) + " the pokemon."
+					break
+					case 3: //Amount
+						return undefined
+					break
+				}
+			break
+			case 42:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 42
+					break
+					case 1: //Name
+						return "Oddish"
+					break
+					case 2: //Description
+						return string(global.pkmn_type) + " the pokemon."
+					break
+					case 3: //Amount
+						return undefined
+					break
+				}
+			break
+			case 43:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 43
+					break
+					case 1: //Name
+						return "Gloom"
+					break
+					case 2: //Description
+						return string(global.pkmn_type) + " the pokemon."
+					break
+					case 3: //Amount
+						return undefined
+					break
+				}
+			break
+			case 44:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 44
+					break
+					case 1: //Name
+						return "Vileplume"
+					break
+					case 2: //Description
+						return string(global.pkmn_type) + " the pokemon."
+					break
+					case 3: //Amount
+						return undefined
+					break
+				}
+			break
+			case 45:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 45
+					break
+					case 1: //Name
+						return "Paras"
+					break
+					case 2: //Description
+						return string(global.pkmn_type) + " the pokemon."
+					break
+					case 3: //Amount
+						return undefined
+					break
+				}
+			break
+			case 46:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 46
+					break
+					case 1: //Name
+						return "Parasect"
+					break
+					case 2: //Description
+						return string(global.pkmn_type) + " the pokemon."
+					break
+					case 3: //Amount
+						return undefined
+					break
+				}
+			break
+			case 47:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 47
+					break
+					case 1: //Name
+						return "Venonat"
+					break
+					case 2: //Description
+						return string(global.pkmn_type) + " the pokemon."
+					break
+					case 3: //Amount
+						return undefined
+					break
+				}
+			break
+			case 48:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 48
+					break
+					case 1: //Name
+						return "Venomoth"
+					break
+					case 2: //Description
+						return string(global.pkmn_type) + " the pokemon."
+					break
+					case 3: //Amount
+						return undefined
+					break
+				}
+			break
+			case 49:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 49
+					break
+					case 1: //Name
+						return "Diglett"
+					break
+					case 2: //Description
+						return string(global.pkmn_type) + " the pokemon."
+					break
+					case 3: //Amount
+						return undefined
+					break
+				}
+			break
+			case 50:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 50
+					break
+					case 1: //Name
+						return "Dugtrio"
+					break
+					case 2: //Description
+						return string(global.pkmn_type) + " the pokemon."
+					break
+					case 3: //Amount
+						return undefined
+					break
+				}
+			break
+			case 51:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 51
+					break
+					case 1: //Name
+						return "Meowth"
+					break
+					case 2: //Description
+						return string(global.pkmn_type) + " the pokemon."
+					break
+					case 3: //Amount
+						return undefined
+					break
+				}
+			break
+			case 52:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 52
+					break
+					case 1: //Name
+						return "Persian"
+					break
+					case 2: //Description
+						return string(global.pkmn_type) + " the pokemon."
+					break
+					case 3: //Amount
+						return undefined
+					break
+				}
+			break
+			case 53:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 53
+					break
+					case 1: //Name
+						return "Psyduck"
+					break
+					case 2: //Description
+						return string(global.pkmn_type) + " the pokemon."
+					break
+					case 3: //Amount
+						return undefined
+					break
+				}
+			break
+			case 54:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 54
+					break
+					case 1: //Name
+						return "Golduck"
+					break
+					case 2: //Description
+						return string(global.pkmn_type) + " the pokemon."
+					break
+					case 3: //Amount
+						return undefined
+					break
+				}
+			break
+			case 55:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 55
+					break
+					case 1: //Name
+						return "Mankey"
+					break
+					case 2: //Description
+						return string(global.pkmn_type) + " the pokemon."
+					break
+					case 3: //Amount
+						return undefined
+					break
+				}
+			break
+			case 56:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 56
+					break
+					case 1: //Name
+						return "Primeape"
+					break
+					case 2: //Description
+						return string(global.pkmn_type) + " the pokemon."
+					break
+					case 3: //Amount
+						return undefined
+					break
+				}
+			break
+			case 57:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 57
+					break
+					case 1: //Name
+						return "Growlithe"
+					break
+					case 2: //Description
+						return string(global.pkmn_type) + " the pokemon."
+					break
+					case 3: //Amount
+						return undefined
+					break
+				}
+			break
+			case 58:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 58
+					break
+					case 1: //Name
+						return "Arcanine"
+					break
+					case 2: //Description
+						return string(global.pkmn_type) + " the pokemon."
+					break
+					case 3: //Amount
+						return undefined
+					break
+				}
+			break
+			case 59:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 59
+					break
+					case 1: //Name
+						return "Poliwag"
+					break
+					case 2: //Description
+						return string(global.pkmn_type) + " the pokemon."
+					break
+					case 3: //Amount
+						return undefined
+					break
+				}
+			break
+			case 60:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 60
+					break
+					case 1: //Name
+						return "Poliwhirl"
+					break
+					case 2: //Description
+						return string(global.pkmn_type) + " the pokemon."
+					break
+					case 3: //Amount
+						return undefined
+					break
+				}
+			break
+			case 61:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 61
+					break
+					case 1: //Name
+						return "Poliwrath"
+					break
+					case 2: //Description
+						return string(global.pkmn_type) + " the pokemon."
+					break
+					case 3: //Amount
+						return undefined
+					break
+				}
+			break
+			case 62:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 62
+					break
+					case 1: //Name
+						return "Abra"
+					break
+					case 2: //Description
+						return string(global.pkmn_type) + " the pokemon."
+					break
+					case 3: //Amount
+						return undefined
+					break
+				}
+			break
+			case 63:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 63
+					break
+					case 1: //Name
+						return "Kadabra"
+					break
+					case 2: //Description
+						return string(global.pkmn_type) + " the pokemon."
+					break
+					case 3: //Amount
+						return undefined
+					break
+				}
+			break
+			case 64:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 64
+					break
+					case 1: //Name
+						return "Alakazam"
+					break
+					case 2: //Description
+						return string(global.pkmn_type) + " the pokemon."
+					break
+					case 3: //Amount
+						return undefined
+					break
+				}
+			break
+			case 65:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 65
+					break
+					case 1: //Name
+						return "Machop"
+					break
+					case 2: //Description
+						return string(global.pkmn_type) + " the pokemon."
+					break
+					case 3: //Amount
+						return undefined
+					break
+				}
+			break
+			case 66:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 66
+					break
+					case 1: //Name
+						return "Machoke"
+					break
+					case 2: //Description
+						return string(global.pkmn_type) + " the pokemon."
+					break
+					case 3: //Amount
+						return undefined
+					break
+				}
+			break
+			case 67:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 67
+					break
+					case 1: //Name
+						return "Machamp"
+					break
+					case 2: //Description
+						return string(global.pkmn_type) + " the pokemon."
+					break
+					case 3: //Amount
+						return undefined
+					break
+				}
+			break
+			case 68:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 68
+					break
+					case 1: //Name
+						return "Bellsprout"
+					break
+					case 2: //Description
+						return string(global.pkmn_type) + " the pokemon."
+					break
+					case 3: //Amount
+						return undefined
+					break
+				}
+			break
+			case 69:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 69
+					break
+					case 1: //Name
+						return "Weepinbell"
+					break
+					case 2: //Description
+						return string(global.pkmn_type) + " the pokemon."
+					break
+					case 3: //Amount
+						return undefined
+					break
+				}
+			break
+			case 70:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 70
+					break
+					case 1: //Name
+						return "Victreebel"
+					break
+					case 2: //Description
+						return string(global.pkmn_type) + " the pokemon."
+					break
+					case 3: //Amount
+						return undefined
+					break
+				}
+			break
+			case 71:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 71
+					break
+					case 1: //Name
+						return "Tentacool"
+					break
+					case 2: //Description
+						return string(global.pkmn_type) + " the pokemon."
+					break
+					case 3: //Amount
+						return undefined
+					break
+				}
+			break
+			case 72:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 72
+					break
+					case 1: //Name
+						return "Tentacruel"
+					break
+					case 2: //Description
+						return string(global.pkmn_type) + " the pokemon."
+					break
+					case 3: //Amount
+						return undefined
+					break
+				}
+			break
+			case 73:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 73
+					break
+					case 1: //Name
+						return "Geodude"
+					break
+					case 2: //Description
+						return string(global.pkmn_type) + " the pokemon."
+					break
+					case 3: //Amount
+						return undefined
+					break
+				}
+			break
+			case 74:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 74
+					break
+					case 1: //Name
+						return "Graveler"
+					break
+					case 2: //Description
+						return string(global.pkmn_type) + " the pokemon."
+					break
+					case 3: //Amount
+						return undefined
+					break
+				}
+			break
+			case 75:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 75
+					break
+					case 1: //Name
+						return "Golem"
+					break
+					case 2: //Description
+						return string(global.pkmn_type) + " the pokemon."
+					break
+					case 3: //Amount
+						return undefined
+					break
+				}
+			break
+			case 76:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 76
+					break
+					case 1: //Name
+						return "Ponyta"
+					break
+					case 2: //Description
+						return string(global.pkmn_type) + " the pokemon."
+					break
+					case 3: //Amount
+						return undefined
+					break
+				}
+			break
+			case 77:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 77
+					break
+					case 1: //Name
+						return "Rapidash"
+					break
+					case 2: //Description
+						return string(global.pkmn_type) + " the pokemon."
+					break
+					case 3: //Amount
+						return undefined
+					break
+				}
+			break
+			case 78:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 78
+					break
+					case 1: //Name
+						return "Slowpoke"
+					break
+					case 2: //Description
+						return string(global.pkmn_type) + " the pokemon."
+					break
+					case 3: //Amount
+						return undefined
+					break
+				}
+			break
+			case 79:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 79
+					break
+					case 1: //Name
+						return "Slowbro"
+					break
+					case 2: //Description
+						return string(global.pkmn_type) + " the pokemon."
+					break
+					case 3: //Amount
+						return undefined
+					break
+				}
+			break
+			case 80:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 80
+					break
+					case 1: //Name
+						return "Magnemite"
+					break
+					case 2: //Description
+						return string(global.pkmn_type) + " the pokemon."
+					break
+					case 3: //Amount
+						return undefined
+					break
+				}
+			break
+			case 81:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 81
+					break
+					case 1: //Name
+						return "Magneton"
+					break
+					case 2: //Description
+						return string(global.pkmn_type) + " the pokemon."
+					break
+					case 3: //Amount
+						return undefined
+					break
+				}
+			break
+			case 82:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 82
+					break
+					case 1: //Name
+						return "Farfetch'd"
+					break
+					case 2: //Description
+						return string(global.pkmn_type) + " the pokemon."
+					break
+					case 3: //Amount
+						return undefined
+					break
+				}
+			break
+			case 83:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 83
+					break
+					case 1: //Name
+						return "Doduo"
+					break
+					case 2: //Description
+						return string(global.pkmn_type) + " the pokemon."
+					break
+					case 3: //Amount
+						return undefined
+					break
+				}
+			break
+			case 84:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 84
+					break
+					case 1: //Name
+						return "Dodrio"
+					break
+					case 2: //Description
+						return string(global.pkmn_type) + " the pokemon."
+					break
+					case 3: //Amount
+						return undefined
+					break
+				}
+			break
+			case 85:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 85
+					break
+					case 1: //Name
+						return "Seel"
+					break
+					case 2: //Description
+						return string(global.pkmn_type) + " the pokemon."
+					break
+					case 3: //Amount
+						return undefined
+					break
+				}
+			break
+			case 86:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 86
+					break
+					case 1: //Name
+						return "Dewgong"
+					break
+					case 2: //Description
+						return string(global.pkmn_type) + " the pokemon."
+					break
+					case 3: //Amount
+						return undefined
+					break
+				}
+			break
+			case 87:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 87
+					break
+					case 1: //Name
+						return "Grimer"
+					break
+					case 2: //Description
+						return string(global.pkmn_type) + " the pokemon."
+					break
+					case 3: //Amount
+						return undefined
+					break
+				}
+			break
+			case 88:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 88
+					break
+					case 1: //Name
+						return "Muk"
+					break
+					case 2: //Description
+						return string(global.pkmn_type) + " the pokemon."
+					break
+					case 3: //Amount
+						return undefined
+					break
+				}
+			break
+			case 89:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 89
+					break
+					case 1: //Name
+						return "Shellder"
+					break
+					case 2: //Description
+						return string(global.pkmn_type) + " the pokemon."
+					break
+					case 3: //Amount
+						return undefined
+					break
+				}
+			break
+			case 90:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 90
+					break
+					case 1: //Name
+						return "Cloyster"
+					break
+					case 2: //Description
+						return string(global.pkmn_type) + " the pokemon."
+					break
+					case 3: //Amount
+						return undefined
+					break
+				}
+			break
+			case 91:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 91
+					break
+					case 1: //Name
+						return "Gastly"
+					break
+					case 2: //Description
+						return string(global.pkmn_type) + " the pokemon."
+					break
+					case 3: //Amount
+						return undefined
+					break
+				}
+			break
+			case 92:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 92
+					break
+					case 1: //Name
+						return "Haunter"
+					break
+					case 2: //Description
+						return string(global.pkmn_type) + " the pokemon."
+					break
+					case 3: //Amount
+						return undefined
+					break
+				}
+			break
+			case 93:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 93
+					break
+					case 1: //Name
+						return "Gengar"
+					break
+					case 2: //Description
+						return string(global.pkmn_type) + " the pokemon."
+					break
+					case 3: //Amount
+						return undefined
+					break
+				}
+			break
+			case 94:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 94
+					break
+					case 1: //Name
+						return "Onix"
+					break
+					case 2: //Description
+						return string(global.pkmn_type) + " the pokemon."
+					break
+					case 3: //Amount
+						return undefined
+					break
+				}
+			break
+			case 95:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 95
+					break
+					case 1: //Name
+						return "Drowzee"
+					break
+					case 2: //Description
+						return string(global.pkmn_type) + " the pokemon."
+					break
+					case 3: //Amount
+						return undefined
+					break
+				}
+			break
+			case 96:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 96
+					break
+					case 1: //Name
+						return "Hypno"
+					break
+					case 2: //Description
+						return string(global.pkmn_type) + " the pokemon."
+					break
+					case 3: //Amount
+						return undefined
+					break
+				}
+			break
+			case 97:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 97
+					break
+					case 1: //Name
+						return "Krabby"
+					break
+					case 2: //Description
+						return string(global.pkmn_type) + " the pokemon."
+					break
+					case 3: //Amount
+						return undefined
+					break
+				}
+			break
+			case 98:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 98
+					break
+					case 1: //Name
+						return "Kingler"
+					break
+					case 2: //Description
+						return string(global.pkmn_type) + " the pokemon."
+					break
+					case 3: //Amount
+						return undefined
+					break
+				}
+			break
+			case 99:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 99
+					break
+					case 1: //Name
+						return "Voltorb"
+					break
+					case 2: //Description
+						return string(global.pkmn_type) + " the pokemon."
+					break
+					case 3: //Amount
+						return undefined
+					break
+				}
+			break
+			case 100:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 100
+					break
+					case 1: //Name
+						return "Electrode"
+					break
+					case 2: //Description
+						return string(global.pkmn_type) + " the pokemon."
+					break
+					case 3: //Amount
+						return undefined
+					break
+				}
+			break
+			case 101:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 101
+					break
+					case 1: //Name
+						return "Exeggcute"
+					break
+					case 2: //Description
+						return string(global.pkmn_type) + " the pokemon."
+					break
+					case 3: //Amount
+						return undefined
+					break
+				}
+			break
+			case 102:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 102
+					break
+					case 1: //Name
+						return "Exeggutor"
+					break
+					case 2: //Description
+						return string(global.pkmn_type) + " the pokemon."
+					break
+					case 3: //Amount
+						return undefined
+					break
+				}
+			break
+			case 103:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 103
+					break
+					case 1: //Name
+						return "Cubone"
+					break
+					case 2: //Description
+						return string(global.pkmn_type) + " the pokemon."
+					break
+					case 3: //Amount
+						return undefined
+					break
+				}
+			break
+			case 104:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 104
+					break
+					case 1: //Name
+						return "Marowak"
+					break
+					case 2: //Description
+						return string(global.pkmn_type) + " the pokemon."
+					break
+					case 3: //Amount
+						return undefined
+					break
+				}
+			break
+			case 105:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 105
+					break
+					case 1: //Name
+						return "Hitmonlee"
+					break
+					case 2: //Description
+						return string(global.pkmn_type) + " the pokemon."
+					break
+					case 3: //Amount
+						return undefined
+					break
+				}
+			break
+			case 106:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 106
+					break
+					case 1: //Name
+						return "Hitmonchan"
+					break
+					case 2: //Description
+						return string(global.pkmn_type) + " the pokemon."
+					break
+					case 3: //Amount
+						return undefined
+					break
+				}
+			break
+			case 107:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 107
+					break
+					case 1: //Name
+						return "Lickitung"
+					break
+					case 2: //Description
+						return string(global.pkmn_type) + " the pokemon."
+					break
+					case 3: //Amount
+						return undefined
+					break
+				}
+			break
+			case 108:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 108
+					break
+					case 1: //Name
+						return "Koffing"
+					break
+					case 2: //Description
+						return string(global.pkmn_type) + " the pokemon."
+					break
+					case 3: //Amount
+						return undefined
+					break
+				}
+			break
+			case 109:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 109
+					break
+					case 1: //Name
+						return "Weezing"
+					break
+					case 2: //Description
+						return string(global.pkmn_type) + " the pokemon."
+					break
+					case 3: //Amount
+						return undefined
+					break
+				}
+			break
+			case 110:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 110
+					break
+					case 1: //Name
+						return "Rhyhorn"
+					break
+					case 2: //Description
+						return string(global.pkmn_type) + " the pokemon."
+					break
+					case 3: //Amount
+						return undefined
+					break
+				}
+			break
+			case 111:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 111
+					break
+					case 1: //Name
+						return "Rhydon"
+					break
+					case 2: //Description
+						return string(global.pkmn_type) + " the pokemon."
+					break
+					case 3: //Amount
+						return undefined
+					break
+				}
+			break
+			case 112:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 112
+					break
+					case 1: //Name
+						return "Chansey"
+					break
+					case 2: //Description
+						return string(global.pkmn_type) + " the pokemon."
+					break
+					case 3: //Amount
+						return undefined
+					break
+				}
+			break
+			case 113:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 113
+					break
+					case 1: //Name
+						return "Tangela"
+					break
+					case 2: //Description
+						return string(global.pkmn_type) + " the pokemon."
+					break
+					case 3: //Amount
+						return undefined
+					break
+				}
+			break
+			case 114:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 114
+					break
+					case 1: //Name
+						return "Kangaskhan"
+					break
+					case 2: //Description
+						return string(global.pkmn_type) + " the pokemon."
+					break
+					case 3: //Amount
+						return undefined
+					break
+				}
+			break
+			case 115:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 115
+					break
+					case 1: //Name
+						return "Horsea"
+					break
+					case 2: //Description
+						return string(global.pkmn_type) + " the pokemon."
+					break
+					case 3: //Amount
+						return undefined
+					break
+				}
+			break
+			case 116:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 116
+					break
+					case 1: //Name
+						return "Seadra"
+					break
+					case 2: //Description
+						return string(global.pkmn_type) + " the pokemon."
+					break
+					case 3: //Amount
+						return undefined
+					break
+				}
+			break
+			case 117:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 117
+					break
+					case 1: //Name
+						return "Goldeen"
+					break
+					case 2: //Description
+						return string(global.pkmn_type) + " the pokemon."
+					break
+					case 3: //Amount
+						return undefined
+					break
+				}
+			break
+			case 118:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 118
+					break
+					case 1: //Name
+						return "Seaking"
+					break
+					case 2: //Description
+						return string(global.pkmn_type) + " the pokemon."
+					break
+					case 3: //Amount
+						return undefined
+					break
+				}
+			break
+			case 119:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 119
+					break
+					case 1: //Name
+						return "Staryu"
+					break
+					case 2: //Description
+						return string(global.pkmn_type) + " the pokemon."
+					break
+					case 3: //Amount
+						return undefined
+					break
+				}
+			break
+			case 120:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 120
+					break
+					case 1: //Name
+						return "Starmie"
+					break
+					case 2: //Description
+						return string(global.pkmn_type) + " the pokemon."
+					break
+					case 3: //Amount
+						return undefined
+					break
+				}
+			break
+			case 121:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 121
+					break
+					case 1: //Name
+						return "Mr.Mime"
+					break
+					case 2: //Description
+						return string(global.pkmn_type) + " the pokemon."
+					break
+					case 3: //Amount
+						return undefined
+					break
+				}
+			break
+			case 122:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 122
+					break
+					case 1: //Name
+						return "Scyther"
+					break
+					case 2: //Description
+						return string(global.pkmn_type) + " the pokemon."
+					break
+					case 3: //Amount
+						return undefined
+					break
+				}
+			break
+			case 123:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 123
+					break
+					case 1: //Name
+						return "Jynx"
+					break
+					case 2: //Description
+						return string(global.pkmn_type) + " the pokemon."
+					break
+					case 3: //Amount
+						return undefined
+					break
+				}
+			break
+			case 124:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 124
+					break
+					case 1: //Name
+						return "Electabuzz"
+					break
+					case 2: //Description
+						return string(global.pkmn_type) + " the pokemon."
+					break
+					case 3: //Amount
+						return undefined
+					break
+				}
+			break
+			case 125:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 125
+					break
+					case 1: //Name
+						return "Magmar"
+					break
+					case 2: //Description
+						return string(global.pkmn_type) + " the pokemon."
+					break
+					case 3: //Amount
+						return undefined
+					break
+				}
+			break
+			case 126:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 126
+					break
+					case 1: //Name
+						return "Pinsir"
+					break
+					case 2: //Description
+						return string(global.pkmn_type) + " the pokemon."
+					break
+					case 3: //Amount
+						return undefined
+					break
+				}
+			break
+			case 127:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 127
+					break
+					case 1: //Name
+						return "Tauros"
+					break
+					case 2: //Description
+						return string(global.pkmn_type) + " the pokemon."
+					break
+					case 3: //Amount
+						return undefined
+					break
+				}
+			break
+			case 128:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 128
+					break
+					case 1: //Name
+						return "Magicarp"
+					break
+					case 2: //Description
+						return string(global.pkmn_type) + " the pokemon."
+					break
+					case 3: //Amount
+						return undefined
+					break
+				}
+			break
+			case 129:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 129
+					break
+					case 1: //Name
+						return "Gyarados"
+					break
+					case 2: //Description
+						return string(global.pkmn_type) + " the pokemon."
+					break
+					case 3: //Amount
+						return undefined
+					break
+				}
+			break
+			case 130:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 130
+					break
+					case 1: //Name
+						return "Lapras"
+					break
+					case 2: //Description
+						return string(global.pkmn_type) + " the pokemon."
+					break
+					case 3: //Amount
+						return undefined
+					break
+				}
+			break
+			case 131:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 131
+					break
+					case 1: //Name
+						return "Ditto"
+					break
+					case 2: //Description
+						return string(global.pkmn_type) + " the pokemon."
+					break
+					case 3: //Amount
+						return undefined
+					break
+				}
+			break
+			case 132:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 132
+					break
+					case 1: //Name
+						return "Eevee"
+					break
+					case 2: //Description
+						return string(global.pkmn_type) + " the pokemon."
+					break
+					case 3: //Amount
+						return undefined
+					break
+				}
+			break
+			case 133:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 133
+					break
+					case 1: //Name
+						return "Vaporeon"
+					break
+					case 2: //Description
+						return string(global.pkmn_type) + " the pokemon."
+					break
+					case 3: //Amount
+						return undefined
+					break
+				}
+			break
+			case 134:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 134
+					break
+					case 1: //Name
+						return "Jolteon"
+					break
+					case 2: //Description
+						return string(global.pkmn_type) + " the pokemon."
+					break
+					case 3: //Amount
+						return undefined
+					break
+				}
+			break
+			case 135:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 135
+					break
+					case 1: //Name
+						return "Flareon"
+					break
+					case 2: //Description
+						return string(global.pkmn_type) + " the pokemon."
+					break
+					case 3: //Amount
+						return undefined
+					break
+				}
+			break
+			case 136:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 136
+					break
+					case 1: //Name
+						return "Porygon"
+					break
+					case 2: //Description
+						return string(global.pkmn_type) + " the pokemon."
+					break
+					case 3: //Amount
+						return undefined
+					break
+				}
+			break
+			case 137:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 137
+					break
+					case 1: //Name
+						return "Omanyte"
+					break
+					case 2: //Description
+						return string(global.pkmn_type) + " the pokemon."
+					break
+					case 3: //Amount
+						return undefined
+					break
+				}
+			break
+			case 138:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 138
+					break
+					case 1: //Name
+						return "Omastar"
+					break
+					case 2: //Description
+						return string(global.pkmn_type) + " the pokemon."
+					break
+					case 3: //Amount
+						return undefined
+					break
+				}
+			break
+			case 139:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 139
+					break
+					case 1: //Name
+						return "Kabuto"
+					break
+					case 2: //Description
+						return string(global.pkmn_type) + " the pokemon."
+					break
+					case 3: //Amount
+						return undefined
+					break
+				}
+			break
+			case 140:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 140
+					break
+					case 1: //Name
+						return "Kabutops"
+					break
+					case 2: //Description
+						return string(global.pkmn_type) + " the pokemon."
+					break
+					case 3: //Amount
+						return undefined
+					break
+				}
+			break
+			case 141:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 141
+					break
+					case 1: //Name
+						return "Aerodactyl"
+					break
+					case 2: //Description
+						return string(global.pkmn_type) + " the pokemon."
+					break
+					case 3: //Amount
+						return undefined
+					break
+				}
+			break
+			case 142:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 142
+					break
+					case 1: //Name
+						return "Snorlax"
+					break
+					case 2: //Description
+						return string(global.pkmn_type) + " the pokemon."
+					break
+					case 3: //Amount
+						return undefined
+					break
+				}
+			break
+			case 143:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 143
+					break
+					case 1: //Name
+						return "Articuno"
+					break
+					case 2: //Description
+						return string(global.pkmn_type) + " the pokemon."
+					break
+					case 3: //Amount
+						return undefined
+					break
+				}
+			break
+			case 144:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 144
+					break
+					case 1: //Name
+						return "Zapdos"
+					break
+					case 2: //Description
+						return string(global.pkmn_type) + " the pokemon."
+					break
+					case 3: //Amount
+						return undefined
+					break
+				}
+			break
+			case 145:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 145
+					break
+					case 1: //Name
+						return "Moltres"
+					break
+					case 2: //Description
+						return string(global.pkmn_type) + " the pokemon."
+					break
+					case 3: //Amount
+						return undefined
+					break
+				}
+			break
+			case 146:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 146
+					break
+					case 1: //Name
+						return "Dratini"
+					break
+					case 2: //Description
+						return string(global.pkmn_type) + " the pokemon."
+					break
+					case 3: //Amount
+						return undefined
+					break
+				}
+			break
+			case 147:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 147
+					break
+					case 1: //Name
+						return "Dragonair"
+					break
+					case 2: //Description
+						return string(global.pkmn_type) + " the pokemon."
+					break
+					case 3: //Amount
+						return undefined
+					break
+				}
+			break
+			case 148:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 148
+					break
+					case 1: //Name
+						return "Dragonite"
+					break
+					case 2: //Description
+						return string(global.pkmn_type) + " the pokemon."
+					break
+					case 3: //Amount
+						return undefined
+					break
+				}
+			break
+			case 149:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 149
+					break
+					case 1: //Name
+						return "Mewtwo"
+					break
+					case 2: //Description
+						return string(global.pkmn_type) + " the pokemon."
+					break
+					case 3: //Amount
+						return undefined
+					break
+				}
+			break
+			case 150:
+		        switch (argument1) { //Info
+					case 0: //Icon
+						return 150
+					break
+					case 1: //Name
+						return "Mew"
+					break
+					case 2: //Description
+						return string(global.pkmn_type) + " the pokemon."
 					break
 					case 3: //Amount
 						return undefined
