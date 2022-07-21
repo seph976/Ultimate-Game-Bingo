@@ -146,7 +146,7 @@ function bingo_settings(){
 			}
 		}
 		if global.pkmn_gen2 = true then{
-			for (var i = 0; i <= 0; ++i) {
+			for (var i = 151; i <= 250; ++i) {
 				ds_list_add(global.availableitems,i)
 			}
 		}
