@@ -763,7 +763,7 @@ if global.Game = game_pkmn then{
 	var _pos_x  = 50
 	var _pos_y = 200 + global.topbar
 	draw_set_halign(fa_left)
-	draw_text(_pos_x + 10,_pos_y + 4,"Generation 3 (0)")
+	draw_text(_pos_x + 10,_pos_y + 4,"Generation 3 (135)")
 	draw_set_halign(fa_right)
 	if global.pkmn_gen3 = true then{
 		var _text = "Yes"
