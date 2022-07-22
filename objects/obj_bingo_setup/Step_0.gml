@@ -452,11 +452,17 @@ if global.Game = game_pkmn then{
 		if global.Sounds = true then{
 			audio_play_sound(sfx_cursor,1,false)
 		}
-		if global.pkmn_type = "Encounter" then{
+		if global.pkmn_type = "Find" then{
+			global.pkmn_type = "Encounter"
+		}
+		else if global.pkmn_type = "Encounter" then{
 			global.pkmn_type = "Catch"
 		}
 		else if global.pkmn_type = "Catch" then{
-			global.pkmn_type = "Encounter"
+			global.pkmn_type = "Defeat"
+		}
+		else if global.pkmn_type = "Defeat" then{
+			global.pkmn_type = "Find"
 		}
 	}
 }

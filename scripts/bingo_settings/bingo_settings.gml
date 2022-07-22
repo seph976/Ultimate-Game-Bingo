@@ -166,17 +166,17 @@ function bingo_settings(){
 			}
 		}
 		if global.pkmn_gen6 = true then{
-			for (var i = 0; i <= 0; ++i) {
+			for (var i = 649; i <= 720; ++i) {
 				ds_list_add(global.availableitems,i)
 			}
 		}
 		if global.pkmn_gen7 = true then{
-			for (var i = 0; i <= 0; ++i) {
+			for (var i = 721; i <= 808; ++i) {
 				ds_list_add(global.availableitems,i)
 			}
 		}
 		if global.pkmn_gen8 = true then{
-			for (var i = 0; i <= 0; ++i) {
+			for (var i = 809; i <= 897; ++i) {
 				ds_list_add(global.availableitems,i)
 			}
 		}

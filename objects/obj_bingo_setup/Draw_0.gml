@@ -859,7 +859,7 @@ if global.Game = game_pkmn then{
 	var _pos_x  = 50
 	var _pos_y = 250 + global.topbar
 	draw_set_halign(fa_left)
-	draw_text(_pos_x + 10,_pos_y + 4,"Generation 5 (0)")
+	draw_text(_pos_x + 10,_pos_y + 4,"Generation 5 (156)")
 	draw_set_halign(fa_right)
 	if global.pkmn_gen5 = true then{
 		var _text = "Yes"
@@ -872,7 +872,7 @@ if global.Game = game_pkmn then{
 	var _pos_x  = 50
 	var _pos_y = 275 + global.topbar
 	draw_set_halign(fa_left)
-	draw_text(_pos_x + 10,_pos_y + 4,"Generation 6 (0)")
+	draw_text(_pos_x + 10,_pos_y + 4,"Generation 6 (72)")
 	draw_set_halign(fa_right)
 	if global.pkmn_gen6 = true then{
 		var _text = "Yes"
@@ -885,7 +885,7 @@ if global.Game = game_pkmn then{
 	var _pos_x  = 50
 	var _pos_y = 300 + global.topbar
 	draw_set_halign(fa_left)
-	draw_text(_pos_x + 10,_pos_y + 4,"Generation 7 (0)")
+	draw_text(_pos_x + 10,_pos_y + 4,"Generation 7 (88)")
 	draw_set_halign(fa_right)
 	if global.pkmn_gen7 = true then{
 		var _text = "Yes"
@@ -898,7 +898,7 @@ if global.Game = game_pkmn then{
 	var _pos_x  = 50
 	var _pos_y = 325 + global.topbar
 	draw_set_halign(fa_left)
-	draw_text(_pos_x + 10,_pos_y + 4,"Generation 8 (0)")
+	draw_text(_pos_x + 10,_pos_y + 4,"Generation 8 (96)")
 	draw_set_halign(fa_right)
 	if global.pkmn_gen8 = true then{
 		var _text = "Yes"

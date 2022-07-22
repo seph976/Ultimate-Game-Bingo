@@ -103,7 +103,7 @@ global.pkmn_gen5 = true
 global.pkmn_gen6 = true
 global.pkmn_gen7 = true
 global.pkmn_gen8 = true
-global.pkmn_type = "Encounter"
+global.pkmn_type = "Find"
 
 if file_exists("bingosettings.ini") then{
 	bingosettings_load()
