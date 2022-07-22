@@ -160,5 +160,25 @@ function bingo_settings(){
 				ds_list_add(global.availableitems,i)
 			}
 		}
+		if global.pkmn_gen5 = true then{
+			for (var i = 493; i <= 648; ++i) {
+				ds_list_add(global.availableitems,i)
+			}
+		}
+		if global.pkmn_gen6 = true then{
+			for (var i = 0; i <= 0; ++i) {
+				ds_list_add(global.availableitems,i)
+			}
+		}
+		if global.pkmn_gen7 = true then{
+			for (var i = 0; i <= 0; ++i) {
+				ds_list_add(global.availableitems,i)
+			}
+		}
+		if global.pkmn_gen8 = true then{
+			for (var i = 0; i <= 0; ++i) {
+				ds_list_add(global.availableitems,i)
+			}
+		}
 	}
 }

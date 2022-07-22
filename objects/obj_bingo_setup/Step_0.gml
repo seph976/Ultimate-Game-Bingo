@@ -389,9 +389,65 @@ if global.Game = game_pkmn then{
 			global.pkmn_gen4 = true
 		}
 	}
-	//Type
+	//Gen 5
 	var _pos_x  = 50
 	var _pos_y = 250 + global.topbar
+	if mouse_x > _pos_x and mouse_x < _pos_x + 400 and mouse_y > _pos_y and mouse_y < _pos_y + 25 and mouse_check_button_pressed(mb_left) then{
+		if global.Sounds = true then{
+			audio_play_sound(sfx_cursor,1,false)
+		}
+		if global.pkmn_gen5 = true then{
+			global.pkmn_gen5 = false
+		}
+		else if global.pkmn_gen5 = false then{
+			global.pkmn_gen5 = true
+		}
+	}
+	//Gen 6
+	var _pos_x  = 50
+	var _pos_y = 275 + global.topbar
+	if mouse_x > _pos_x and mouse_x < _pos_x + 400 and mouse_y > _pos_y and mouse_y < _pos_y + 25 and mouse_check_button_pressed(mb_left) then{
+		if global.Sounds = true then{
+			audio_play_sound(sfx_cursor,1,false)
+		}
+		if global.pkmn_gen6 = true then{
+			global.pkmn_gen6 = false
+		}
+		else if global.pkmn_gen6 = false then{
+			global.pkmn_gen6 = true
+		}
+	}
+	//Gen 7
+	var _pos_x  = 50
+	var _pos_y = 300 + global.topbar
+	if mouse_x > _pos_x and mouse_x < _pos_x + 400 and mouse_y > _pos_y and mouse_y < _pos_y + 25 and mouse_check_button_pressed(mb_left) then{
+		if global.Sounds = true then{
+			audio_play_sound(sfx_cursor,1,false)
+		}
+		if global.pkmn_gen7 = true then{
+			global.pkmn_gen7 = false
+		}
+		else if global.pkmn_gen7 = false then{
+			global.pkmn_gen7 = true
+		}
+	}
+	//Gen 8
+	var _pos_x  = 50
+	var _pos_y = 325 + global.topbar
+	if mouse_x > _pos_x and mouse_x < _pos_x + 400 and mouse_y > _pos_y and mouse_y < _pos_y + 25 and mouse_check_button_pressed(mb_left) then{
+		if global.Sounds = true then{
+			audio_play_sound(sfx_cursor,1,false)
+		}
+		if global.pkmn_gen8 = true then{
+			global.pkmn_gen8 = false
+		}
+		else if global.pkmn_gen8 = false then{
+			global.pkmn_gen8 = true
+		}
+	}
+	//Type
+	var _pos_x  = 50
+	var _pos_y = 350 + global.topbar
 	if mouse_x > _pos_x and mouse_x < _pos_x + 400 and mouse_y > _pos_y and mouse_y < _pos_y + 25 and mouse_check_button_pressed(mb_left) then{
 		if global.Sounds = true then{
 			audio_play_sound(sfx_cursor,1,false)

@@ -44,6 +44,10 @@ switch (type_event){
 			buffer_write(server_buffer,buffer_u8,global.pkmn_gen2)
 			buffer_write(server_buffer,buffer_u8,global.pkmn_gen3)
 			buffer_write(server_buffer,buffer_u8,global.pkmn_gen4)
+			buffer_write(server_buffer,buffer_u8,global.pkmn_gen5)
+			buffer_write(server_buffer,buffer_u8,global.pkmn_gen6)
+			buffer_write(server_buffer,buffer_u8,global.pkmn_gen7)
+			buffer_write(server_buffer,buffer_u8,global.pkmn_gen8)
 			buffer_write(server_buffer,buffer_string,global.pkmn_type)
 		}
 		var _players = ds_list_size(global.players) - 1

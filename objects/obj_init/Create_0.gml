@@ -99,6 +99,10 @@ global.pkmn_gen1 = true
 global.pkmn_gen2 = true
 global.pkmn_gen3 = true
 global.pkmn_gen4 = true
+global.pkmn_gen5 = true
+global.pkmn_gen6 = true
+global.pkmn_gen7 = true
+global.pkmn_gen8 = true
 global.pkmn_type = "Encounter"
 
 if file_exists("bingosettings.ini") then{

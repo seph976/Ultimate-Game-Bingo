@@ -32,6 +32,10 @@ function bingosettings_save(){
 	ini_write_string("PKMN","Gen2",global.pkmn_gen2)
 	ini_write_string("PKMN","Gen3",global.pkmn_gen3)
 	ini_write_string("PKMN","Gen4",global.pkmn_gen4)
+	ini_write_string("PKMN","Gen5",global.pkmn_gen5)
+	ini_write_string("PKMN","Gen6",global.pkmn_gen6)
+	ini_write_string("PKMN","Gen7",global.pkmn_gen7)
+	ini_write_string("PKMN","Gen8",global.pkmn_gen8)
 	ini_write_string("PKMN","Type",global.pkmn_type)
 	ini_close()
 }

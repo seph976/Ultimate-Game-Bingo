@@ -43,6 +43,10 @@ function recieved_packet_client(argument0) {
 				global.pkmn_gen2 = buffer_read(buffer,buffer_u8)
 				global.pkmn_gen3 = buffer_read(buffer,buffer_u8)
 				global.pkmn_gen4 = buffer_read(buffer,buffer_u8)
+				global.pkmn_gen5 = buffer_read(buffer,buffer_u8)
+				global.pkmn_gen6 = buffer_read(buffer,buffer_u8)
+				global.pkmn_gen7 = buffer_read(buffer,buffer_u8)
+				global.pkmn_gen8 = buffer_read(buffer,buffer_u8)
 				global.pkmn_type = buffer_read(buffer,buffer_string)
 			}
 			var _players = buffer_read(buffer,buffer_u8)
