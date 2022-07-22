@@ -32,6 +32,7 @@ function bingosettings_load(){
 		global.pkmn_gen1 = ini_read_string("PKMN","Gen1",global.pkmn_gen1)
 		global.pkmn_gen2 = ini_read_string("PKMN","Gen2",global.pkmn_gen2)
 		global.pkmn_gen3 = ini_read_string("PKMN","Gen3",global.pkmn_gen3)
+		global.pkmn_gen4 = ini_read_string("PKMN","Gen4",global.pkmn_gen4)
 		global.pkmn_type = ini_read_string("PKMN","Type",global.pkmn_type)
 	}
 	//Seed

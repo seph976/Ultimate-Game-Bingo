@@ -155,5 +155,10 @@ function bingo_settings(){
 				ds_list_add(global.availableitems,i)
 			}
 		}
+		if global.pkmn_gen4 = true then{
+			for (var i = 386; i <= 492; ++i) {
+				ds_list_add(global.availableitems,i)
+			}
+		}
 	}
 }
