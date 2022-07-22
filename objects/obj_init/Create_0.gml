@@ -1,7 +1,7 @@
 /// @description Setup
 
 //Setup
-global.Version = "1.5.0 DEV"
+global.Version = "1.5.0"
 global.Latest = global.Version
 global.CheckVer = false
 global.Update = false
@@ -66,7 +66,7 @@ else{
 #macro game_lttp "Zelda: A Link to the Past"
 #macro game_ct "Chrono Trigger"
 #macro game_som "Secret of Mana"
-#macro game_pkmn "Pokemon"
+#macro game_pkmn "Pokémon"
 
 //Bingo settings
 global.Game = game_oot
