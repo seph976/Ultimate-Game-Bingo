@@ -9,46 +9,53 @@ switch (type_event){
 		socket = ds_map_find_value(async_load,"socket")
 		buffer_seek(server_buffer,buffer_seek_start,0)
 		buffer_write(server_buffer,buffer_u8,0) //Connected
+		buffer_write(server_buffer,buffer_u8,global.plango)
 		buffer_write(server_buffer,buffer_u32,global.timer)
 		buffer_write(server_buffer,buffer_string,global.Game)
 		buffer_write(server_buffer,buffer_string,global.Seed)
 		buffer_write(server_buffer,buffer_u8,global.Type)
-		buffer_write(server_buffer,buffer_u8,global.Dupes)
-		if global.Game = game_oot then{
-			buffer_write(server_buffer,buffer_u8,global.oot_basic)
-			buffer_write(server_buffer,buffer_u8,global.oot_upgrades)
-			buffer_write(server_buffer,buffer_u8,global.oot_songs)
-			buffer_write(server_buffer,buffer_u8,global.oot_dungeon)
-			buffer_write(server_buffer,buffer_u8,global.oot_skulltulas)
-			buffer_write(server_buffer,buffer_u8,global.oot_quests)
+		if global.plango = true then{
+			buffer_write(server_buffer,buffer_string,ds_list_write(global.plango_items))
+			buffer_write(server_buffer,buffer_string,ds_list_write(global.plango_items_amounts))
 		}
-		if global.Game = game_ct then{
-			buffer_write(server_buffer,buffer_u8,global.ct_keyitems)
-			buffer_write(server_buffer,buffer_u8,global.ct_characters)
-			buffer_write(server_buffer,buffer_u8,global.ct_bosses)
-		}
-		if global.Game = game_lttp then{
-			buffer_write(server_buffer,buffer_u8,global.lttp_items)
-			buffer_write(server_buffer,buffer_u8,global.lttp_dungeon)
-			buffer_write(server_buffer,buffer_u8,global.lttp_bosses)
-			buffer_write(server_buffer,buffer_u8,global.lttp_quests)
-		}
-		if global.Game = game_som then{
-			buffer_write(server_buffer,buffer_u8,global.som_basic)
-			buffer_write(server_buffer,buffer_u8,global.som_extweapon)
-			buffer_write(server_buffer,buffer_u8,global.som_characters)
-			buffer_write(server_buffer,buffer_u8,global.som_bosses)
-		}
-		if global.Game = game_pkmn then{
-			buffer_write(server_buffer,buffer_u8,global.pkmn_gen1)
-			buffer_write(server_buffer,buffer_u8,global.pkmn_gen2)
-			buffer_write(server_buffer,buffer_u8,global.pkmn_gen3)
-			buffer_write(server_buffer,buffer_u8,global.pkmn_gen4)
-			buffer_write(server_buffer,buffer_u8,global.pkmn_gen5)
-			buffer_write(server_buffer,buffer_u8,global.pkmn_gen6)
-			buffer_write(server_buffer,buffer_u8,global.pkmn_gen7)
-			buffer_write(server_buffer,buffer_u8,global.pkmn_gen8)
-			buffer_write(server_buffer,buffer_string,global.pkmn_type)
+		else{
+			buffer_write(server_buffer,buffer_u8,global.Dupes)
+			if global.Game = game_oot then{
+				buffer_write(server_buffer,buffer_u8,global.oot_basic)
+				buffer_write(server_buffer,buffer_u8,global.oot_upgrades)
+				buffer_write(server_buffer,buffer_u8,global.oot_songs)
+				buffer_write(server_buffer,buffer_u8,global.oot_dungeon)
+				buffer_write(server_buffer,buffer_u8,global.oot_skulltulas)
+				buffer_write(server_buffer,buffer_u8,global.oot_quests)
+			}
+			if global.Game = game_ct then{
+				buffer_write(server_buffer,buffer_u8,global.ct_keyitems)
+				buffer_write(server_buffer,buffer_u8,global.ct_characters)
+				buffer_write(server_buffer,buffer_u8,global.ct_bosses)
+			}
+			if global.Game = game_lttp then{
+				buffer_write(server_buffer,buffer_u8,global.lttp_items)
+				buffer_write(server_buffer,buffer_u8,global.lttp_dungeon)
+				buffer_write(server_buffer,buffer_u8,global.lttp_bosses)
+				buffer_write(server_buffer,buffer_u8,global.lttp_quests)
+			}
+			if global.Game = game_som then{
+				buffer_write(server_buffer,buffer_u8,global.som_basic)
+				buffer_write(server_buffer,buffer_u8,global.som_extweapon)
+				buffer_write(server_buffer,buffer_u8,global.som_characters)
+				buffer_write(server_buffer,buffer_u8,global.som_bosses)
+			}
+			if global.Game = game_pkmn then{
+				buffer_write(server_buffer,buffer_u8,global.pkmn_gen1)
+				buffer_write(server_buffer,buffer_u8,global.pkmn_gen2)
+				buffer_write(server_buffer,buffer_u8,global.pkmn_gen3)
+				buffer_write(server_buffer,buffer_u8,global.pkmn_gen4)
+				buffer_write(server_buffer,buffer_u8,global.pkmn_gen5)
+				buffer_write(server_buffer,buffer_u8,global.pkmn_gen6)
+				buffer_write(server_buffer,buffer_u8,global.pkmn_gen7)
+				buffer_write(server_buffer,buffer_u8,global.pkmn_gen8)
+				buffer_write(server_buffer,buffer_string,global.pkmn_type)
+			}
 		}
 		var _players = ds_list_size(global.players) - 1
 		buffer_write(server_buffer,buffer_u8,_players)

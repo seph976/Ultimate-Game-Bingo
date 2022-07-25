@@ -4,7 +4,9 @@
 global.caption = "Seed: " + string(global.Seed)
 
 //Set seed
-random_set_seed(global.Seed)
+if global.plango = false then{
+	random_set_seed(global.Seed)
+}
 
 //Check if grid or hex
 if global.Type = 0 then{ //Grid mode
@@ -23,22 +25,28 @@ repeat(_slots) {
 }
 
 //Create items
-bingo_settings()
-var _list = ds_list_create()
-while(ds_list_size(global.items) < _slots) {
-	var _item = ds_list_find_value(global.availableitems,irandom(ds_list_size(global.availableitems) - 1))
-	if global.Dupes = true then{
-		ds_list_add(_list,_item)
-		ds_list_add(global.items,_item)
-	}
-	else if global.Dupes = false then{
-		if ds_list_find_index(_list,_item) = -1 then{
+if global.plango = true then{
+	ds_list_copy(global.items,global.plango_items)
+	ds_list_copy(global.items_amounts,global.plango_items_amounts)
+}
+else{
+	bingo_settings()
+	var _list = ds_list_create()
+	while(ds_list_size(global.items) < _slots) {
+		var _item = ds_list_find_value(global.availableitems,irandom(ds_list_size(global.availableitems) - 1))
+		if global.Dupes = true then{
 			ds_list_add(_list,_item)
 			ds_list_add(global.items,_item)
 		}
+		else if global.Dupes = false then{
+			if ds_list_find_index(_list,_item) = -1 then{
+				ds_list_add(_list,_item)
+				ds_list_add(global.items,_item)
+			}
+		}
 	}
+	ds_list_destroy(_list)
 }
-ds_list_destroy(_list)
 
 //Timer
 alarm[0] = 60

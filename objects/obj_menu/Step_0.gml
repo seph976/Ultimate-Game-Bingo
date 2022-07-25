@@ -17,7 +17,7 @@ if global.Update = true then{
 
 //Create room button
 var _pos_x  = 50
-var _pos_y = 350 + global.topbar
+var _pos_y = 300 + global.topbar
 if mouse_x > _pos_x and mouse_x < _pos_x + 400 and mouse_y > _pos_y and mouse_y < _pos_y + 25 and mouse_check_button_pressed(mb_left) then{
 	if global.Sounds = true then{
 		audio_play_sound(sfx_cursor,1,false)
@@ -27,12 +27,32 @@ if mouse_x > _pos_x and mouse_x < _pos_x + 400 and mouse_y > _pos_y and mouse_y 
 
 //Join room button
 var _pos_x  = 50
-var _pos_y = 375 + global.topbar
+var _pos_y = 325 + global.topbar
 if mouse_x > _pos_x and mouse_x < _pos_x + 400 and mouse_y > _pos_y and mouse_y < _pos_y + 25 and mouse_check_button_pressed(mb_left) then{
 	if global.Sounds = true then{
 		audio_play_sound(sfx_cursor,1,false)
 	}
 	room_goto(room_join)
+}
+
+//Create plango
+var _pos_x  = 50
+var _pos_y = 350 + global.topbar
+if mouse_x > _pos_x and mouse_x < _pos_x + 400 and mouse_y > _pos_y and mouse_y < _pos_y + 25 and mouse_check_button_pressed(mb_left) then{
+	if global.Sounds = true then{
+		audio_play_sound(sfx_cursor,1,false)
+	}
+	plango_load()
+}
+
+//Create plango
+var _pos_x  = 50
+var _pos_y = 375 + global.topbar
+if mouse_x > _pos_x and mouse_x < _pos_x + 400 and mouse_y > _pos_y and mouse_y < _pos_y + 25 and mouse_check_button_pressed(mb_left) then{
+	if global.Sounds = true then{
+		audio_play_sound(sfx_cursor,1,false)
+	}
+	room_goto(room_plango_choosegame)
 }
 
 //Settings button

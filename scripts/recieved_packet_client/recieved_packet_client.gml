@@ -8,46 +8,59 @@ function recieved_packet_client(argument0) {
 	//Do things based on packet recieved
 	switch(message_id){
 		case 0: //Connected
+			global.plango = buffer_read(buffer,buffer_u8)
 			global.timer = buffer_read(buffer,buffer_u32)
 			global.Game = buffer_read(buffer,buffer_string)
-			global.Seed = real(buffer_read(buffer,buffer_string))
+			var _seed = buffer_read(buffer,buffer_string)
+			if _seed = "PLANGO!" then{
+				global.Seed = _seed
+			}
+			else{
+				global.Seed = real(_seed)
+			}
 			global.Type = buffer_read(buffer,buffer_u8)
-			global.Dupes = buffer_read(buffer,buffer_u8)
-			if global.Game = game_oot then{
-				global.oot_basic = buffer_read(buffer,buffer_u8)
-				global.oot_upgrades = buffer_read(buffer,buffer_u8)
-				global.oot_songs = buffer_read(buffer,buffer_u8)
-				global.oot_dungeon = buffer_read(buffer,buffer_u8)
-				global.oot_skulltulas = buffer_read(buffer,buffer_u8)
-				global.oot_quests = buffer_read(buffer,buffer_u8)
+			if global.plango = true then{
+				ds_list_read(global.plango_items,buffer_read(buffer,buffer_string))
+				ds_list_read(global.plango_items_amounts,buffer_read(buffer,buffer_string))
 			}
-			if global.Game = game_ct then{
-				global.ct_keyitems = buffer_read(buffer,buffer_u8)
-				global.ct_characters = buffer_read(buffer,buffer_u8)
-				global.ct_bosses = buffer_read(buffer,buffer_u8)
-			}
-			if global.Game = game_lttp then{
-				global.lttp_items = buffer_read(buffer,buffer_u8)
-				global.lttp_dungeon = buffer_read(buffer,buffer_u8)
-				global.lttp_bosses = buffer_read(buffer,buffer_u8)
-				global.lttp_quests = buffer_read(buffer,buffer_u8)
-			}
-			if global.Game = game_som then{
-				global.som_basic = buffer_read(buffer,buffer_u8)
-				global.som_extweapon = buffer_read(buffer,buffer_u8)
-				global.som_characters = buffer_read(buffer,buffer_u8)
-				global.som_bosses = buffer_read(buffer,buffer_u8)
-			}
-			if global.Game = game_pkmn then{
-				global.pkmn_gen1 = buffer_read(buffer,buffer_u8)
-				global.pkmn_gen2 = buffer_read(buffer,buffer_u8)
-				global.pkmn_gen3 = buffer_read(buffer,buffer_u8)
-				global.pkmn_gen4 = buffer_read(buffer,buffer_u8)
-				global.pkmn_gen5 = buffer_read(buffer,buffer_u8)
-				global.pkmn_gen6 = buffer_read(buffer,buffer_u8)
-				global.pkmn_gen7 = buffer_read(buffer,buffer_u8)
-				global.pkmn_gen8 = buffer_read(buffer,buffer_u8)
-				global.pkmn_type = buffer_read(buffer,buffer_string)
+			else{
+				global.Dupes = buffer_read(buffer,buffer_u8)
+				if global.Game = game_oot then{
+					global.oot_basic = buffer_read(buffer,buffer_u8)
+					global.oot_upgrades = buffer_read(buffer,buffer_u8)
+					global.oot_songs = buffer_read(buffer,buffer_u8)
+					global.oot_dungeon = buffer_read(buffer,buffer_u8)
+					global.oot_skulltulas = buffer_read(buffer,buffer_u8)
+					global.oot_quests = buffer_read(buffer,buffer_u8)
+				}
+				if global.Game = game_ct then{
+					global.ct_keyitems = buffer_read(buffer,buffer_u8)
+					global.ct_characters = buffer_read(buffer,buffer_u8)
+					global.ct_bosses = buffer_read(buffer,buffer_u8)
+				}
+				if global.Game = game_lttp then{
+					global.lttp_items = buffer_read(buffer,buffer_u8)
+					global.lttp_dungeon = buffer_read(buffer,buffer_u8)
+					global.lttp_bosses = buffer_read(buffer,buffer_u8)
+					global.lttp_quests = buffer_read(buffer,buffer_u8)
+				}
+				if global.Game = game_som then{
+					global.som_basic = buffer_read(buffer,buffer_u8)
+					global.som_extweapon = buffer_read(buffer,buffer_u8)
+					global.som_characters = buffer_read(buffer,buffer_u8)
+					global.som_bosses = buffer_read(buffer,buffer_u8)
+				}
+				if global.Game = game_pkmn then{
+					global.pkmn_gen1 = buffer_read(buffer,buffer_u8)
+					global.pkmn_gen2 = buffer_read(buffer,buffer_u8)
+					global.pkmn_gen3 = buffer_read(buffer,buffer_u8)
+					global.pkmn_gen4 = buffer_read(buffer,buffer_u8)
+					global.pkmn_gen5 = buffer_read(buffer,buffer_u8)
+					global.pkmn_gen6 = buffer_read(buffer,buffer_u8)
+					global.pkmn_gen7 = buffer_read(buffer,buffer_u8)
+					global.pkmn_gen8 = buffer_read(buffer,buffer_u8)
+					global.pkmn_type = buffer_read(buffer,buffer_string)
+				}
 			}
 			var _players = buffer_read(buffer,buffer_u8)
 			for (i = 0; i <= _players; i++) {

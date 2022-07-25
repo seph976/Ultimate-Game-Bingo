@@ -29,7 +29,7 @@
     "path": "folders/Objects.yy",
   },
   "resourceVersion": "1.0",
-  "name": "obj_menu",
+  "name": "obj_plango_choosegame",
   "tags": [],
   "resourceType": "GMObject",
 }

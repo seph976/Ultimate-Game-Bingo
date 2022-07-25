@@ -15,6 +15,7 @@ ds_list_add(global.playerid,-1)
 
 //Clear and setup board
 ds_list_clear(global.board)
+ds_list_clear(global.board_x)
 if global.Type = 0 then{ //Grid
 	repeat(25){
 		ds_list_add(global.board,0)

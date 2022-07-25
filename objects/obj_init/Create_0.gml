@@ -1,7 +1,7 @@
 /// @description Setup
 
 //Setup
-global.Version = "1.5.1"
+global.Version = "1.6.0"
 global.Latest = global.Version
 global.CheckVer = false
 global.Update = false
@@ -26,6 +26,13 @@ global.items = ds_list_create()
 global.items_amounts = ds_list_create()
 global.availableitems = ds_list_create()
 global.log = ds_list_create()
+
+//Creator
+global.plango = false
+global.plango_create_setup = false
+global.plango_selected = undefined
+global.plango_items = ds_list_create()
+global.plango_items_amounts = ds_list_create()
 
 //Ip and port
 global.LastIP = "127.0.0.1"
