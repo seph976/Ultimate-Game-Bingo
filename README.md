@@ -15,5 +15,7 @@ Pokémon**
 All games can be played in either grid mode, hex mode or mission mode with duplicate items on the board enabled or disabled, however games will also have
 their own settings to customize the bingo further.
 
+Its also possible to create your own custom bingo board setupts for the supported games and export them to .dat files to load and play later.
+
 For now the board only supposed lockout mode when you play multiplayer, however you can easily open two boards and join eachother as a spectator if you
 want to play normal mode and keep track of eachothers boards, note that you can also play alone by just opening a room on your own.
