@@ -10,7 +10,7 @@ var ii = 0
 for (i = 0; i < 8; i += 1){
 	var _number = i + (ii * 8)
 	draw_sprite(spr_icon,0,_board_x + 88 + (i * 55),_board_y + 57 + (ii * 55))
-	if mouse_x > _board_x + 88 - 25 + (i * 55) and mouse_x < _board_x + 88 + 25 + (i * 55) and mouse_y > _board_y + 57 - 25 + (ii * 55) and mouse_y < _board_y + 57 + 25 + (ii * 55) and mouse_y > global.topbar and mouse_y < 310 and mouse_check_button_pressed(mb_left) then{
+	if mouse_x > _board_x + 88 - 25 + (i * 55) and mouse_x < _board_x + 88 + 25 + (i * 55) and mouse_y > _board_y + 57 - 25 + (ii * 55) and mouse_y < _board_y + 57 + 25 + (ii * 55) and mouse_y > global.topbar and mouse_y < 310 + global.topbar and mouse_check_button_pressed(mb_left) then{
 		if global.Sounds = true then{
 			audio_play_sound(sfx_cursor,1,false)
 		}

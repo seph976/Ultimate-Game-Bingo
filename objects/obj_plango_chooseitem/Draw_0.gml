@@ -36,9 +36,16 @@ var ii = 0
 for (i = 0; i < 8; i += 1){
 	var _number = i + (ii * 8)
 	//Hover highlight and info
-	if mouse_x > _board_x + 88 - 25 + (i * 55) and mouse_x < _board_x + 88 + 25 + (i * 55) and mouse_y > _board_y + 57 - 25 + (ii * 55) and mouse_y < _board_y + 57 + 25 + (ii * 55) and mouse_y > global.topbar and mouse_y < 310 then{
+	if mouse_x > _board_x + 88 - 25 + (i * 55) and mouse_x < _board_x + 88 + 25 + (i * 55) and mouse_y > _board_y + 57 - 25 + (ii * 55) and mouse_y < _board_y + 57 + 25 + (ii * 55) and mouse_y > global.topbar and mouse_y < 310 + global.topbar then{
 		//Highlight
 		draw_sprite_ext(spr_iconhighlight,0,_board_x + 88 + (i * 55),_board_y + 57 + (ii * 55),1,1,0,col_highlight,1)
+		draw_sprite_part(spr_background,0,1,310,500 - 2,139,1,310 + global.topbar)
+		draw_set_color(c_black)
+		draw_line(10,310 + global.topbar,490,310 + global.topbar)
+		draw_line(10,312 + global.topbar,490,312 + global.topbar)
+		draw_line(9,311 + global.topbar,491,311 + global.topbar)
+		draw_set_color(c_white)
+		draw_line(10,311 + global.topbar,490,311 + global.topbar)
 		//Information
 		draw_set_font(font_bahnschrift_11)
 		draw_set_halign(fa_left)
