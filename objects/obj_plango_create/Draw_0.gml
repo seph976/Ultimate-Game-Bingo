@@ -6,6 +6,14 @@ draw_sprite(spr_background,0,0,0 + global.topbar)
 //Topbar
 topbar_draw()
 
+//Bottom line
+draw_set_color(c_black)
+draw_line(10,310 + global.topbar,490,310 + global.topbar)
+draw_line(10,312 + global.topbar,490,312 + global.topbar)
+draw_line(9,311 + global.topbar,491,311 + global.topbar)
+draw_set_color(c_white)
+draw_line(10,311 + global.topbar,490,311 + global.topbar)
+
 //Board stuff
 if global.Type = 0 then{ //Grid mode
 	//Position
@@ -48,6 +56,11 @@ if global.Type = 0 then{ //Grid mode
 		if mouse_x > _board_x + 88 - 25 + (i * 55) and mouse_x < _board_x + 88 + 25 + (i * 55) and mouse_y > _board_y + 57 - 25 + (ii * 55) and mouse_y < _board_y + 57 + 25 + (ii * 55) then{
 			//Highlight
 			draw_sprite_ext(spr_iconhighlight,0,_board_x + 88 + (i * 55),_board_y + 57 + (ii * 55),1,1,0,col_highlight,1)
+			//Information
+			draw_set_font(font_bahnschrift_11)
+			draw_set_halign(fa_left)
+			draw_text_outline(bingo_item_get(ds_list_find_value(global.items,_number),1),10,317 + global.topbar,c_white,c_black)
+			draw_text_outline(bingo_item_get(ds_list_find_value(global.items,_number),2),10,337 + global.topbar,c_white,c_black)
 		}
 		if i = 4 and ii < 4 then{
 			i = -1
@@ -88,6 +101,11 @@ else if global.Type = 1 then{ //Hex mode
 		if mouse_x > _board_x + 88 - 25 + (i * 55) and mouse_x < _board_x + 88 + 25 + (i * 55) and mouse_y > _board_y + 57 - 25 + (0 * 55) and mouse_y < _board_y + 57 + 25 + (0 * 55) then{
 			//Highlight
 			draw_sprite_ext(spr_iconhighlight,0,_board_x + 88 + (i * 55),_board_y + 57 + (0 * 55),1,1,0,col_highlight,1)
+			//Information
+			draw_set_font(font_bahnschrift_11)
+			draw_set_halign(fa_left)
+			draw_text_outline(bingo_item_get(ds_list_find_value(global.items,_number),1),10,317 + global.topbar,c_white,c_black)
+			draw_text_outline(bingo_item_get(ds_list_find_value(global.items,_number),2),10,337 + global.topbar,c_white,c_black)
 		}
 	}
 	for (i = 0; i < 4; i += 1){
@@ -108,6 +126,11 @@ else if global.Type = 1 then{ //Hex mode
 		if mouse_x > _board_x + 115 - 25 + (i * 55) and mouse_x < _board_x + 115 + 25 + (i * 55) and mouse_y > _board_y + 57 - 25 + (1 * 55) and mouse_y < _board_y + 57 + 25 + (1 * 55) then{
 			//Highlight
 			draw_sprite_ext(spr_iconhighlight,0,_board_x + 115 + (i * 55),_board_y + 57 + (1 * 55),1,1,0,col_highlight,1)
+			//Information
+			draw_set_font(font_bahnschrift_11)
+			draw_set_halign(fa_left)
+			draw_text_outline(bingo_item_get(ds_list_find_value(global.items,_number),1),10,317 + global.topbar,c_white,c_black)
+			draw_text_outline(bingo_item_get(ds_list_find_value(global.items,_number),2),10,337 + global.topbar,c_white,c_black)
 		}
 	}
 	for (i = 0; i < 5; i += 1){
@@ -128,6 +151,11 @@ else if global.Type = 1 then{ //Hex mode
 		if mouse_x > _board_x + 88 - 25 + (i * 55) and mouse_x < _board_x + 88 + 25 + (i * 55) and mouse_y > _board_y + 57 - 25 + (2 * 55) and mouse_y < _board_y + 57 + 25 + (2 * 55) then{
 			//Highlight
 			draw_sprite_ext(spr_iconhighlight,0,_board_x + 88 + (i * 55),_board_y + 57 + (2 * 55),1,1,0,col_highlight,1)
+			//Information
+			draw_set_font(font_bahnschrift_11)
+			draw_set_halign(fa_left)
+			draw_text_outline(bingo_item_get(ds_list_find_value(global.items,_number),1),10,317 + global.topbar,c_white,c_black)
+			draw_text_outline(bingo_item_get(ds_list_find_value(global.items,_number),2),10,337 + global.topbar,c_white,c_black)
 		}
 	}
 	for (i = 0; i < 4; i += 1){
@@ -148,6 +176,11 @@ else if global.Type = 1 then{ //Hex mode
 		if mouse_x > _board_x + 115 - 25 + (i * 55) and mouse_x < _board_x + 115 + 25 + (i * 55) and mouse_y > _board_y + 57 - 25 + (3 * 55) and mouse_y < _board_y + 57 + 25 + (3 * 55) then{
 			//Highlight
 			draw_sprite_ext(spr_iconhighlight,0,_board_x + 115 + (i * 55),_board_y + 57 + (3 * 55),1,1,0,col_highlight,1)
+			//Information
+			draw_set_font(font_bahnschrift_11)
+			draw_set_halign(fa_left)
+			draw_text_outline(bingo_item_get(ds_list_find_value(global.items,_number),1),10,317 + global.topbar,c_white,c_black)
+			draw_text_outline(bingo_item_get(ds_list_find_value(global.items,_number),2),10,337 + global.topbar,c_white,c_black)
 		}
 	}
 	for (i = 1; i < 4; i += 1){
@@ -168,6 +201,11 @@ else if global.Type = 1 then{ //Hex mode
 		if mouse_x > _board_x + 88 - 25 + (i * 55) and mouse_x < _board_x + 88 + 25 + (i * 55) and mouse_y > _board_y + 57 - 25 + (4 * 55) and mouse_y < _board_y + 57 + 25 + (4 * 55) then{
 			//Highlight
 			draw_sprite_ext(spr_iconhighlight,0,_board_x + 88 + (i * 55),_board_y + 57 + (4 * 55),1,1,0,col_highlight,1)
+			//Information
+			draw_set_font(font_bahnschrift_11)
+			draw_set_halign(fa_left)
+			draw_text_outline(bingo_item_get(ds_list_find_value(global.items,_number),1),10,317 + global.topbar,c_white,c_black)
+			draw_text_outline(bingo_item_get(ds_list_find_value(global.items,_number),2),10,337 + global.topbar,c_white,c_black)
 		}
 	}
 }
@@ -216,75 +254,80 @@ else if global.Type = 2 then{ //Mission mode
 			}
 		}
 		//Hover highlight and info
-		if mouse_x > _board_x + 88 - 25 and mouse_x < _board_x + 88 + 250 and mouse_y > _board_y + 57 - 25 + (i * 55) and mouse_y < _board_y + 57 + 25 + (i * 55) then{
+		if mouse_x > _board_x + 63 and mouse_x < _board_x + 63 + 275 and mouse_y > _board_y + 57 - 25 + (i * 55) and mouse_y < _board_y + 57 + 25 + (i * 55) then{
 			//Highlight
-			draw_rectangle_color(_board_x + 63,_board_y + 57 - 25 + (i * 55),_board_x + 63 + 283,_board_y + 57 + 25 + (i * 55),col_highlight,col_highlight,col_highlight,col_highlight,true)
-			draw_rectangle_color(_board_x + 1 + 63,_board_y + 1 + 57 - 25 + (i * 55),_board_x - 1 + 63 + 283,_board_y - 1 + 57 + 25 + (i * 55),col_highlight,col_highlight,col_highlight,col_highlight,true)
-			draw_rectangle_color(_board_x + 2 + 63,_board_y + 2 + 57 - 25 + (i * 55),_board_x - 2 + 63 + 283,_board_y - 2 + 57 + 25 + (i * 55),col_highlight,col_highlight,col_highlight,col_highlight,true)
+			draw_rectangle_color(_board_x + 63,_board_y + 57 - 25 + (i * 55),_board_x + 63 + 275,_board_y + 57 + 25 + (i * 55),col_highlight,col_highlight,col_highlight,col_highlight,true)
+			draw_rectangle_color(_board_x + 1 + 63,_board_y + 1 + 57 - 25 + (i * 55),_board_x - 1 + 63 + 275,_board_y - 1 + 57 + 25 + (i * 55),col_highlight,col_highlight,col_highlight,col_highlight,true)
+			draw_rectangle_color(_board_x + 2 + 63,_board_y + 2 + 57 - 25 + (i * 55),_board_x - 2 + 63 + 275,_board_y - 2 + 57 + 25 + (i * 55),col_highlight,col_highlight,col_highlight,col_highlight,true)
+			//Information
+			draw_set_font(font_bahnschrift_11)
+			draw_set_halign(fa_left)
+			draw_text_outline(bingo_item_get(ds_list_find_value(global.items,i),1),10,317 + global.topbar,c_white,c_black)
+			draw_text_outline(bingo_item_get(ds_list_find_value(global.items,i),2),10,337 + global.topbar,c_white,c_black)
 		}
 	}
 }
 
-//Bottom options
-var _pos_x  = 50
-var _pos_y = 325 + global.topbar
-draw_line(_pos_x,_pos_y,_pos_x + 400,_pos_y)
-draw_line(_pos_x,_pos_y + 25,_pos_x + 400,_pos_y + 25)
-var _pos_x  = 50
-var _pos_y = 350 + global.topbar
-draw_line(_pos_x,_pos_y,_pos_x + 400,_pos_y)
-draw_line(_pos_x,_pos_y + 25,_pos_x + 400,_pos_y + 25)
-var _pos_x  = 50
-var _pos_y = 375 + global.topbar
-draw_line(_pos_x,_pos_y,_pos_x + 400,_pos_y)
-draw_line(_pos_x,_pos_y + 25,_pos_x + 400,_pos_y + 25)
-var _pos_x  = 50
-var _pos_y = 400 + global.topbar
-draw_line(_pos_x,_pos_y,_pos_x + 400,_pos_y)
-draw_line(_pos_x,_pos_y + 25,_pos_x + 400,_pos_y + 25)
+//Side options
+var _pos_x  = 340
+var _pos_y = 25 + global.topbar
+draw_line(_pos_x,_pos_y,_pos_x + 150,_pos_y)
+draw_line(_pos_x,_pos_y + 25,_pos_x + 150,_pos_y + 25)
+var _pos_x  = 340
+var _pos_y = 50 + global.topbar
+draw_line(_pos_x,_pos_y,_pos_x + 150,_pos_y)
+draw_line(_pos_x,_pos_y + 25,_pos_x + 150,_pos_y + 25)
+var _pos_x  = 340
+var _pos_y = 75 + global.topbar
+draw_line(_pos_x,_pos_y,_pos_x + 150,_pos_y)
+draw_line(_pos_x,_pos_y + 25,_pos_x + 150,_pos_y + 25)
+var _pos_x  = 340
+var _pos_y = 100 + global.topbar
+draw_line(_pos_x,_pos_y,_pos_x + 150,_pos_y)
+draw_line(_pos_x,_pos_y + 25,_pos_x + 150,_pos_y + 25)
 
-var _pos_x  = 50
-var _pos_y = 325 + global.topbar
-if mouse_x > _pos_x and mouse_x < _pos_x + 400 and mouse_y > _pos_y and mouse_y < _pos_y + 25 then{
+var _pos_x  = 340
+var _pos_y = 25 + global.topbar
+if mouse_x > _pos_x and mouse_x < _pos_x + 150 and mouse_y > _pos_y and mouse_y < _pos_y + 25 then{
 	draw_set_alpha(0.3)
-	draw_rectangle(_pos_x,_pos_y,_pos_x + 400,_pos_y + 25,false)
+	draw_rectangle(_pos_x,_pos_y,_pos_x + 150,_pos_y + 25,false)
 	draw_set_alpha(1)
-	draw_rectangle_color(_pos_x + 2,_pos_y + 2,_pos_x + 400 - 2,_pos_y + 25 - 2,col_highlight,col_highlight,col_highlight,col_highlight,true)
-	draw_rectangle_color(_pos_x + 1,_pos_y + 1,_pos_x + 400 - 1,_pos_y + 25 - 1,col_highlight,col_highlight,col_highlight,col_highlight,true)
+	draw_rectangle_color(_pos_x + 2,_pos_y + 2,_pos_x + 150 - 2,_pos_y + 25 - 2,col_highlight,col_highlight,col_highlight,col_highlight,true)
+	draw_rectangle_color(_pos_x + 1,_pos_y + 1,_pos_x + 150 - 1,_pos_y + 25 - 1,col_highlight,col_highlight,col_highlight,col_highlight,true)
 }
-var _pos_x  = 50
-var _pos_y = 350 + global.topbar
-if mouse_x > _pos_x and mouse_x < _pos_x + 400 and mouse_y > _pos_y and mouse_y < _pos_y + 25 then{
+var _pos_x  = 340
+var _pos_y = 50 + global.topbar
+if mouse_x > _pos_x and mouse_x < _pos_x + 150 and mouse_y > _pos_y and mouse_y < _pos_y + 25 then{
 	draw_set_alpha(0.3)
-	draw_rectangle(_pos_x,_pos_y,_pos_x + 400,_pos_y + 25,false)
+	draw_rectangle(_pos_x,_pos_y,_pos_x + 150,_pos_y + 25,false)
 	draw_set_alpha(1)
-	draw_rectangle_color(_pos_x + 2,_pos_y + 2,_pos_x + 400 - 2,_pos_y + 25 - 2,col_highlight,col_highlight,col_highlight,col_highlight,true)
-	draw_rectangle_color(_pos_x + 1,_pos_y + 1,_pos_x + 400 - 1,_pos_y + 25 - 1,col_highlight,col_highlight,col_highlight,col_highlight,true)
+	draw_rectangle_color(_pos_x + 2,_pos_y + 2,_pos_x + 150 - 2,_pos_y + 25 - 2,col_highlight,col_highlight,col_highlight,col_highlight,true)
+	draw_rectangle_color(_pos_x + 1,_pos_y + 1,_pos_x + 150 - 1,_pos_y + 25 - 1,col_highlight,col_highlight,col_highlight,col_highlight,true)
 }
-var _pos_x  = 50
-var _pos_y = 375 + global.topbar
-if mouse_x > _pos_x and mouse_x < _pos_x + 400 and mouse_y > _pos_y and mouse_y < _pos_y + 25 then{
+var _pos_x  = 340
+var _pos_y = 75 + global.topbar
+if mouse_x > _pos_x and mouse_x < _pos_x + 150 and mouse_y > _pos_y and mouse_y < _pos_y + 25 then{
 	draw_set_alpha(0.3)
-	draw_rectangle(_pos_x,_pos_y,_pos_x + 400,_pos_y + 25,false)
+	draw_rectangle(_pos_x,_pos_y,_pos_x + 150,_pos_y + 25,false)
 	draw_set_alpha(1)
-	draw_rectangle_color(_pos_x + 2,_pos_y + 2,_pos_x + 400 - 2,_pos_y + 25 - 2,col_highlight,col_highlight,col_highlight,col_highlight,true)
-	draw_rectangle_color(_pos_x + 1,_pos_y + 1,_pos_x + 400 - 1,_pos_y + 25 - 1,col_highlight,col_highlight,col_highlight,col_highlight,true)
+	draw_rectangle_color(_pos_x + 2,_pos_y + 2,_pos_x + 150 - 2,_pos_y + 25 - 2,col_highlight,col_highlight,col_highlight,col_highlight,true)
+	draw_rectangle_color(_pos_x + 1,_pos_y + 1,_pos_x + 150 - 1,_pos_y + 25 - 1,col_highlight,col_highlight,col_highlight,col_highlight,true)
 }
-var _pos_x  = 50
-var _pos_y = 400 + global.topbar
-if mouse_x > _pos_x and mouse_x < _pos_x + 400 and mouse_y > _pos_y and mouse_y < _pos_y + 25 then{
+var _pos_x  = 340
+var _pos_y = 100 + global.topbar
+if mouse_x > _pos_x and mouse_x < _pos_x + 150 and mouse_y > _pos_y and mouse_y < _pos_y + 25 then{
 	draw_set_alpha(0.3)
-	draw_rectangle(_pos_x,_pos_y,_pos_x + 400,_pos_y + 25,false)
+	draw_rectangle(_pos_x,_pos_y,_pos_x + 150,_pos_y + 25,false)
 	draw_set_alpha(1)
-	draw_rectangle_color(_pos_x + 2,_pos_y + 2,_pos_x + 400 - 2,_pos_y + 25 - 2,col_highlight,col_highlight,col_highlight,col_highlight,true)
-	draw_rectangle_color(_pos_x + 1,_pos_y + 1,_pos_x + 400 - 1,_pos_y + 25 - 1,col_highlight,col_highlight,col_highlight,col_highlight,true)
+	draw_rectangle_color(_pos_x + 2,_pos_y + 2,_pos_x + 150 - 2,_pos_y + 25 - 2,col_highlight,col_highlight,col_highlight,col_highlight,true)
+	draw_rectangle_color(_pos_x + 1,_pos_y + 1,_pos_x + 150 - 1,_pos_y + 25 - 1,col_highlight,col_highlight,col_highlight,col_highlight,true)
 }
 
+//Type
 draw_set_halign(fa_center)
 draw_set_font(font_bahnschrift_11)
-//Seed
-var _pos_x  = 50
-var _pos_y = 325 + global.topbar
+var _pos_x  = 340
+var _pos_y = 25 + global.topbar
 if global.Type = 0 then{
 	var _type = "Grid"
 }
@@ -294,16 +337,16 @@ else if global.Type = 1 then{
 else if global.Type = 2 then{
 	var _type = "Mission"
 }
-draw_text(_pos_x + 200,_pos_y + 4,"Type: " + string(_type))
+draw_text(_pos_x + 75,_pos_y + 4,"Type: " + string(_type))
 //Seed
-var _pos_x  = 50
-var _pos_y = 350 + global.topbar
-draw_text(_pos_x + 200,_pos_y + 4,"Seed: " + string(global.Seed))
+var _pos_x  = 340
+var _pos_y = 50 + global.topbar
+draw_text(_pos_x + 75,_pos_y + 4,"Seed: " + string(global.Seed))
 //Reset
-var _pos_x  = 50
-var _pos_y = 375 + global.topbar
-draw_text(_pos_x + 200,_pos_y + 4,"Reset")
-//Save plan
-var _pos_x  = 50
-var _pos_y = 400 + global.topbar
-draw_text(_pos_x + 200,_pos_y + 4,"Save Plan")
+var _pos_x  = 340
+var _pos_y = 75 + global.topbar
+draw_text(_pos_x + 75,_pos_y + 4,"Reset")
+//Save
+var _pos_x  = 340
+var _pos_y = 100 + global.topbar
+draw_text(_pos_x + 75,_pos_y + 4,"Save Plan")

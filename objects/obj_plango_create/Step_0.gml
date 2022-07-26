@@ -87,8 +87,8 @@ else if global.Type = 2 then{ //Mission mode
 	var _board_y = -10 + global.topbar
 	if global.Color != c_ltgray then{
 		for (i = 0; i < 5; i += 1){
-			draw_sprite(spr_icon,0,_board_x + 88,_board_y + 57 + (i * 55))
-			if mouse_x > _board_x + 88 - 25 and mouse_x < _board_x + 88 + 283 and mouse_y > _board_y + 57 - 25 + (i * 55) and mouse_y < _board_y + 57 + 25 + (i * 55) and mouse_check_button_pressed(mb_left) then{
+			draw_sprite(spr_icon,0,_board_x + 63,_board_y + 57 + (i * 55))
+			if mouse_x > _board_x + 63 and mouse_x < _board_x + 63 + 275 and mouse_y > _board_y + 57 - 25 + (i * 55) and mouse_y < _board_y + 57 + 25 + (i * 55) and mouse_check_button_pressed(mb_left) then{
 				if global.Sounds = true then{
 					audio_play_sound(sfx_cursor,1,false)
 				}
@@ -99,11 +99,11 @@ else if global.Type = 2 then{ //Mission mode
 	}
 }
 
-//Bottom buttons
+//Side buttons
 //Type
-var _pos_x  = 50
-var _pos_y = 325 + global.topbar
-if mouse_x > _pos_x and mouse_x < _pos_x + 400 and mouse_y > _pos_y and mouse_y < _pos_y + 25 and mouse_check_button_pressed(mb_left) then{
+var _pos_x  = 340
+var _pos_y = 25 + global.topbar
+if mouse_x > _pos_x and mouse_x < _pos_x + 150 and mouse_y > _pos_y and mouse_y < _pos_y + 25 and mouse_check_button_pressed(mb_left) then{
 	if global.Sounds = true then{
 		audio_play_sound(sfx_cursor,1,false)
 	}
@@ -132,9 +132,9 @@ if mouse_x > _pos_x and mouse_x < _pos_x + 400 and mouse_y > _pos_y and mouse_y 
 	}
 }
 //Seed
-var _pos_x  = 50
-var _pos_y = 350 + global.topbar
-if mouse_x > _pos_x and mouse_x < _pos_x + 400 and mouse_y > _pos_y and mouse_y < _pos_y + 25 and mouse_check_button_pressed(mb_left) then{
+var _pos_x  = 340
+var _pos_y = 50 + global.topbar
+if mouse_x > _pos_x and mouse_x < _pos_x + 150 and mouse_y > _pos_y and mouse_y < _pos_y + 25 and mouse_check_button_pressed(mb_left) then{
 	if global.Sounds = true then{
 		audio_play_sound(sfx_cursor,1,false)
 	}
@@ -142,9 +142,9 @@ if mouse_x > _pos_x and mouse_x < _pos_x + 400 and mouse_y > _pos_y and mouse_y 
 	room_restart()
 }
 //Reset
-var _pos_x  = 50
-var _pos_y = 375 + global.topbar
-if mouse_x > _pos_x and mouse_x < _pos_x + 400 and mouse_y > _pos_y and mouse_y < _pos_y + 25 and mouse_check_button_pressed(mb_left) then{
+var _pos_x  = 340
+var _pos_y = 75 + global.topbar
+if mouse_x > _pos_x and mouse_x < _pos_x + 150 and mouse_y > _pos_y and mouse_y < _pos_y + 25 and mouse_check_button_pressed(mb_left) then{
 	if global.Sounds = true then{
 		audio_play_sound(sfx_cursor,1,false)
 	}
@@ -170,9 +170,9 @@ if mouse_x > _pos_x and mouse_x < _pos_x + 400 and mouse_y > _pos_y and mouse_y 
 	}
 }
 //Save plan
-var _pos_x  = 50
-var _pos_y = 400 + global.topbar
-if mouse_x > _pos_x and mouse_x < _pos_x + 400 and mouse_y > _pos_y and mouse_y < _pos_y + 25 and mouse_check_button_pressed(mb_left) then{
+var _pos_x  = 340
+var _pos_y = 100 + global.topbar
+if mouse_x > _pos_x and mouse_x < _pos_x + 150 and mouse_y > _pos_y and mouse_y < _pos_y + 25 and mouse_check_button_pressed(mb_left) then{
 	if global.Sounds = true then{
 		audio_play_sound(sfx_cursor,1,false)
 	}

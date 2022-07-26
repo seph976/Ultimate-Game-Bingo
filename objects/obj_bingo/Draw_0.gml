@@ -349,7 +349,7 @@ else if global.Type = 2 then{ //Mission mode
 			draw_sprite_ext(spr_iconset,0,_board_x + 88,_board_y + 57 + (i * 55),1,1,0,ds_list_find_value(global.board,i),0.7)
 		}
 		//Hover highlight and info
-		if mouse_x > _board_x + 88 - 25 and mouse_x < _board_x + 88 + 250 and mouse_y > _board_y + 57 - 25 + (i * 55) and mouse_y < _board_y + 57 + 25 + (i * 55) then{
+		if mouse_x > _board_x + 63 and mouse_x < _board_x + 63 + 283 and mouse_y > _board_y + 57 - 25 + (i * 55) and mouse_y < _board_y + 57 + 25 + (i * 55) then{
 			//Highlight
 			draw_rectangle_color(_board_x + 63,_board_y + 57 - 25 + (i * 55),_board_x + 63 + 283,_board_y + 57 + 25 + (i * 55),col_highlight,col_highlight,col_highlight,col_highlight,true)
 			draw_rectangle_color(_board_x + 1 + 63,_board_y + 1 + 57 - 25 + (i * 55),_board_x - 1 + 63 + 283,_board_y - 1 + 57 + 25 + (i * 55),col_highlight,col_highlight,col_highlight,col_highlight,true)
@@ -372,7 +372,7 @@ else if global.Type = 2 then{ //Mission mode
 				draw_set_font(font_bahnschrift_11)
 				draw_set_halign(fa_left)
 				draw_text_outline(bingo_item_get(ds_list_find_value(global.items,i),1),10,317 + global.topbar,c_white,c_black)
-				draw_text_outline(bingo_item_get(ds_list_find_value(global.items,i),2),10,337 + global.topbar,c_white,c_black)	
+				draw_text_outline(bingo_item_get(ds_list_find_value(global.items,i),2),10,337 + global.topbar,c_white,c_black)
 			}
 		}
 	}
