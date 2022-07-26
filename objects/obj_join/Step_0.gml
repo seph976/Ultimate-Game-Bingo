@@ -10,7 +10,10 @@ if mouse_x > _pos_x and mouse_x < _pos_x + 400 and mouse_y > _pos_y and mouse_y 
 	if global.Sounds = true then{
 		audio_play_sound(sfx_cursor,1,false)
 	}
-	global.LastIP = get_string("Set IP:",global.LastIP)
+	var _lastip = get_string("Set IP:",global.LastIP)
+	if _lastip != "" then{
+		global.LastIP = _lastip
+	}
 }
 //PORT button
 var _pos_x  = 50
@@ -19,7 +22,10 @@ if mouse_x > _pos_x and mouse_x < _pos_x + 400 and mouse_y > _pos_y and mouse_y 
 	if global.Sounds = true then{
 		audio_play_sound(sfx_cursor,1,false)
 	}
-	global.LastPort = get_integer("Set Port:",global.LastPort)
+	var _lastport = get_integer("Set Port:",global.LastPort)
+	if _lastport != undefined then{
+		global.LastPort = _lastport
+	}
 }
 
 //Spectator button
