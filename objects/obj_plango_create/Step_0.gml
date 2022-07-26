@@ -141,9 +141,33 @@ if mouse_x > _pos_x and mouse_x < _pos_x + 150 and mouse_y > _pos_y and mouse_y 
 	global.Seed = irandom(2147483647)
 	room_restart()
 }
-//Reset
+//Populate
 var _pos_x  = 340
 var _pos_y = 75 + global.topbar
+if mouse_x > _pos_x and mouse_x < _pos_x + 150 and mouse_y > _pos_y and mouse_y < _pos_y + 25 and mouse_check_button_pressed(mb_left) then{
+	if global.Sounds = true then{
+		audio_play_sound(sfx_cursor,1,false)
+	}
+	for (var i = 0; i < ds_list_size(global.items); ++i) {
+	    ds_list_replace(global.items,i,irandom(ds_list_size(global.availableitems) - 1))
+		ds_list_replace(global.items_amounts,i,bingo_item_get(ds_list_find_value(global.items,i),3))
+	}
+}
+//Shuffle
+var _pos_x  = 340
+var _pos_y = 100 + global.topbar
+if mouse_x > _pos_x and mouse_x < _pos_x + 150 and mouse_y > _pos_y and mouse_y < _pos_y + 25 and mouse_check_button_pressed(mb_left) then{
+	if global.Sounds = true then{
+		audio_play_sound(sfx_cursor,1,false)
+	}
+	ds_list_shuffle(global.items)
+	for (var i = 0; i < ds_list_size(global.items); ++i) {
+	    ds_list_replace(global.items_amounts,i,bingo_item_get(ds_list_find_value(global.items,i),3))
+	}
+}
+//Reset
+var _pos_x  = 340
+var _pos_y = 125 + global.topbar
 if mouse_x > _pos_x and mouse_x < _pos_x + 150 and mouse_y > _pos_y and mouse_y < _pos_y + 25 and mouse_check_button_pressed(mb_left) then{
 	if global.Sounds = true then{
 		audio_play_sound(sfx_cursor,1,false)
@@ -171,7 +195,7 @@ if mouse_x > _pos_x and mouse_x < _pos_x + 150 and mouse_y > _pos_y and mouse_y 
 }
 //Save plan
 var _pos_x  = 340
-var _pos_y = 100 + global.topbar
+var _pos_y = 150 + global.topbar
 if mouse_x > _pos_x and mouse_x < _pos_x + 150 and mouse_y > _pos_y and mouse_y < _pos_y + 25 and mouse_check_button_pressed(mb_left) then{
 	if global.Sounds = true then{
 		audio_play_sound(sfx_cursor,1,false)

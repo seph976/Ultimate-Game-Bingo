@@ -285,6 +285,14 @@ var _pos_x  = 340
 var _pos_y = 100 + global.topbar
 draw_line(_pos_x,_pos_y,_pos_x + 150,_pos_y)
 draw_line(_pos_x,_pos_y + 25,_pos_x + 150,_pos_y + 25)
+var _pos_x  = 340
+var _pos_y = 125 + global.topbar
+draw_line(_pos_x,_pos_y,_pos_x + 150,_pos_y)
+draw_line(_pos_x,_pos_y + 25,_pos_x + 150,_pos_y + 25)
+var _pos_x  = 340
+var _pos_y = 150 + global.topbar
+draw_line(_pos_x,_pos_y,_pos_x + 150,_pos_y)
+draw_line(_pos_x,_pos_y + 25,_pos_x + 150,_pos_y + 25)
 
 var _pos_x  = 340
 var _pos_y = 25 + global.topbar
@@ -315,6 +323,24 @@ if mouse_x > _pos_x and mouse_x < _pos_x + 150 and mouse_y > _pos_y and mouse_y 
 }
 var _pos_x  = 340
 var _pos_y = 100 + global.topbar
+if mouse_x > _pos_x and mouse_x < _pos_x + 150 and mouse_y > _pos_y and mouse_y < _pos_y + 25 then{
+	draw_set_alpha(0.3)
+	draw_rectangle(_pos_x,_pos_y,_pos_x + 150,_pos_y + 25,false)
+	draw_set_alpha(1)
+	draw_rectangle_color(_pos_x + 2,_pos_y + 2,_pos_x + 150 - 2,_pos_y + 25 - 2,col_highlight,col_highlight,col_highlight,col_highlight,true)
+	draw_rectangle_color(_pos_x + 1,_pos_y + 1,_pos_x + 150 - 1,_pos_y + 25 - 1,col_highlight,col_highlight,col_highlight,col_highlight,true)
+}
+var _pos_x  = 340
+var _pos_y = 125 + global.topbar
+if mouse_x > _pos_x and mouse_x < _pos_x + 150 and mouse_y > _pos_y and mouse_y < _pos_y + 25 then{
+	draw_set_alpha(0.3)
+	draw_rectangle(_pos_x,_pos_y,_pos_x + 150,_pos_y + 25,false)
+	draw_set_alpha(1)
+	draw_rectangle_color(_pos_x + 2,_pos_y + 2,_pos_x + 150 - 2,_pos_y + 25 - 2,col_highlight,col_highlight,col_highlight,col_highlight,true)
+	draw_rectangle_color(_pos_x + 1,_pos_y + 1,_pos_x + 150 - 1,_pos_y + 25 - 1,col_highlight,col_highlight,col_highlight,col_highlight,true)
+}
+var _pos_x  = 340
+var _pos_y = 150 + global.topbar
 if mouse_x > _pos_x and mouse_x < _pos_x + 150 and mouse_y > _pos_y and mouse_y < _pos_y + 25 then{
 	draw_set_alpha(0.3)
 	draw_rectangle(_pos_x,_pos_y,_pos_x + 150,_pos_y + 25,false)
@@ -342,11 +368,19 @@ draw_text(_pos_x + 75,_pos_y + 4,"Type: " + string(_type))
 var _pos_x  = 340
 var _pos_y = 50 + global.topbar
 draw_text(_pos_x + 75,_pos_y + 4,"Seed: " + string(global.Seed))
-//Reset
+//Populate
 var _pos_x  = 340
 var _pos_y = 75 + global.topbar
+draw_text(_pos_x + 75,_pos_y + 4,"Populate")
+//Shuffle
+var _pos_x  = 340
+var _pos_y = 100 + global.topbar
+draw_text(_pos_x + 75,_pos_y + 4,"Shuffle")
+//Reset
+var _pos_x  = 340
+var _pos_y = 125 + global.topbar
 draw_text(_pos_x + 75,_pos_y + 4,"Reset")
 //Save
 var _pos_x  = 340
-var _pos_y = 100 + global.topbar
+var _pos_y = 150 + global.topbar
 draw_text(_pos_x + 75,_pos_y + 4,"Save Plan")
